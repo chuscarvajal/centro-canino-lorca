@@ -80,6 +80,12 @@
     @keyframes pawStep { 0%{opacity:0;} 12%{opacity:.5;} 45%{opacity:.5;} 70%{opacity:0;} 100%{opacity:0;} }
     .paw-trail { position:absolute; inset:0; pointer-events:none; z-index:2; overflow:hidden; }
     .paw-trail svg { position:absolute; width:30px; height:30px; opacity:0; fill:#ffffff; animation:pawStep 5s linear infinite; }
+
+    /* Hero overlay responsive: móvil deja ver la foto */
+    .hero-ov{position:absolute;inset:0;background:linear-gradient(to bottom, rgba(0,0,0,0.28) 0%, rgba(0,0,0,0.40) 42%, rgba(0,0,0,0.70) 100%);}
+    @media(min-width:768px){ .hero-ov{background:linear-gradient(to right, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0.5) 55%, rgba(0,0,0,0.14) 100%);} }
+    .hero-content{text-shadow:0 1px 6px rgba(0,0,0,0.6);}
+    @media(min-width:768px){ .hero-content{text-shadow:none;} }
   </style>
 </head>
 <body class="bg-surface text-on-surface antialiased">
@@ -140,7 +146,7 @@
 <!-- ══════════════════════ HERO ══════════════════════ -->
 <section class="w-full relative overflow-hidden" style="min-height:580px;">
   <img src="hero-residencia.webp" alt="Residencia canina en Lorca — Centro Canino de Lorca" class="absolute inset-0 w-full h-full object-cover object-[68%_center] md:object-center">
-  <div class="absolute inset-0" style="background:linear-gradient(to right, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.48) 55%, rgba(0,0,0,0.12) 100%);"></div>
+  <div class="absolute inset-0 hero-ov"></div>
 
   <!-- Huellas dispersas animadas -->
   <div class="paw-trail" aria-hidden="true">
@@ -168,7 +174,7 @@
   </div>
 
   <div class="relative z-10 max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop py-10 md:py-24 flex items-center min-h-[380px] md:min-h-[520px]">
-    <div class="w-full md:w-1/2 flex flex-col gap-4 md:gap-6">
+    <div class="w-full md:w-1/2 flex flex-col gap-4 md:gap-6 hero-content">
       <!-- Rating -->
       <div class="flex items-center gap-2">
         <div class="flex items-center gap-0.5" style="color:#FBBC04">
@@ -293,7 +299,7 @@
 
       <!-- Photo right -->
       <div class="anim anim-slide-r delay-1 w-full md:w-1/2">
-        <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHtSoGXgZazYpc5n3XB4cM10Ze8O8jPmfDCkVz_FAJAXaJH-nLTzZhCgPYe3tzJ31ZMiuYRjJDGKEXzVrODRQTl4700Nsmohb7TK5CiTe37dzrbeflQUos5W2ldUUZ0xySrvMr6hQ=w1200-h900-k-no" alt="Instalaciones de la residencia canina en Lorca" class="rounded-2xl w-full h-[420px] object-cover shadow-[0_4px_24px_rgba(5,150,105,0.10)] border border-[#E9E5D9]">
+        <img src="hero-homepage.webp" alt="Instalaciones de la residencia canina en Lorca" class="rounded-2xl w-full h-[420px] object-cover shadow-[0_4px_24px_rgba(5,150,105,0.10)] border border-[#E9E5D9]">
       </div>
     </div>
   </div>
