@@ -51,9 +51,9 @@
     .hero-ov{position:absolute;inset:0;background:linear-gradient(to bottom, rgba(0,0,0,0.16) 0%, rgba(0,0,0,0.26) 45%, rgba(0,0,0,0.52) 100%);}
     @media(min-width:768px){ .hero-ov{background:linear-gradient(to right, rgba(0,0,0,0.48) 0%, rgba(0,0,0,0.24) 50%, rgba(0,0,0,0.02) 100%);} }
     .hero-content{text-shadow:0 2px 12px rgba(0,0,0,0.75), 0 1px 3px rgba(0,0,0,0.6);}
-    /* Hero parallax: imagen fija al hacer scroll (desktop) */
-    .hero-bg{background-size:cover;background-position:65% center;background-repeat:no-repeat;}
-    @media(min-width:768px){ .hero-bg{background-position:center;background-attachment:fixed;} }
+    /* Hero parallax fijo (móvil y escritorio, vía JS) */
+    .hero-img{position:absolute;top:0;left:0;width:100%;height:100%;background-size:cover;background-position:65% center;background-repeat:no-repeat;will-change:transform;z-index:0;}
+    @media(min-width:768px){ .hero-img{background-position:center;} }
   </style>
 </head>
 <body class="bg-surface text-on-surface antialiased">
@@ -106,7 +106,8 @@
 </header>
 
 <!-- HERO -->
-<section class="w-full relative overflow-hidden hero-bg" style="min-height:580px;background-image:url('cachorros-pastor-aleman-hero.webp');">
+<section class="w-full relative overflow-hidden" style="min-height:580px;">
+  <div class="hero-img" style="background-image:url('cachorros-pastor-aleman-hero.webp');"></div>
   <div class="absolute inset-0 hero-ov"></div>
   <div class="relative z-10 max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop pt-8">
     <nav class="flex items-center gap-2 text-white/60 font-label-sm text-xs">
@@ -123,7 +124,7 @@
         </div>
         <span class="font-label-sm text-white font-semibold">5,0 · 16 reseñas en Google</span>
       </div>
-      <h1 class="font-headline-lg text-white">Cachorros de pastor alemán línea de trabajo</h1>
+      <h1 class="font-headline-lg text-white mb-40 md:mb-0">Cachorros de pastor alemán línea de trabajo</h1>
       <p class="font-body-md text-white/85 max-w-md">
         Un pastor alemán de trabajo no es uno de belleza con suerte. Es genética, carácter y un perro construido desde las seis semanas. Llevamos 45 años seleccionando esta línea, y ningún cachorro sale de aquí sin estar sano del todo.
       </p>
@@ -579,5 +580,16 @@
 }
 </script>
 
+<script>
+(function(){
+  var imgs=[].slice.call(document.querySelectorAll(".hero-img"));
+  if(!imgs.length)return;
+  var ticking=false;
+  function upd(){ var y=window.pageYOffset||document.documentElement.scrollTop||0; for(var i=0;i<imgs.length;i++){ imgs[i].style.transform="translate3d(0,"+y+"px,0)"; } ticking=false; }
+  window.addEventListener("scroll",function(){ if(!ticking){ window.requestAnimationFrame(upd); ticking=true; } },{passive:true});
+  window.addEventListener("resize",upd,{passive:true});
+  upd();
+})();
+</script>
 </body>
 </html>
