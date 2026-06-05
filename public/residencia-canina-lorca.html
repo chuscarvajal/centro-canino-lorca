@@ -81,11 +81,10 @@
     .paw-trail { position:absolute; inset:0; pointer-events:none; z-index:2; overflow:hidden; }
     .paw-trail svg { position:absolute; width:30px; height:30px; opacity:0; fill:#ffffff; animation:pawStep 5s linear infinite; }
 
-    /* Hero overlay responsive: móvil deja ver la foto */
-    .hero-ov{position:absolute;inset:0;background:linear-gradient(to bottom, rgba(0,0,0,0.28) 0%, rgba(0,0,0,0.40) 42%, rgba(0,0,0,0.70) 100%);}
-    @media(min-width:768px){ .hero-ov{background:linear-gradient(to right, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0.5) 55%, rgba(0,0,0,0.14) 100%);} }
-    .hero-content{text-shadow:0 1px 6px rgba(0,0,0,0.6);}
-    @media(min-width:768px){ .hero-content{text-shadow:none;} }
+    /* Hero overlay ligero: deja ver bien la foto de fondo */
+    .hero-ov{position:absolute;inset:0;background:linear-gradient(to bottom, rgba(0,0,0,0.16) 0%, rgba(0,0,0,0.26) 45%, rgba(0,0,0,0.52) 100%);}
+    @media(min-width:768px){ .hero-ov{background:linear-gradient(to right, rgba(0,0,0,0.48) 0%, rgba(0,0,0,0.24) 50%, rgba(0,0,0,0.02) 100%);} }
+    .hero-content{text-shadow:0 2px 12px rgba(0,0,0,0.75), 0 1px 3px rgba(0,0,0,0.6);}
   </style>
 </head>
 <body class="bg-surface text-on-surface antialiased">
