@@ -52,6 +52,9 @@
     .hero-ov{position:absolute;inset:0;background:linear-gradient(to bottom, rgba(0,0,0,0.16) 0%, rgba(0,0,0,0.26) 45%, rgba(0,0,0,0.52) 100%);}
     @media(min-width:768px){ .hero-ov{background:linear-gradient(to right, rgba(0,0,0,0.48) 0%, rgba(0,0,0,0.24) 50%, rgba(0,0,0,0.02) 100%);} }
     .hero-content{text-shadow:0 2px 12px rgba(0,0,0,0.75), 0 1px 3px rgba(0,0,0,0.6);}
+    /* Hero parallax: imagen fija al hacer scroll (desktop) */
+    .hero-bg{background-size:cover;background-position:65% center;background-repeat:no-repeat;}
+    @media(min-width:768px){ .hero-bg{background-position:center;background-attachment:fixed;} }
   </style>
 </head>
 <body class="bg-surface text-on-surface antialiased">
@@ -104,24 +107,8 @@
 </header>
 
 <!-- HERO -->
-<section class="w-full relative overflow-hidden" style="min-height:580px;">
-  <img src="cachorro-caniche-gigante.webp" alt="Cachorros de caniche gigante — Centro Canino de Lorca" class="absolute inset-0 w-full h-full object-cover object-[68%_center] md:object-center">
+<section class="w-full relative overflow-hidden hero-bg" style="min-height:580px;background-image:url('cachorro-caniche-gigante.webp');">
   <div class="absolute inset-0 hero-ov"></div>
-  <!-- Huellas dispersas animadas -->
-  <div class="paw-trail" aria-hidden="true">
-    <svg style="left:7%;top:20%;width:26px;height:26px;transform:rotate(12deg);animation-delay:0s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
-    <svg style="left:21%;top:68%;width:34px;height:34px;transform:rotate(-16deg);animation-delay:.7s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
-    <svg style="left:14%;top:44%;width:21px;height:21px;transform:rotate(26deg);animation-delay:1.3s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
-    <svg style="left:37%;top:26%;width:30px;height:30px;transform:rotate(-8deg);animation-delay:.35s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
-    <svg style="left:47%;top:64%;width:24px;height:24px;transform:rotate(18deg);animation-delay:1.6s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
-    <svg style="left:61%;top:16%;width:34px;height:34px;transform:rotate(-22deg);animation-delay:1s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
-    <svg style="left:71%;top:50%;width:27px;height:27px;transform:rotate(10deg);animation-delay:2.2s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
-    <svg style="left:84%;top:24%;width:23px;height:23px;transform:rotate(-12deg);animation-delay:1.9s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
-    <svg style="left:90%;top:62%;width:31px;height:31px;transform:rotate(22deg);animation-delay:.5s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
-    <svg style="left:31%;top:85%;width:25px;height:25px;transform:rotate(-18deg);animation-delay:2.5s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
-    <svg style="left:55%;top:84%;width:22px;height:22px;transform:rotate(8deg);animation-delay:1.15s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
-    <svg style="left:78%;top:80%;width:29px;height:29px;transform:rotate(-25deg);animation-delay:.8s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
-  </div>
   <div class="relative z-10 max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop pt-8">
     <nav class="flex items-center gap-2 text-white/60 font-label-sm text-xs">
       <a href="index.html" class="hover:text-white transition-colors">Centro Canino de Lorca</a>
@@ -130,7 +117,7 @@
     </nav>
   </div>
   <div class="relative z-10 max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop py-10 md:py-24 flex items-center min-h-[380px] md:min-h-[520px]">
-    <div class="w-full md:w-1/2 flex flex-col gap-4 md:gap-6 hero-content">
+    <div class="w-full md:w-1/2 flex flex-col gap-5 md:gap-7 hero-content">
       <div class="flex items-center gap-2">
         <div class="flex items-center gap-0.5" style="color:#FBBC04">
           <span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span>
