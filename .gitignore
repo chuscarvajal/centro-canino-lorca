@@ -2,5 +2,19 @@ node_modules/
 .vercel
 .env
 
-.vercel
+# Config local y artefactos de herramientas
+.claude/
+.playwright-mcp/
 
+# Material de trabajo interno (no publicar)
+Centro canino de lorca/
+plantilla Pawfect/
+temporary screenshots/
+*.pdf
+generar_informe_seo.py
+gmb-screenshot-*.png
+credentials.json
+token.json
+
+# Capturas SEO internas
+seo local/

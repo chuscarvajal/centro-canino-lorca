@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Residencia Canina en Lorca — donde los perros no quieren irse | Centro Canino de Lorca</title>
+  <meta name="description" content="Residencia canina en Lorca, Murcia. Más de 100 plazas, solo 10-15 perros a la vez. 45 años de experiencia. Supervisión real 24h. 5,0★ · 16 reseñas en Google. Llama al 670 36 06 76.">
+  <link rel="canonical" href="https://centro-canino-lorca.vercel.app/residencia-canina-lorca">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#059669',
+            'on-primary': '#ffffff',
+            'primary-fixed-dim': '#a7f3d0',
+            'surface-tint': '#047857',
+            'secondary-container': '#fea619',
+            'on-secondary-container': '#3b1f00',
+            'on-primary-container': '#d1fae5',
+            background: '#f9f7f2',
+            surface: '#ffffff',
+            'on-surface': '#1a1a1a',
+            'on-surface-variant': '#4a4a4a',
+            secondary: '#fea619',
+            'secondary-fixed-dim': '#fbbf24',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Epilogue', 'sans-serif'],
+          },
+          maxWidth: { 'container-max-width': '1200px' },
+          spacing: {
+            'margin-mobile': '1.25rem',
+            'margin-desktop': '2.5rem',
+            gutter: '1.5rem',
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    .font-headline-lg  { font-family:'Epilogue',sans-serif; font-size:clamp(1.75rem,4vw,2.5rem); font-weight:700; line-height:1.15; letter-spacing:-0.03em; }
+    .font-headline-md  { font-family:'Epilogue',sans-serif; font-size:1.375rem; font-weight:700; line-height:1.2; letter-spacing:-0.02em; }
+    .font-body-md      { font-family:'Inter',sans-serif; font-size:1rem; font-weight:400; line-height:1.7; }
+    .font-label-md     { font-family:'Inter',sans-serif; font-size:0.9375rem; font-weight:600; }
+    .font-label-sm     { font-family:'Inter',sans-serif; font-size:0.75rem; font-weight:600; }
+
+    .tonal-shadow       { box-shadow: 0 4px 8px rgba(5,150,105,0.04), 0 1px 3px rgba(5,150,105,0.06); }
+    .tonal-shadow-hover { box-shadow: 0 8px 16px rgba(5,150,105,0.08), 0 2px 6px rgba(5,150,105,0.08); }
+
+    .anim { opacity:0; transform:translateY(16px); transition:opacity .55s ease, transform .55s ease; }
+    .anim.anim-slide-l { transform:translateX(-20px); }
+    .anim.anim-slide-r { transform:translateX(20px); }
+    .anim.visible { opacity:1; transform:none; }
+    .delay-1 { transition-delay:.1s; }
+    .delay-2 { transition-delay:.2s; }
+    .delay-3 { transition-delay:.3s; }
+
+    @keyframes carousel-scroll {
+      0%   { transform:translateX(0); }
+      100% { transform:translateX(-50%); }
+    }
+    #reviewCarousel { animation:carousel-scroll 36s linear infinite; }
+    #reviewCarousel:hover { animation-play-state:paused; }
+
+    blockquote.quote-block {
+      border-left: 3px solid #059669;
+      padding: 1rem 1.25rem;
+      background: rgba(5,150,105,0.05);
+      border-radius: 0 12px 12px 0;
+      font-style: italic;
+    }
+    @keyframes pawStep { 0%{opacity:0;} 12%{opacity:.5;} 45%{opacity:.5;} 70%{opacity:0;} 100%{opacity:0;} }
+    .paw-trail { position:absolute; inset:0; pointer-events:none; z-index:2; overflow:hidden; }
+    .paw-trail svg { position:absolute; width:30px; height:30px; opacity:0; fill:#ffffff; animation:pawStep 5s linear infinite; }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+
+<!-- ══════════════════════ NAV ══════════════════════ -->
+<header class="sticky top-0 z-50 w-full bg-background/95 backdrop-blur border-b border-[#E9E5D9]" style="box-shadow:0 1px 8px rgba(5,150,105,0.06);">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop h-16 flex items-center justify-between gap-4">
+    <a href="index.html" class="flex items-center gap-2 flex-shrink-0">
+      <span class="material-symbols-outlined text-primary text-[22px]" style="font-variation-settings:'FILL' 1;">pets</span>
+      <span style="font-family:'Epilogue',sans-serif;font-weight:700;font-size:1.2rem;color:#059669;letter-spacing:-0.01em;">Centro Canino de Lorca</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-6">
+      <div class="relative group">
+        <a href="index.html#servicios" class="font-label-md text-on-surface-variant hover:text-primary transition-colors inline-flex items-center gap-1 cursor-pointer">Servicios<span class="material-symbols-outlined text-[16px]">expand_more</span></a>
+        <div class="absolute left-1/2 -translate-x-1/2 top-full pt-3 hidden group-hover:block z-50">
+          <div class="bg-surface rounded-xl border border-[#E9E5D9] shadow-[0_8px_24px_rgba(5,150,105,0.14)] py-2 w-72">
+            <a href="residencia-canina-lorca.html" class="flex items-center gap-3 px-4 py-2.5 hover:bg-background transition-colors"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">home</span><span class="font-label-md text-on-surface">Residencia canina</span></a>
+            <a href="adiestramiento-canino-lorca.html" class="flex items-center gap-3 px-4 py-2.5 hover:bg-background transition-colors"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">school</span><span class="font-label-md text-on-surface">Adiestramiento canino en Lorca</span></a>
+            <a href="adiestramiento-canino-online.html" class="flex items-center gap-3 px-4 py-2.5 hover:bg-background transition-colors"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">videocam</span><span class="font-label-md text-on-surface">Adiestramiento online</span></a>
+            <a href="cachorros-pastor-aleman-de-trabajo.html" class="flex items-center gap-3 px-4 py-2.5 hover:bg-background transition-colors"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">pets</span><span class="font-label-md text-on-surface">Cachorros Pastor Alemán</span></a>
+            <a href="cachorros-caniche-gigante.html" class="flex items-center gap-3 px-4 py-2.5 hover:bg-background transition-colors"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">pets</span><span class="font-label-md text-on-surface">Cachorros Caniche Gigante</span></a>
+            <a href="peluqueria-canina-lorca.html" class="flex items-center gap-3 px-4 py-2.5 hover:bg-background transition-colors"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">content_cut</span><span class="font-label-md text-on-surface">Peluquería canina</span></a>
+          </div>
+        </div>
+      </div>
+      <a href="index.html#nosotros" class="font-label-md text-on-surface-variant hover:text-primary transition-colors">Nosotros</a>
+      <a href="index.html#resenas" class="font-label-md text-on-surface-variant hover:text-primary transition-colors">Reseñas</a>
+      <a href="#contacto" class="font-label-md text-on-surface-variant hover:text-primary transition-colors">Contacto</a>
+      <a href="tel:+34670360676" class="inline-flex items-center gap-2 bg-primary text-on-primary font-label-md px-5 py-2.5 rounded-lg font-bold hover:bg-surface-tint transition-colors tonal-shadow tonal-shadow-hover">
+        <span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">phone</span>
+        670 36 06 76
+      </a>
+    </nav>
+    <button id="menuBtn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Abrir menú">
+      <span class="w-5 h-0.5 bg-on-surface block"></span>
+      <span class="w-5 h-0.5 bg-on-surface block"></span>
+      <span class="w-5 h-0.5 bg-on-surface block"></span>
+    </button>
+  </div>
+  <div id="mobileMenu" class="hidden md:hidden bg-background border-t border-[#E9E5D9] px-margin-mobile py-4 flex flex-col gap-4">
+    <p class="font-label-sm text-on-surface-variant/60 uppercase tracking-wider pt-1">Servicios</p>
+    <a href="residencia-canina-lorca.html" class="font-label-md text-on-surface-variant pl-3">Residencia canina</a>
+    <a href="adiestramiento-canino-lorca.html" class="font-label-md text-on-surface-variant pl-3">Adiestramiento canino en Lorca</a>
+    <a href="adiestramiento-canino-online.html" class="font-label-md text-on-surface-variant pl-3">Adiestramiento online</a>
+    <a href="cachorros-pastor-aleman-de-trabajo.html" class="font-label-md text-on-surface-variant pl-3">Cachorros Pastor Alemán</a>
+    <a href="cachorros-caniche-gigante.html" class="font-label-md text-on-surface-variant pl-3">Cachorros Caniche Gigante</a>
+    <a href="peluqueria-canina-lorca.html" class="font-label-md text-on-surface-variant pl-3">Peluquería canina</a>
+    <a href="index.html#nosotros" class="font-label-md text-on-surface-variant pt-1">Nosotros</a>
+    <a href="index.html#resenas" class="font-label-md text-on-surface-variant">Reseñas</a>
+    <a href="#contacto" class="font-label-md text-on-surface-variant">Contacto</a>
+    <a href="tel:+34670360676" class="inline-flex items-center gap-2 bg-primary text-on-primary font-label-md px-5 py-3 rounded-lg font-bold w-fit">
+      <span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">phone</span>
+      670 36 06 76
+    </a>
+  </div>
+</header>
+
+<!-- ══════════════════════ HERO ══════════════════════ -->
+<section class="w-full relative overflow-hidden" style="min-height:580px;">
+  <img src="https://lh3.googleusercontent.com/p/AF1QipMeGBh_4sGVpb2eFTsYLbXSVFs8Gq2uxvwSLQ4L=w1200-h900-k-no" alt="Residencia canina en Lorca — Centro Canino de Lorca" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0" style="background:linear-gradient(to right, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.48) 55%, rgba(0,0,0,0.12) 100%);"></div>
+
+  <!-- Huellas dispersas animadas -->
+  <div class="paw-trail" aria-hidden="true">
+    <svg style="left:7%;top:20%;width:26px;height:26px;transform:rotate(12deg);animation-delay:0s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:21%;top:68%;width:34px;height:34px;transform:rotate(-16deg);animation-delay:.7s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:14%;top:44%;width:21px;height:21px;transform:rotate(26deg);animation-delay:1.3s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:37%;top:26%;width:30px;height:30px;transform:rotate(-8deg);animation-delay:.35s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:47%;top:64%;width:24px;height:24px;transform:rotate(18deg);animation-delay:1.6s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:61%;top:16%;width:34px;height:34px;transform:rotate(-22deg);animation-delay:1s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:71%;top:50%;width:27px;height:27px;transform:rotate(10deg);animation-delay:2.2s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:84%;top:24%;width:23px;height:23px;transform:rotate(-12deg);animation-delay:1.9s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:90%;top:62%;width:31px;height:31px;transform:rotate(22deg);animation-delay:.5s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:31%;top:85%;width:25px;height:25px;transform:rotate(-18deg);animation-delay:2.5s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:55%;top:84%;width:22px;height:22px;transform:rotate(8deg);animation-delay:1.15s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:78%;top:80%;width:29px;height:29px;transform:rotate(-25deg);animation-delay:.8s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+  </div>
+
+  <!-- Breadcrumb -->
+  <div class="relative z-10 max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop pt-8">
+    <nav class="flex items-center gap-2 text-white/60 font-label-sm text-xs">
+      <a href="index.html" class="hover:text-white transition-colors">Centro Canino de Lorca</a>
+      <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+      <span class="text-white/90">Residencia canina</span>
+    </nav>
+  </div>
+
+  <div class="relative z-10 max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop py-16 md:py-24 flex items-center" style="min-height:520px;">
+    <div class="w-full md:w-1/2 flex flex-col gap-6">
+      <!-- Rating -->
+      <div class="flex items-center gap-2">
+        <div class="flex items-center gap-0.5" style="color:#FBBC04">
+          <span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span>
+        </div>
+        <span class="font-label-sm text-white font-semibold">5,0 · 16 reseñas en Google</span>
+      </div>
+
+      <!-- H1 -->
+      <h1 class="font-headline-lg text-white">
+        Residencia canina en Lorca —<br>donde los perros no quieren irse
+      </h1>
+
+      <p class="font-body-md text-white/85 max-w-md">
+        Hace unos días un perro se negaba a marcharse con sus dueños: lloraba como un niño al que sacan de los brazos. Eso no se finge — pasa cuando está de verdad a gusto. Llevamos 45 años cuidando perros en Lorca y nunca tenemos más de 10-15 a la vez.
+      </p>
+
+      <!-- CTAs -->
+      <div class="flex flex-col sm:flex-row gap-3">
+        <a href="tel:+34670360676" class="inline-flex items-center justify-center gap-2 bg-primary text-on-primary font-label-md font-bold px-6 py-3.5 rounded-lg hover:bg-surface-tint transition-colors" style="box-shadow:0 4px 16px rgba(5,150,105,0.4);">
+          <span class="material-symbols-outlined text-[20px]" style="font-variation-settings:'FILL' 1;">phone</span>
+          Llama y reserva plaza
+        </a>
+        <a href="https://wa.me/34670360676?text=Hola%2C%20quiero%20saber%20si%20quedan%20plazas%20en%20la%20residencia" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white font-label-md font-bold px-6 py-3.5 rounded-lg hover:opacity-90 transition-opacity">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.116 1.527 5.845L.057 23.5l5.773-1.517A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 01-5.031-1.385l-.361-.214-3.427.9.915-3.332-.235-.373A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+          Pregunta si quedan plazas
+        </a>
+      </div>
+
+      <!-- Badges -->
+      <div class="flex flex-wrap gap-2 mt-1">
+        <span class="inline-flex items-center gap-1.5 font-label-md text-[13px] px-3 py-1.5 rounded-full font-semibold" style="background:rgba(255,255,255,0.18);backdrop-filter:blur(6px);color:#fff;">
+          <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">home</span>
+          Más de 100 plazas
+        </span>
+        <span class="inline-flex items-center gap-1.5 font-label-md text-[13px] px-3 py-1.5 rounded-full font-semibold" style="background:rgba(254,166,25,0.22);backdrop-filter:blur(6px);color:#fea619;">
+          <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">groups</span>
+          Solo 10-15 a la vez
+        </span>
+        <span class="inline-flex items-center gap-1.5 font-label-md text-[13px] px-3 py-1.5 rounded-full font-semibold" style="background:rgba(255,255,255,0.18);backdrop-filter:blur(6px);color:#fff;">
+          <span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">location_on</span>
+          Lorca · Murcia
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ STATS ══════════════════════ -->
+<section class="w-full py-8" style="background:linear-gradient(135deg,#047857 0%,#059669 100%);">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div>
+        <p class="font-headline-md text-[1.75rem] text-secondary-container font-bold">+100</p>
+        <p class="font-label-sm text-on-primary-container text-[11px] uppercase tracking-wider mt-1">Plazas disponibles</p>
+      </div>
+      <div>
+        <p class="font-headline-md text-[1.75rem] text-secondary-container font-bold">10–15</p>
+        <p class="font-label-sm text-on-primary-container text-[11px] uppercase tracking-wider mt-1">Perros a la vez · sin masificación</p>
+      </div>
+      <div>
+        <p class="font-headline-md text-[1.75rem] text-secondary-container font-bold">45 años</p>
+        <p class="font-label-sm text-on-primary-container text-[11px] uppercase tracking-wider mt-1">De experiencia real</p>
+      </div>
+      <div>
+        <p class="font-headline-md text-[1.75rem] text-secondary-container font-bold">5,0★</p>
+        <p class="font-label-sm text-on-primary-container text-[11px] uppercase tracking-wider mt-1">16 reseñas en Google</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ H2 #1: Hotel canino / ratio ══════════════════════ -->
+<section class="w-full py-20 bg-surface">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="flex flex-col md:flex-row items-center gap-12">
+
+      <!-- Text left -->
+      <div class="anim anim-slide-l w-full md:w-1/2 flex flex-col gap-6">
+        <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-widest" style="background:rgba(5,150,105,0.10);color:#059669;letter-spacing:0.12em;">Hotel Canino en Lorca</span>
+        <h2 class="font-headline-lg text-primary">Más de 100 plazas — y solo 10-15 perros a la vez</h2>
+        <p class="font-body-md text-on-surface-variant leading-relaxed">
+          Podríamos meter 100 perros. No lo hacemos. Nunca tenemos más de 10-15 a la vez, y es una decisión, no una limitación. Un perro no es un número en una jaula: si entran demasiados, ninguno recibe lo que necesita. Aquí cada uno tiene espacio, atención y a alguien que lo conoce.
+        </p>
+
+        <div class="flex flex-col gap-5">
+          <div class="flex gap-4">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(5,150,105,0.10);">
+              <span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">apartment</span>
+            </div>
+            <div>
+              <h3 class="font-headline-md text-[1rem] text-on-surface mb-1">Instalaciones para perros en Lorca — espacios interiores y exteriores propios</h3>
+              <p class="font-body-md text-on-surface-variant text-[0.9rem]">Zonas cubiertas, exteriores con césped y áreas separadas según el tamaño y el carácter de cada perro. Los clientes lo dicen mejor que nosotros: «los perros se tiran del coche en cuanto llegan a la puerta».</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(5,150,105,0.10);">
+              <span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">directions_car</span>
+            </div>
+            <div>
+              <h3 class="font-headline-md text-[1rem] text-on-surface mb-1">Recogida de perros en Lorca, Totana, Águilas y Puerto Lumbreras</h3>
+              <p class="font-body-md text-on-surface-variant text-[0.9rem]">¿No puedes acercarlo tú? Vamos a buscarlo. Recogida y entrega sin cargo hasta 20-25 km de Lorca; más lejos, solo el desplazamiento. Dinos dónde estás y lo organizamos.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-3 mt-2">
+          <a href="tel:+34670360676" class="inline-flex items-center gap-2 bg-primary text-on-primary font-label-md font-bold px-6 py-3 rounded-lg hover:bg-surface-tint transition-colors tonal-shadow">
+            <span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">phone</span>
+            Llamar ahora
+          </a>
+          <a href="https://wa.me/34670360676?text=Quiero%20ver%20las%20instalaciones%20de%20la%20residencia" target="_blank" rel="noopener" class="inline-flex items-center gap-2 border border-[#E9E5D9] text-on-surface-variant font-label-md font-bold px-5 py-3 rounded-lg hover:border-primary hover:text-primary transition-colors">
+            Ven a conocerlas
+          </a>
+        </div>
+      </div>
+
+      <!-- Photo right -->
+      <div class="anim anim-slide-r delay-1 w-full md:w-1/2">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHtSoGXgZazYpc5n3XB4cM10Ze8O8jPmfDCkVz_FAJAXaJH-nLTzZhCgPYe3tzJ31ZMiuYRjJDGKEXzVrODRQTl4700Nsmohb7TK5CiTe37dzrbeflQUos5W2ldUUZ0xySrvMr6hQ=w1200-h900-k-no" alt="Instalaciones de la residencia canina en Lorca" class="rounded-2xl w-full h-[420px] object-cover shadow-[0_4px_24px_rgba(5,150,105,0.10)] border border-[#E9E5D9]">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ H2 #2: Qué pasa durante la estancia ══════════════════════ -->
+<section class="w-full py-20 bg-background">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="flex flex-col md:flex-row-reverse items-center gap-12">
+
+      <!-- Text right (reversed) -->
+      <div class="anim anim-slide-r w-full md:w-1/2 flex flex-col gap-6">
+        <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-widest" style="background:rgba(5,150,105,0.10);color:#059669;letter-spacing:0.12em;">La estancia</span>
+        <h2 class="font-headline-lg text-primary">Qué le pasa a tu perro mientras estás fuera — esto es lo que nadie te cuenta</h2>
+        <p class="font-body-md text-on-surface-variant leading-relaxed">
+          Lo que de verdad te preocupa no lo escribes en Google, pero lo piensas: <em>¿estará bien mi perro sin mí?</em> Te lo contamos sin adornos. Tiene sus paseos, sus rutinas, su descanso y compañía durante el día. Y si los primeros días está raro, lo sabrás — porque te llamamos.
+        </p>
+
+        <div class="flex flex-col gap-5">
+          <div class="flex gap-4">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(5,150,105,0.10);">
+              <span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">visibility</span>
+            </div>
+            <div>
+              <h3 class="font-headline-md text-[1rem] text-on-surface mb-1">Supervisión durante la estancia — vivimos en la misma parcela</h3>
+              <p class="font-body-md text-on-surface-variant text-[0.9rem]">No fichamos a las ocho y nos vamos a las seis. Vivimos aquí, en la misma parcela. Si tu perro tose a las tres de la mañana, hay alguien que lo oye. Esto no es un trabajo de turnos: es nuestra casa.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(5,150,105,0.10);">
+              <span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">pets</span>
+            </div>
+            <div>
+              <h3 class="font-headline-md text-[1rem] text-on-surface mb-1">Pensión canina con trato personalizado — cada perro es diferente</h3>
+              <p class="font-body-md text-on-surface-variant text-[0.9rem]">Un cachorro no necesita lo mismo que un perro mayor; uno tímido no se trata como uno lanzado. Antes de la primera estancia conocemos a tu perro para saber cómo tratarlo. En 45 años no hemos visto dos iguales.</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://wa.me/34670360676?text=Te%20cuento%20cómo%20es%20mi%20perro%20para%20la%20residencia" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-[#25D366] text-white font-label-md font-bold px-6 py-3 rounded-lg hover:opacity-90 transition-opacity w-fit mt-2">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.116 1.527 5.845L.057 23.5l5.773-1.517A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 01-5.031-1.385l-.361-.214-3.427.9.915-3.332-.235-.373A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+          Cuéntanos cómo es tu perro
+        </a>
+      </div>
+
+      <!-- Photo left -->
+      <div class="anim anim-slide-l delay-1 w-full md:w-1/2">
+        <img src="https://lh3.googleusercontent.com/p/AF1QipOJpAkP9aL4VImW2HmbBcKcUbrnWzwEbTVmP1RG=w1200-h900-k-no" alt="Perro cuidado en la residencia canina de Lorca" class="rounded-2xl w-full h-[420px] object-cover shadow-[0_4px_24px_rgba(5,150,105,0.10)] border border-[#E9E5D9]">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ H2 #3: Guardería vacaciones ══════════════════════ -->
+<section class="w-full py-20 bg-surface">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="flex flex-col md:flex-row items-center gap-12">
+
+      <!-- Text left -->
+      <div class="anim anim-slide-l w-full md:w-1/2 flex flex-col gap-6">
+        <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-widest" style="background:rgba(5,150,105,0.10);color:#059669;letter-spacing:0.12em;">Guardería canina Lorca</span>
+        <h2 class="font-headline-lg text-primary">Guardería canina para vacaciones, puentes y fines de semana en Lorca</h2>
+        <p class="font-body-md text-on-surface-variant leading-relaxed">
+          Te vas tres días o te vas tres semanas: a tu perro le da igual y a nosotros también. El trato es el mismo. Aquí no hay tarifa de lujo y tarifa de saldo — hay una forma de cuidar, y es la misma para todos.
+        </p>
+
+        <div class="flex flex-col gap-5">
+          <div class="flex gap-4">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(5,150,105,0.10);">
+              <span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">beach_access</span>
+            </div>
+            <div>
+              <h3 class="font-headline-md text-[1rem] text-on-surface mb-1">Alojamiento para perros en Lorca durante tus vacaciones de verano</h3>
+              <p class="font-body-md text-on-surface-variant text-[0.9rem]">En julio y agosto las plazas vuelan. Si ya sabes las fechas de tus vacaciones, reserva ya: cada verano se queda gente fuera por avisar tarde. Y no, en temporada alta no bajamos el listón.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(5,150,105,0.10);">
+              <span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">date_range</span>
+            </div>
+            <div>
+              <h3 class="font-headline-md text-[1rem] text-on-surface mb-1">Hospedaje de perros para estancias largas — tarifas especiales</h3>
+              <p class="font-body-md text-on-surface-variant text-[0.9rem]">Un mes de trabajo fuera, un ingreso, una mudanza. Cuando la cosa va para largo, el precio por día baja. Cuéntanos cuánto tiempo y te pasamos una tarifa cerrada, sin sorpresas.</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://wa.me/34670360676?text=Quiero%20reservar%20plaza%2C%20mis%20fechas%20son" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-primary text-on-primary font-label-md font-bold px-6 py-3 rounded-lg hover:bg-surface-tint transition-colors tonal-shadow w-fit mt-2">
+          <span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">event_available</span>
+          Reserva antes de que se llene
+        </a>
+      </div>
+
+      <!-- Photo right -->
+      <div class="anim anim-slide-r delay-1 w-full md:w-1/2">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHpQ8HnZGVRH7ujfrpw9CPnATZCvJGzPF25a1skNByRPqRg6cdnIJPStY_1RjJyK50bRIOOseM39ltTwS7W1c0_7CdBqfLxqk1lhamhXKGKjxMe7aG4H4qjCzJdbFq0btXuX3x3Tw=w1200-h900-k-no" alt="Perros disfrutando de la residencia canina en Lorca" class="rounded-2xl w-full h-[420px] object-cover shadow-[0_4px_24px_rgba(5,150,105,0.10)] border border-[#E9E5D9]">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ H2 #4: Precio (oscuro) ══════════════════════ -->
+<section class="w-full py-20" style="background:#1c1c1c;">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="text-center mb-12">
+      <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-widest mb-4" style="background:rgba(165,208,185,0.15);color:#d1fae5;letter-spacing:0.12em;">Sin letra pequeña</span>
+      <h2 class="anim font-headline-lg text-white mb-3">Precio de la residencia canina en Lorca</h2>
+      <p class="anim delay-1 font-body-md max-w-xl mx-auto" style="color:rgba(255,255,255,0.65);">Aquí lo ves antes de llamar. Ni «consúltanos» ni letra pequeña: el precio, claro, y lo que incluye.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+
+      <div class="anim rounded-2xl p-8 flex flex-col gap-3 text-center" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.10);">
+        <div class="w-14 h-14 rounded-xl flex items-center justify-center mx-auto" style="background:#fea619;">
+          <span class="material-symbols-outlined text-[28px]" style="color:#3b1f00;font-variation-settings:'FILL' 1;">euro</span>
+        </div>
+        <p class="font-headline-lg text-white text-[2.5rem] leading-none mt-2">18€</p>
+        <p class="font-label-sm text-white/50 uppercase tracking-wide text-[11px]">+ IVA / perro / día</p>
+        <p class="font-body-md text-[0.875rem] leading-relaxed" style="color:rgba(255,255,255,0.65);">Día completo de estancia. Los paseos, la supervisión y la atención no se cobran aparte: ya van dentro.</p>
+      </div>
+
+      <div class="anim delay-1 rounded-2xl p-8 flex flex-col gap-3 text-center" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.10);">
+        <div class="w-14 h-14 rounded-xl flex items-center justify-center mx-auto" style="background:#fea619;">
+          <span class="material-symbols-outlined text-[28px]" style="color:#3b1f00;font-variation-settings:'FILL' 1;">check_circle</span>
+        </div>
+        <h3 class="font-headline-md text-white mt-2">¿Qué incluye?</h3>
+        <p class="font-label-sm text-white/50 uppercase tracking-wide text-[11px]">Incluido en el precio</p>
+        <p class="font-body-md text-[0.875rem] leading-relaxed" style="color:rgba(255,255,255,0.65);">Supervisión continua, paseos diarios, su zona de descanso y una llamada tuya si pasa cualquier cosa. Lo que harías tú si estuvieras.</p>
+      </div>
+
+      <div class="anim delay-2 rounded-2xl p-8 flex flex-col gap-3 text-center" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.10);">
+        <div class="w-14 h-14 rounded-xl flex items-center justify-center mx-auto" style="background:#fea619;">
+          <span class="material-symbols-outlined text-[28px]" style="color:#3b1f00;font-variation-settings:'FILL' 1;">calendar_month</span>
+        </div>
+        <h3 class="font-headline-md text-white mt-2">Larga estancia</h3>
+        <p class="font-label-sm text-white/50 uppercase tracking-wide text-[11px]">Tarifa especial</p>
+        <p class="font-body-md text-[0.875rem] leading-relaxed" style="color:rgba(255,255,255,0.65);">¿Semanas o meses? El precio por día baja. Dinos cuánto tiempo y te cerramos una tarifa a tu medida.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ H2 #5: Adiestramiento en residencia ══════════════════════ -->
+<section class="w-full py-20 bg-surface">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="flex flex-col md:flex-row-reverse items-center gap-12">
+
+      <!-- Text right (reversed) -->
+      <div class="anim anim-slide-r w-full md:w-1/2 flex flex-col gap-6">
+        <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-widest" style="background:rgba(5,150,105,0.10);color:#059669;letter-spacing:0.12em;">Servicio diferencial</span>
+        <h2 class="font-headline-lg text-primary">Adiestramiento canino en residencia — una semana para saber si el problema es el perro o el manejo</h2>
+        <p class="font-body-md text-on-surface-variant leading-relaxed">
+          Casi nadie te dice esto: muchas veces el perro no tiene ningún problema. El problema es cómo se le maneja. Déjalo aquí una semana mientras estás de viaje y, cuando vuelvas, te digo qué pasa de verdad — y se arregla.
+        </p>
+
+        <blockquote class="quote-block font-body-md text-on-surface-variant">
+          «Cuando yo tenga el perro en una semana y normalice el trato, te diré si el perro tiene algún problema o el problema es tuyo. Normalmente el problema es de manejo.»
+          <footer class="mt-2 font-label-md text-primary not-italic">— Juan Miguel · 45 años de experiencia</footer>
+        </blockquote>
+
+        <div class="flex gap-4">
+          <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(5,150,105,0.10);">
+            <span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">psychology</span>
+          </div>
+          <div>
+            <h3 class="font-headline-md text-[1rem] text-on-surface mb-1">Estancia canina con seguimiento de conducta personalizado</h3>
+            <p class="font-body-md text-on-surface-variant text-[0.9rem]">Lejos de tu casa y de tus rutinas, el perro enseña cómo es de verdad. Lo observamos esos días y te devolvemos algo concreto: qué hace, por qué, y los dos o tres cambios que tienes que hacer tú. Si hace falta ir más a fondo, lo continuamos en el <a href="adiestramiento-canino-lorca.html" class="text-primary font-semibold underline decoration-primary/30 hover:decoration-primary transition-colors">curso de adiestramiento en Lorca</a>.</p>
+          </div>
+        </div>
+
+        <a href="https://wa.me/34670360676?text=Mi%20perro%20hace%20esto%2C%20¿lo%20podéis%20ver%20en%20la%20estancia%3F" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-primary text-on-primary font-label-md font-bold px-6 py-3 rounded-lg hover:bg-surface-tint transition-colors tonal-shadow w-fit mt-2">
+          <span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">chat</span>
+          Cuéntame qué hace tu perro
+        </a>
+      </div>
+
+      <!-- Photo left -->
+      <div class="anim anim-slide-l delay-1 w-full md:w-1/2">
+        <img src="https://lh3.googleusercontent.com/p/AF1QipOF-6Nx8pLmZYQu90pesUOVn4DAnxpJnoj7gDfz=w1200-h900-k-no" alt="Juan Miguel adiestrando un perro en el Centro Canino de Lorca" class="rounded-2xl w-full h-[420px] object-cover shadow-[0_4px_24px_rgba(5,150,105,0.10)] border border-[#E9E5D9]">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ H2 #6: Requisitos (oscuro) ══════════════════════ -->
+<section class="w-full py-20" style="background:#1c1c1c;">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="text-center mb-12">
+      <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-widest mb-4" style="background:rgba(165,208,185,0.15);color:#d1fae5;letter-spacing:0.12em;">Antes de llegar</span>
+      <h2 class="anim font-headline-lg text-white mb-3">Requisitos para la residencia</h2>
+      <p class="anim delay-1 font-body-md max-w-xl mx-auto" style="color:rgba(255,255,255,0.65);">Pedimos poco, pero lo pedimos por algo: lo que protege a tu perro protege a todos los demás.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+
+      <div class="anim rounded-2xl p-6 flex flex-col gap-4" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.10);">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center" style="background:#fea619;">
+          <span class="material-symbols-outlined text-[24px]" style="color:#3b1f00;font-variation-settings:'FILL' 1;">vaccines</span>
+        </div>
+        <h3 class="font-headline-md text-[1.05rem] text-white">Vacunación actualizada</h3>
+        <p class="font-body-md text-[0.875rem] leading-relaxed" style="color:rgba(255,255,255,0.65);">Cartilla al día antes de entrar. No es burocracia: aquí conviven muchos perros y la salud de uno es la de todos.</p>
+      </div>
+
+      <div class="anim delay-1 rounded-2xl p-6 flex flex-col gap-4" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.10);">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center" style="background:#fea619;">
+          <span class="material-symbols-outlined text-[24px]" style="color:#3b1f00;font-variation-settings:'FILL' 1;">shield</span>
+        </div>
+        <h3 class="font-headline-md text-[1.05rem] text-white">Antiparasitarios vigentes</h3>
+        <p class="font-body-md text-[0.875rem] leading-relaxed" style="color:rgba(255,255,255,0.65);">Tratamiento por dentro y por fuera al día. Un perro con pulgas o garrapatas las reparte en horas: por eso no transigimos con esto.</p>
+      </div>
+
+      <div class="anim delay-2 rounded-2xl p-6 flex flex-col gap-4" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.10);">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center" style="background:#fea619;">
+          <span class="material-symbols-outlined text-[24px]" style="color:#3b1f00;font-variation-settings:'FILL' 1;">event_note</span>
+        </div>
+        <h3 class="font-headline-md text-[1.05rem] text-white">Visita previa para perros de difícil trato</h3>
+        <p class="font-body-md text-[0.875rem] leading-relaxed" style="color:rgba(255,255,255,0.65);">¿Tu perro es nervioso, miedoso o no se fía de los desconocidos? Tráelo antes a conocer el sitio. Esa visita es gratis y le cambia la primera estancia.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ RESEÑAS ══════════════════════ -->
+<section id="resenas" class="w-full bg-surface py-20">
+  <div class="max-w-container-max-width mx-auto">
+    <div class="text-center mb-10 px-margin-mobile md:px-margin-desktop">
+      <h2 class="anim font-headline-lg text-primary mb-3">Lo que dicen los dueños de nuestros perros</h2>
+      <p class="anim delay-1 font-body-md text-on-surface-variant max-w-2xl mx-auto">Reseñas reales de nuestra residencia en Google Maps · 5,0 ★ de media</p>
+    </div>
+
+    <div class="overflow-hidden py-2">
+    <div id="reviewCarousel" class="flex gap-5 pb-4" style="width:max-content;">
+
+      <div class="flex-shrink-0 w-[320px] md:w-[360px] bg-background rounded-xl p-6 border border-[#E9E5D9] tonal-shadow flex flex-col gap-4">
+        <div class="flex items-center gap-1" style="color:#FBBC04"><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span></div>
+        <p class="font-body-md text-on-surface-variant italic leading-relaxed flex-1">«El sitio perfecto para mi beagle. Mi bigotitos se tira del coche en cuanto llegamos a la puerta. Hace dos años que llevo mi beagle, tanto de alojamiento como de peluquería, y para mí genial.»</p>
+        <div class="flex items-center gap-3 pt-2 border-t border-[#E9E5D9]"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="text-on-primary font-bold text-sm">V</span></div><div><p class="font-label-md text-on-surface text-sm">Vicente Miguel Ros</p><p class="font-label-sm text-on-surface-variant text-xs">Google Maps · Local Guide</p></div></div>
+      </div>
+
+      <div class="flex-shrink-0 w-[320px] md:w-[360px] bg-background rounded-xl p-6 border border-[#E9E5D9] tonal-shadow flex flex-col gap-4">
+        <div class="flex items-center gap-1" style="color:#FBBC04"><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span></div>
+        <p class="font-body-md text-on-surface-variant italic leading-relaxed flex-1">«El sitio perfecto para mi beagle. Mi bigotitos se tira del coche en cuanto llegamos a la puerta. Hace dos años que llevo mi beagle, tanto de alojamiento como de peluquería, y para mí genial.»</p>
+        <div class="flex items-center gap-3 pt-2 border-t border-[#E9E5D9]"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="text-on-primary font-bold text-sm">V</span></div><div><p class="font-label-md text-on-surface text-sm">Vicente Miguel Ros</p><p class="font-label-sm text-on-surface-variant text-xs">Google Maps · Local Guide</p></div></div>
+      </div>
+
+      <div class="flex-shrink-0 w-[320px] md:w-[360px] bg-background rounded-xl p-6 border border-[#E9E5D9] tonal-shadow flex flex-col gap-4">
+        <div class="flex items-center gap-1" style="color:#FBBC04"><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span></div>
+        <p class="font-body-md text-on-surface-variant italic leading-relaxed flex-1">«El sitio perfecto para mi beagle. Mi bigotitos se tira del coche en cuanto llegamos a la puerta. Hace dos años que llevo mi beagle, tanto de alojamiento como de peluquería, y para mí genial.»</p>
+        <div class="flex items-center gap-3 pt-2 border-t border-[#E9E5D9]"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="text-on-primary font-bold text-sm">V</span></div><div><p class="font-label-md text-on-surface text-sm">Vicente Miguel Ros</p><p class="font-label-sm text-on-surface-variant text-xs">Google Maps · Local Guide</p></div></div>
+      </div>
+
+      <div class="flex-shrink-0 w-[320px] md:w-[360px] bg-background rounded-xl p-6 border border-[#E9E5D9] tonal-shadow flex flex-col gap-4">
+        <div class="flex items-center gap-1" style="color:#FBBC04"><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span></div>
+        <p class="font-body-md text-on-surface-variant italic leading-relaxed flex-1">«El sitio perfecto para mi beagle. Mi bigotitos se tira del coche en cuanto llegamos a la puerta. Hace dos años que llevo mi beagle, tanto de alojamiento como de peluquería, y para mí genial.»</p>
+        <div class="flex items-center gap-3 pt-2 border-t border-[#E9E5D9]"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="text-on-primary font-bold text-sm">V</span></div><div><p class="font-label-md text-on-surface text-sm">Vicente Miguel Ros</p><p class="font-label-sm text-on-surface-variant text-xs">Google Maps · Local Guide</p></div></div>
+      </div>
+
+    </div>
+    </div>
+
+    <div class="text-center mt-8 px-margin-mobile md:px-margin-desktop">
+      <a href="https://www.google.com/maps/search/?api=1&query=Centro%20canino%20de%20lorca&query_place_id=ChIJBaYgWWjDZA0RA1d3LrAbdKk" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-secondary font-label-md font-bold hover:text-secondary-fixed-dim transition-colors">
+        Ver todas las reseñas en Google <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ FAQ ══════════════════════ -->
+<section class="w-full bg-background py-20">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="text-center mb-10">
+      <h2 class="anim font-headline-lg text-primary mb-3">Preguntas frecuentes sobre la residencia</h2>
+      <p class="anim delay-1 font-body-md text-on-surface-variant max-w-xl mx-auto">Todo lo que necesitas saber antes de dejar a tu perro con nosotros.</p>
+    </div>
+    <div class="max-w-2xl mx-auto flex flex-col gap-4">
+
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-surface overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿Cuánto cuesta la residencia canina en Lorca?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">En nuestra residencia canina de Lorca el precio es de 18 € + IVA por perro y día, e incluye la estancia, los paseos, la supervisión y el descanso, sin extras escondidos. Para estancias largas de varias semanas o meses aplicamos una tarifa especial: cuanto más tiempo, mejor precio por día. Lo mejor es que nos digas las fechas y el caso de tu perro por WhatsApp al 670 36 06 76 y te cerramos el precio claro, sin sorpresas al recoger.</div>
+      </details>
+
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-surface overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿Qué necesito para dejar a mi perro en la residencia?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">Dos cosas imprescindibles: la cartilla de vacunación al día y el tratamiento antiparasitario en vigor, por dentro y por fuera. No es burocracia: en la residencia conviven varios perros y eso protege a todos. Si tu perro es nervioso o de difícil trato, recomendamos una visita previa para que conozca el sitio. Estamos en Lorca (Murcia); cuéntanos cómo es tu perro al 670 36 06 76 y te decimos si hace falta algo más antes de la primera estancia.</div>
+      </details>
+
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-surface overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿Cuántos perros tenéis a la vez en la residencia?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">Tenemos capacidad para más de 100 perros, pero por decisión propia no masificamos: lo normal es tener entre 10 y 15 a la vez para que cada uno reciba atención de verdad. En verano, en temporada alta, podemos llegar a 25-40, pero sin bajar el listón de cuidado. Preferimos calidad antes que llenar. Por eso en la residencia canina de Lorca tu perro no es un número en una jaula, sino un huésped al que conocemos.</div>
+      </details>
+
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-surface overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿Recogéis al perro en casa?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">Sí. Si no puedes acercarlo tú, vamos a buscarlo. La recogida y entrega es sin cargo hasta 20-25 km de Lorca; más lejos, se cobra solo el desplazamiento. Cubrimos Lorca y la comarca —Totana, Águilas, Puerto Lumbreras, Alhama—. Dinos dónde estás y las fechas por WhatsApp al 670 36 06 76 y lo organizamos. Así tú te despreocupas y tu perro llega a la residencia sin estrés de última hora.</div>
+      </details>
+
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-surface overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿Puedo dejar al perro en vacaciones y con cuánta antelación reservo?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">Por supuesto, las vacaciones y los puentes son justo para lo que está la residencia. Eso sí: en julio y agosto las plazas vuelan, así que si ya tienes fechas, reserva cuanto antes, que cada verano se queda gente fuera por avisar tarde. El resto del año hay más flexibilidad. En la residencia canina de Lorca el trato es el mismo te vayas tres días o tres semanas. Escríbenos las fechas al 670 36 06 76 y te confirmamos plaza.</div>
+      </details>
+
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-surface overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿Qué pasa si mi perro no come o se pone malo?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">Te avisamos enseguida. Algunos perros tardan uno o dos días en adaptarse y dejar de comer del todo es normal al principio; lo vigilamos de cerca y actuamos si hace falta. En 45 años en Lorca hemos visto de todo, así que ningún perro nos pilla por sorpresa. Y como vivimos en la misma parcela que la residencia, hay alguien pendiente a cualquier hora. Si tu perro necesita medicación, la traes con las instrucciones y se la damos.</div>
+      </details>
+
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-surface overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿Aceptáis perros nerviosos o de difícil trato?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">Sí. En la residencia canina de Lorca estamos acostumbrados a perros nerviosos, miedosos o que no se fían de los desconocidos, para eso tenemos 45 años de oficio y formación en conducta. Para estos casos recomendamos una visita previa: que el perro venga antes a conocer el sitio sin quedarse, así la primera estancia es mucho más fácil. Esa visita no cuesta nada. Cuéntanos cómo es tu perro al 670 36 06 76 y vemos cómo prepararlo.</div>
+      </details>
+
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-surface overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿Puedo visitar la residencia antes de dejar a mi perro?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">Claro, y lo animamos. Puedes venir a ver las instalaciones y dónde va a estar tu perro antes de decidir, sobre todo si nunca ha estado en una residencia. Estamos en el Camino de los Valencianos, 24, en Lorca (Murcia), con instalaciones propias y zonas de césped. Nosotros vivimos allí mismo, así que enseñártelo todo es lo normal. Llama al 670 36 06 76 y quedamos un día para que lo veas con calma.</div>
+      </details>
+
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-surface overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿Hay alguien por la noche con los perros?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">Sí, siempre. No somos empleados que fichan y se van: vivimos en la misma parcela que la residencia, en Lorca, así que hay alguien pendiente las 24 horas. Si un perro tose a las tres de la mañana o se pone nervioso, lo oímos. Eso es algo que un centro grande con turnos no puede ofrecer igual. Para nosotros esto es un estilo de vida, no un horario, y tu perro lo nota desde la primera noche.</div>
+      </details>
+
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-surface overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿Cómo reservo plaza en la residencia?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">Muy fácil: llámanos o escríbenos por WhatsApp al 670 36 06 76 con las fechas que necesitas y algo sobre tu perro (raza, edad, carácter). Te confirmamos si hay plaza y te explicamos todo: precio, requisitos y recogida si la necesitas. En temporada alta conviene reservar con semanas de antelación. Estamos en Lorca (Murcia) y respondemos rápido, nosotros mismos. Cuanto antes nos escribas, más fácil es asegurarte el sitio para tu perro.</div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ CONTACTO ══════════════════════ -->
+<section id="contacto" class="w-full bg-surface py-20">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="text-center mb-10">
+      <h2 class="anim font-headline-lg text-primary mb-3">Residencia de perros en Lorca — cómo llegar y cómo reservar</h2>
+      <p class="anim delay-1 font-body-md text-on-surface-variant max-w-xl mx-auto">Una llamada o un WhatsApp y hablas directamente con nosotros — no con un robot ni con un formulario. Dinos las fechas y te decimos si hay plaza.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+
+      <div class="flex flex-col gap-6">
+        <!-- Contact card -->
+        <div class="bg-primary rounded-2xl p-6 text-on-primary flex flex-col gap-4">
+          <h3 class="font-headline-md text-[1.2rem]">Contacto directo</h3>
+          <a href="tel:+34670360676" class="flex items-center gap-4 hover:opacity-80 transition-opacity">
+            <span class="material-symbols-outlined text-secondary-container text-[24px]" style="font-variation-settings:'FILL' 1;">phone</span>
+            <div>
+              <p class="font-label-sm text-primary-fixed-dim uppercase tracking-wider">Teléfono</p>
+              <p class="font-body-md font-semibold">670 36 06 76</p>
+            </div>
+          </a>
+          <a href="https://wa.me/34670360676" target="_blank" rel="noopener" class="flex items-center gap-4 hover:opacity-80 transition-opacity">
+            <span class="material-symbols-outlined text-secondary-container text-[24px]" style="font-variation-settings:'FILL' 1;">chat</span>
+            <div>
+              <p class="font-label-sm text-primary-fixed-dim uppercase tracking-wider">WhatsApp</p>
+              <p class="font-body-md font-semibold">670 36 06 76</p>
+            </div>
+          </a>
+          <a href="https://www.facebook.com/centrocaninolorca/" target="_blank" rel="noopener" class="flex items-center gap-4 hover:opacity-80 transition-opacity">
+            <span class="material-symbols-outlined text-secondary-container text-[24px]" style="font-variation-settings:'FILL' 1;">thumb_up</span>
+            <div>
+              <p class="font-label-sm text-primary-fixed-dim uppercase tracking-wider">Facebook</p>
+              <p class="font-body-md font-semibold">Centro Canino Lorca</p>
+            </div>
+          </a>
+          <div class="flex items-start gap-4">
+            <span class="material-symbols-outlined text-secondary-container text-[24px]" style="font-variation-settings:'FILL' 1;">location_on</span>
+            <div>
+              <p class="font-label-sm text-primary-fixed-dim uppercase tracking-wider">Dirección</p>
+              <p class="font-body-md font-semibold">Cam. de los Valencianos, 24<br>30813 Lorca, Murcia</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reviews card -->
+        <div class="bg-surface rounded-2xl p-6 border border-[#E9E5D9] tonal-shadow flex flex-col gap-4">
+          <div class="flex items-center gap-3">
+            <div class="flex items-center gap-0.5" style="color:#FBBC04">
+              <span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span>
+            </div>
+            <span class="font-body-md text-on-surface-variant"><strong class="text-primary">5,0 ★</strong> · 16 reseñas verificadas en Google</span>
+          </div>
+          <a href="https://www.google.com/maps/search/?api=1&query=Centro%20canino%20de%20lorca&query_place_id=ChIJBaYgWWjDZA0RA1d3LrAbdKk" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-primary text-on-primary font-label-md font-bold px-5 py-3 rounded-lg hover:bg-surface-tint transition-colors w-fit">
+            <span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">map</span>
+            Ver ficha en Google Maps
+          </a>
+        </div>
+
+        <!-- WhatsApp form -->
+        <div class="bg-surface rounded-2xl p-6 border border-[#E9E5D9] tonal-shadow">
+          <h3 class="font-headline-md text-[1.1rem] text-on-surface mb-4">Dinos las fechas y te confirmamos plaza</h3>
+          <form onsubmit="sendWA(event)" class="flex flex-col gap-4">
+            <input type="text" id="waName" placeholder="Tu nombre" required class="w-full bg-white border border-[#E9E5D9] rounded-lg px-4 py-2.5 font-body-md text-on-surface focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-colors">
+            <textarea id="waMsg" rows="3" placeholder="¿Cuándo necesitas la plaza? ¿Qué raza y edad tiene tu perro?" required class="w-full bg-white border border-[#E9E5D9] rounded-lg px-4 py-2.5 font-body-md text-on-surface focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-colors resize-none"></textarea>
+            <button type="submit" class="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white font-label-md font-bold px-6 py-3 rounded-lg hover:opacity-90 transition-opacity">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.116 1.527 5.845L.057 23.5l5.773-1.517A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 01-5.031-1.385l-.361-.214-3.427.9.915-3.332-.235-.373A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+              Enviar por WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="rounded-2xl overflow-hidden tonal-shadow border border-[#E9E5D9]" style="height:500px;">
+        <iframe src="https://maps.google.com/maps?q=Centro+canino+de+lorca+Lorca+Murcia&z=15&output=embed&hl=es" width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Centro Canino de Lorca en Lorca, Murcia"></iframe>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ FOOTER ══════════════════════ -->
+<footer class="w-full bg-primary py-10">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-6">
+    <div class="flex flex-col items-center md:items-start gap-1">
+      <span style="font-family:'Epilogue',sans-serif;font-weight:700;font-size:1.1rem;color:#ffffff;">Centro Canino de Lorca</span>
+      <span class="font-label-sm text-on-primary opacity-70">Adiestramiento · Residencia · Peluquería · Lorca, Murcia</span>
+    </div>
+    <nav class="flex flex-wrap justify-center gap-4 md:gap-gutter">
+      <a href="index.html" class="font-label-sm text-on-primary opacity-80 hover:opacity-100 transition-opacity">Inicio</a>
+      <a href="index.html#servicios" class="font-label-sm text-on-primary opacity-80 hover:opacity-100 transition-opacity">Servicios</a>
+      <a href="index.html#nosotros" class="font-label-sm text-on-primary opacity-80 hover:opacity-100 transition-opacity">Nosotros</a>
+      <a href="index.html#resenas" class="font-label-sm text-on-primary opacity-80 hover:opacity-100 transition-opacity">Reseñas</a>
+      <a href="#contacto" class="font-label-sm text-on-primary opacity-80 hover:opacity-100 transition-opacity">Contacto</a>
+    </nav>
+    <div class="font-body-md text-sm text-on-primary opacity-70 text-center md:text-right">
+      © 2025 Centro Canino de Lorca · Lorca, Murcia
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp flotante -->
+<a href="https://wa.me/34670360676" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp" class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-[0_4px_16px_rgba(0,0,0,0.2)] hover:scale-110 transition-transform">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.116 1.527 5.845L.057 23.5l5.773-1.517A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 01-5.031-1.385l-.361-.214-3.427.9.915-3.332-.235-.373A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+</a>
+
+<script>
+  document.getElementById('menuBtn').addEventListener('click', function() {
+    document.getElementById('mobileMenu').classList.toggle('hidden');
+  });
+  document.querySelectorAll('#mobileMenu a').forEach(function(a) {
+    a.addEventListener('click', function() {
+      document.getElementById('mobileMenu').classList.add('hidden');
+    });
+  });
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.anim').forEach(function(el) { observer.observe(el); });
+  function sendWA(e) {
+    e.preventDefault();
+    var name = document.getElementById('waName').value;
+    var msg  = document.getElementById('waMsg').value;
+    window.open('https://wa.me/34670360676?text=' + encodeURIComponent('Hola, soy ' + name + '. ' + msg), '_blank');
+  }
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cuánto cuesta la residencia canina en Lorca?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En nuestra residencia canina de Lorca el precio es de 18 € + IVA por perro y día, e incluye la estancia, los paseos, la supervisión y el descanso, sin extras escondidos. Para estancias largas de varias semanas o meses aplicamos una tarifa especial: cuanto más tiempo, mejor precio por día. Lo mejor es que nos digas las fechas y el caso de tu perro por WhatsApp al 670 36 06 76 y te cerramos el precio claro, sin sorpresas al recoger."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué necesito para dejar a mi perro en la residencia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dos cosas imprescindibles: la cartilla de vacunación al día y el tratamiento antiparasitario en vigor, por dentro y por fuera. No es burocracia: en la residencia conviven varios perros y eso protege a todos. Si tu perro es nervioso o de difícil trato, recomendamos una visita previa para que conozca el sitio. Estamos en Lorca (Murcia); cuéntanos cómo es tu perro al 670 36 06 76 y te decimos si hace falta algo más antes de la primera estancia."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuántos perros tenéis a la vez en la residencia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tenemos capacidad para más de 100 perros, pero por decisión propia no masificamos: lo normal es tener entre 10 y 15 a la vez para que cada uno reciba atención de verdad. En verano, en temporada alta, podemos llegar a 25-40, pero sin bajar el listón de cuidado. Preferimos calidad antes que llenar. Por eso en la residencia canina de Lorca tu perro no es un número en una jaula, sino un huésped al que conocemos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Recogéis al perro en casa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Si no puedes acercarlo tú, vamos a buscarlo. La recogida y entrega es sin cargo hasta 20-25 km de Lorca; más lejos, se cobra solo el desplazamiento. Cubrimos Lorca y la comarca —Totana, Águilas, Puerto Lumbreras, Alhama—. Dinos dónde estás y las fechas por WhatsApp al 670 36 06 76 y lo organizamos. Así tú te despreocupas y tu perro llega a la residencia sin estrés de última hora."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo dejar al perro en vacaciones y con cuánta antelación reservo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Por supuesto, las vacaciones y los puentes son justo para lo que está la residencia. Eso sí: en julio y agosto las plazas vuelan, así que si ya tienes fechas, reserva cuanto antes, que cada verano se queda gente fuera por avisar tarde. El resto del año hay más flexibilidad. En la residencia canina de Lorca el trato es el mismo te vayas tres días o tres semanas. Escríbenos las fechas al 670 36 06 76 y te confirmamos plaza."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué pasa si mi perro no come o se pone malo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Te avisamos enseguida. Algunos perros tardan uno o dos días en adaptarse y dejar de comer del todo es normal al principio; lo vigilamos de cerca y actuamos si hace falta. En 45 años en Lorca hemos visto de todo, así que ningún perro nos pilla por sorpresa. Y como vivimos en la misma parcela que la residencia, hay alguien pendiente a cualquier hora. Si tu perro necesita medicación, la traes con las instrucciones y se la damos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Aceptáis perros nerviosos o de difícil trato?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. En la residencia canina de Lorca estamos acostumbrados a perros nerviosos, miedosos o que no se fían de los desconocidos, para eso tenemos 45 años de oficio y formación en conducta. Para estos casos recomendamos una visita previa: que el perro venga antes a conocer el sitio sin quedarse, así la primera estancia es mucho más fácil. Esa visita no cuesta nada. Cuéntanos cómo es tu perro al 670 36 06 76 y vemos cómo prepararlo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo visitar la residencia antes de dejar a mi perro?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Claro, y lo animamos. Puedes venir a ver las instalaciones y dónde va a estar tu perro antes de decidir, sobre todo si nunca ha estado en una residencia. Estamos en el Camino de los Valencianos, 24, en Lorca (Murcia), con instalaciones propias y zonas de césped. Nosotros vivimos allí mismo, así que enseñártelo todo es lo normal. Llama al 670 36 06 76 y quedamos un día para que lo veas con calma."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Hay alguien por la noche con los perros?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, siempre. No somos empleados que fichan y se van: vivimos en la misma parcela que la residencia, en Lorca, así que hay alguien pendiente las 24 horas. Si un perro tose a las tres de la mañana o se pone nervioso, lo oímos. Eso es algo que un centro grande con turnos no puede ofrecer igual. Para nosotros esto es un estilo de vida, no un horario, y tu perro lo nota desde la primera noche."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo reservo plaza en la residencia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Muy fácil: llámanos o escríbenos por WhatsApp al 670 36 06 76 con las fechas que necesitas y algo sobre tu perro (raza, edad, carácter). Te confirmamos si hay plaza y te explicamos todo: precio, requisitos y recogida si la necesitas. En temporada alta conviene reservar con semanas de antelación. Estamos en Lorca (Murcia) y respondemos rápido, nosotros mismos. Cuanto antes nos escribas, más fácil es asegurarte el sitio para tu perro."
+      }
+    }
+  ]
+}
+</script>
+
+</body>
+</html>

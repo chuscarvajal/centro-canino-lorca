@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cachorros Caniche Gigante — criador especializado en el sur de España | Centro Canino de Lorca</title>
+  <meta name="description" content="Cachorros de caniche gigante con 45 años de selección y protocolo sanitario completo antes de la entrega: si no está sano, no te lo llevas. Único criador de referencia en el sur de España, con peluquería de competición en casa. Llama al 670 36 06 76.">
+  <link rel="canonical" href="https://centro-canino-lorca.vercel.app/cachorros-caniche-gigante">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: {
+          primary:'#059669','on-primary':'#ffffff','primary-fixed-dim':'#a7f3d0','surface-tint':'#047857',
+          'secondary-container':'#fea619','on-secondary-container':'#3b1f00','on-primary-container':'#d1fae5',
+          background:'#f9f7f2',surface:'#ffffff','on-surface':'#1a1a1a','on-surface-variant':'#4a4a4a',
+          secondary:'#fea619','secondary-fixed-dim':'#fbbf24',
+        },
+        fontFamily:{ sans:['Inter','sans-serif'], display:['Epilogue','sans-serif'] },
+        maxWidth:{ 'container-max-width':'1200px' },
+        spacing:{ 'margin-mobile':'1.25rem','margin-desktop':'2.5rem',gutter:'1.5rem' },
+      } }
+    }
+  </script>
+  <style>
+    .font-headline-lg { font-family:'Epilogue',sans-serif; font-size:clamp(1.75rem,4vw,2.5rem); font-weight:700; line-height:1.15; letter-spacing:-0.03em; }
+    .font-headline-md { font-family:'Epilogue',sans-serif; font-size:1.375rem; font-weight:700; line-height:1.2; letter-spacing:-0.02em; }
+    .font-body-md     { font-family:'Inter',sans-serif; font-size:1rem; font-weight:400; line-height:1.7; }
+    .font-label-md    { font-family:'Inter',sans-serif; font-size:0.9375rem; font-weight:600; }
+    .font-label-sm    { font-family:'Inter',sans-serif; font-size:0.75rem; font-weight:600; }
+    .tonal-shadow       { box-shadow:0 4px 8px rgba(5,150,105,0.04),0 1px 3px rgba(5,150,105,0.06); }
+    .tonal-shadow-hover { box-shadow:0 8px 16px rgba(5,150,105,0.08),0 2px 6px rgba(5,150,105,0.08); }
+    .anim { opacity:0; transform:translateY(16px); transition:opacity .55s ease, transform .55s ease; }
+    .anim.anim-slide-l { transform:translateX(-20px); } .anim.anim-slide-r { transform:translateX(20px); }
+    .anim.visible { opacity:1; transform:none; }
+    .delay-1{transition-delay:.1s;}.delay-2{transition-delay:.2s;}.delay-3{transition-delay:.3s;}
+    blockquote.quote-block { border-left:3px solid #059669; padding:1rem 1.25rem; background:rgba(5,150,105,0.05); border-radius:0 12px 12px 0; font-style:italic; }
+    @keyframes carousel-scroll { 0%{transform:translateX(0);} 100%{transform:translateX(-50%);} }
+    #reviewCarousel { animation:carousel-scroll 36s linear infinite; }
+    #reviewCarousel:hover { animation-play-state:paused; }
+    /* Rastro de huellas animado */
+    @keyframes pawStep { 0%{opacity:0;} 12%{opacity:.5;} 45%{opacity:.5;} 70%{opacity:0;} 100%{opacity:0;} }
+    .paw-trail { position:absolute; inset:0; pointer-events:none; z-index:2; overflow:hidden; }
+    .paw-trail svg { position:absolute; width:30px; height:30px; opacity:0; fill:#ffffff; animation:pawStep 5s linear infinite; }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+
+<!-- NAV -->
+<header class="sticky top-0 z-50 w-full bg-background/95 backdrop-blur border-b border-[#E9E5D9]" style="box-shadow:0 1px 8px rgba(5,150,105,0.06);">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop h-16 flex items-center justify-between gap-4">
+    <a href="index.html" class="flex items-center gap-2 flex-shrink-0">
+      <span class="material-symbols-outlined text-primary text-[22px]" style="font-variation-settings:'FILL' 1;">pets</span>
+      <span style="font-family:'Epilogue',sans-serif;font-weight:700;font-size:1.2rem;color:#059669;letter-spacing:-0.01em;">Centro Canino de Lorca</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-6">
+      <div class="relative group">
+        <a href="index.html#servicios" class="font-label-md text-on-surface-variant hover:text-primary transition-colors inline-flex items-center gap-1 cursor-pointer">Servicios<span class="material-symbols-outlined text-[16px]">expand_more</span></a>
+        <div class="absolute left-1/2 -translate-x-1/2 top-full pt-3 hidden group-hover:block z-50">
+          <div class="bg-surface rounded-xl border border-[#E9E5D9] shadow-[0_8px_24px_rgba(5,150,105,0.14)] py-2 w-72">
+            <a href="residencia-canina-lorca.html" class="flex items-center gap-3 px-4 py-2.5 hover:bg-background transition-colors"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">home</span><span class="font-label-md text-on-surface">Residencia canina</span></a>
+            <a href="adiestramiento-canino-lorca.html" class="flex items-center gap-3 px-4 py-2.5 hover:bg-background transition-colors"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">school</span><span class="font-label-md text-on-surface">Adiestramiento canino en Lorca</span></a>
+            <a href="adiestramiento-canino-online.html" class="flex items-center gap-3 px-4 py-2.5 hover:bg-background transition-colors"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">videocam</span><span class="font-label-md text-on-surface">Adiestramiento online</span></a>
+            <a href="cachorros-pastor-aleman-de-trabajo.html" class="flex items-center gap-3 px-4 py-2.5 hover:bg-background transition-colors"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">pets</span><span class="font-label-md text-on-surface">Cachorros Pastor Alemán</span></a>
+            <a href="cachorros-caniche-gigante.html" class="flex items-center gap-3 px-4 py-2.5 hover:bg-background transition-colors"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">pets</span><span class="font-label-md text-on-surface">Cachorros Caniche Gigante</span></a>
+            <a href="peluqueria-canina-lorca.html" class="flex items-center gap-3 px-4 py-2.5 hover:bg-background transition-colors"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">content_cut</span><span class="font-label-md text-on-surface">Peluquería canina</span></a>
+          </div>
+        </div>
+      </div>
+      <a href="index.html#nosotros" class="font-label-md text-on-surface-variant hover:text-primary transition-colors">Nosotros</a>
+      <a href="index.html#resenas" class="font-label-md text-on-surface-variant hover:text-primary transition-colors">Reseñas</a>
+      <a href="#contacto" class="font-label-md text-on-surface-variant hover:text-primary transition-colors">Contacto</a>
+      <a href="tel:+34670360676" class="inline-flex items-center gap-2 bg-primary text-on-primary font-label-md px-5 py-2.5 rounded-lg font-bold hover:bg-surface-tint transition-colors tonal-shadow tonal-shadow-hover">
+        <span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">phone</span>670 36 06 76
+      </a>
+    </nav>
+    <button id="menuBtn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Abrir menú">
+      <span class="w-5 h-0.5 bg-on-surface block"></span><span class="w-5 h-0.5 bg-on-surface block"></span><span class="w-5 h-0.5 bg-on-surface block"></span>
+    </button>
+  </div>
+  <div id="mobileMenu" class="hidden md:hidden bg-background border-t border-[#E9E5D9] px-margin-mobile py-4 flex flex-col gap-4">
+    <p class="font-label-sm text-on-surface-variant/60 uppercase tracking-wider pt-1">Servicios</p>
+    <a href="residencia-canina-lorca.html" class="font-label-md text-on-surface-variant pl-3">Residencia canina</a>
+    <a href="adiestramiento-canino-lorca.html" class="font-label-md text-on-surface-variant pl-3">Adiestramiento canino en Lorca</a>
+    <a href="adiestramiento-canino-online.html" class="font-label-md text-on-surface-variant pl-3">Adiestramiento online</a>
+    <a href="cachorros-pastor-aleman-de-trabajo.html" class="font-label-md text-on-surface-variant pl-3">Cachorros Pastor Alemán</a>
+    <a href="cachorros-caniche-gigante.html" class="font-label-md text-on-surface-variant pl-3">Cachorros Caniche Gigante</a>
+    <a href="peluqueria-canina-lorca.html" class="font-label-md text-on-surface-variant pl-3">Peluquería canina</a>
+    <a href="index.html#nosotros" class="font-label-md text-on-surface-variant pt-1">Nosotros</a>
+    <a href="index.html#resenas" class="font-label-md text-on-surface-variant">Reseñas</a>
+    <a href="#contacto" class="font-label-md text-on-surface-variant">Contacto</a>
+    <a href="tel:+34670360676" class="inline-flex items-center gap-2 bg-primary text-on-primary font-label-md px-5 py-3 rounded-lg font-bold w-fit"><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">phone</span>670 36 06 76</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="w-full relative overflow-hidden" style="min-height:580px;">
+  <img src="cachorro-caniche-gigante.webp" alt="Cachorros de caniche gigante — Centro Canino de Lorca" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0" style="background:linear-gradient(to right, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0.5) 55%, rgba(0,0,0,0.14) 100%);"></div>
+  <!-- Huellas dispersas animadas -->
+  <div class="paw-trail" aria-hidden="true">
+    <svg style="left:7%;top:20%;width:26px;height:26px;transform:rotate(12deg);animation-delay:0s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:21%;top:68%;width:34px;height:34px;transform:rotate(-16deg);animation-delay:.7s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:14%;top:44%;width:21px;height:21px;transform:rotate(26deg);animation-delay:1.3s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:37%;top:26%;width:30px;height:30px;transform:rotate(-8deg);animation-delay:.35s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:47%;top:64%;width:24px;height:24px;transform:rotate(18deg);animation-delay:1.6s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:61%;top:16%;width:34px;height:34px;transform:rotate(-22deg);animation-delay:1s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:71%;top:50%;width:27px;height:27px;transform:rotate(10deg);animation-delay:2.2s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:84%;top:24%;width:23px;height:23px;transform:rotate(-12deg);animation-delay:1.9s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:90%;top:62%;width:31px;height:31px;transform:rotate(22deg);animation-delay:.5s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:31%;top:85%;width:25px;height:25px;transform:rotate(-18deg);animation-delay:2.5s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:55%;top:84%;width:22px;height:22px;transform:rotate(8deg);animation-delay:1.15s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:78%;top:80%;width:29px;height:29px;transform:rotate(-25deg);animation-delay:.8s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+  </div>
+  <div class="relative z-10 max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop pt-8">
+    <nav class="flex items-center gap-2 text-white/60 font-label-sm text-xs">
+      <a href="index.html" class="hover:text-white transition-colors">Centro Canino de Lorca</a>
+      <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+      <span class="text-white/90">Cachorros Caniche Gigante</span>
+    </nav>
+  </div>
+  <div class="relative z-10 max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop py-16 md:py-24 flex items-center" style="min-height:520px;">
+    <div class="w-full md:w-1/2 flex flex-col gap-6">
+      <div class="flex items-center gap-2">
+        <div class="flex items-center gap-0.5" style="color:#FBBC04">
+          <span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span>
+        </div>
+        <span class="font-label-sm text-white font-semibold">5,0 · 16 reseñas en Google</span>
+      </div>
+      <h1 class="font-headline-lg text-white">Cachorros de caniche gigante — criador especializado en el sur de España con protocolo sanitario completo</h1>
+      <p class="font-body-md text-white/85 max-w-md">
+        Quieres un caniche gigante de verdad y no encuentras a nadie cerca: todos los criadores serios están en el norte. Aquí, en Lorca, llevamos 45 años seleccionando esta raza, y ningún cachorro sale por la puerta sin estar sano del todo.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3">
+        <a href="#disponibilidad" class="inline-flex items-center justify-center gap-2 bg-primary text-on-primary font-label-md font-bold px-6 py-3.5 rounded-lg hover:bg-surface-tint transition-colors" style="box-shadow:0 4px 16px rgba(5,150,105,0.4);">
+          <span class="material-symbols-outlined text-[20px]" style="font-variation-settings:'FILL' 1;">pets</span>Ver cachorros disponibles
+        </a>
+        <a href="https://wa.me/34670360676?text=Quiero%20info%20sobre%20cachorros%20de%20caniche%20gigante" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white font-label-md font-bold px-6 py-3.5 rounded-lg hover:opacity-90 transition-opacity">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.116 1.527 5.845L.057 23.5l5.773-1.517A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 01-5.031-1.385l-.361-.214-3.427.9.915-3.332-.235-.373A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+          Consultar disponibilidad
+        </a>
+      </div>
+      <div class="flex flex-wrap gap-2 mt-1">
+        <span class="inline-flex items-center gap-1.5 font-label-md text-[13px] px-3 py-1.5 rounded-full font-semibold" style="background:rgba(255,255,255,0.18);backdrop-filter:blur(6px);color:#fff;"><span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">place</span>Único criador del sur de España</span>
+        <span class="inline-flex items-center gap-1.5 font-label-md text-[13px] px-3 py-1.5 rounded-full font-semibold" style="background:rgba(254,166,25,0.22);backdrop-filter:blur(6px);color:#fea619;"><span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">verified</span>Salud certificada</span>
+        <span class="inline-flex items-center gap-1.5 font-label-md text-[13px] px-3 py-1.5 rounded-full font-semibold" style="background:rgba(255,255,255,0.18);backdrop-filter:blur(6px);color:#fff;"><span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">local_shipping</span>Envíos a toda España</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="w-full py-8" style="background:linear-gradient(135deg,#047857 0%,#059669 100%);">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div><p class="font-headline-md text-[1.75rem] text-secondary-container font-bold">45 años</p><p class="font-label-sm text-on-primary-container text-[11px] uppercase tracking-wider mt-1">Seleccionando la raza</p></div>
+      <div><p class="font-headline-md text-[1.75rem] text-secondary-container font-bold">45-60 cm</p><p class="font-label-sm text-on-primary-container text-[11px] uppercase tracking-wider mt-1">Talla de un caniche gigante</p></div>
+      <div><p class="font-headline-md text-[1.75rem] text-secondary-container font-bold">100%</p><p class="font-label-sm text-on-primary-container text-[11px] uppercase tracking-wider mt-1">Analíticas antes de entregar</p></div>
+      <div><p class="font-headline-md text-[1.75rem] text-secondary-container font-bold">5,0★</p><p class="font-label-sm text-on-primary-container text-[11px] uppercase tracking-wider mt-1">16 reseñas en Google</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- H2 #1: Qué es el caniche gigante -->
+<section class="w-full py-20 bg-surface">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="flex flex-col md:flex-row items-center gap-12">
+      <div class="anim anim-slide-l w-full md:w-1/2 flex flex-col gap-6">
+        <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-widest" style="background:rgba(5,150,105,0.10);color:#059669;letter-spacing:0.12em;">Lo primero que debes saber</span>
+        <h2 class="font-headline-lg text-primary">El perro caniche gigante — qué es, cuánto mide y por qué no es lo que te imaginas</h2>
+        <p class="font-body-md text-on-surface-variant leading-relaxed">
+          Mucha gente llega buscando un «caniche grande» y se imagina un caniche normal un poco más crecido. No es eso. El caniche gigante es una raza con estándar propio: 45 a 60 cm a la cruz y entre 20 y 30 kg en adulto según la línea. Es un perro de tamaño real, con presencia, no un perro de bolso. Y es, además, la segunda raza más inteligente del mundo.
+        </p>
+        <div class="flex flex-col gap-5">
+          <div class="flex gap-4">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(5,150,105,0.10);"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">translate</span></div>
+            <div><h3 class="font-headline-md text-[1rem] text-on-surface mb-1">Perro poodle gigante — el nombre francés que muchos buscan y el mismo perro de siempre</h3><p class="font-body-md text-on-surface-variant text-[0.9rem]">Poodle y caniche son exactamente el mismo perro. «Poodle» es el nombre anglosajón, «caniche» el español. Si has estado buscando «poodle gigante» y «caniche gigante» como si fueran dos razas, no lo son: es el mismo animal. Así que ya sabes lo que buscas.</p></div>
+          </div>
+          <div class="flex gap-4">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(5,150,105,0.10);"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">straighten</span></div>
+            <div><h3 class="font-headline-md text-[1rem] text-on-surface mb-1">Caniche gigante vs. caniche mediano, enano y toy — en qué se diferencia el gigante</h3><p class="font-body-md text-on-surface-variant text-[0.9rem]">El caniche tiene cuatro tallas. El toy y el enano son perros pequeños de piso. El mediano es un perro de tamaño medio. El gigante (también llamado «estándar» en otros países) es el mayor de todos: 45-60 cm, más ejercicio, más espacio y mucha más presencia. Si buscas «perros caniches grandes», el gigante es el que quieres.</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="anim anim-slide-r delay-1 w-full md:w-1/2">
+        <img src="caniche-gigante-talla-real.webp" alt="Comparativa de tamaño real de un caniche gigante frente al mediano, enano y toy" class="rounded-2xl w-full h-[420px] object-cover shadow-[0_4px_24px_rgba(5,150,105,0.10)] border border-[#E9E5D9]">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- H2 #2: Carácter -->
+<section class="w-full py-20 bg-background">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="flex flex-col md:flex-row-reverse items-center gap-12">
+      <div class="anim anim-slide-r w-full md:w-1/2 flex flex-col gap-6">
+        <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-widest" style="background:rgba(5,150,105,0.10);color:#059669;letter-spacing:0.12em;">Cómo es vivir con él</span>
+        <h2 class="font-headline-lg text-primary">Carácter del caniche gigante — inteligente, hipoalergénico y más resistente de lo que parece</h2>
+        <p class="font-body-md text-on-surface-variant leading-relaxed">
+          La gente ve el pelo rizado y piensa en un perro fino y delicado. Nada que ver. El caniche gigante es un perro listísimo, equilibrado, fácil de adiestrar y mucho más fuerte de lo que aparenta. Eso sí, te lo digo claro antes de que pagues: es un perro grande de verdad. Necesita espacio y ejercicio. No es un perro para tener encerrado en un piso pequeño.
+        </p>
+        <div class="flex gap-4">
+          <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(5,150,105,0.10);"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">air</span></div>
+          <div><h3 class="font-headline-md text-[1rem] text-on-surface mb-1">Sin pelo suelto, sin alergia — por qué el caniche gigante es la elección de las familias con alergia</h3><p class="font-body-md text-on-surface-variant text-[0.9rem]">No es marketing: el caniche no muda pelo. No lo suelta por la casa, no lo deja en el sofá, y eso lo convierte en la raza grande de referencia para familias con alérgicos. Lo que sí necesita es que le crezca el pelo y se lo cortes cada cierto tiempo — y eso, aquí, lo resolvemos mejor que nadie.</p></div>
+        </div>
+        <blockquote class="quote-block font-body-md text-on-surface-variant">
+          «Entendiendo a tu perro, terminas por entenderte a ti mismo.»
+          <footer class="mt-2 font-label-md text-primary not-italic">— Juan Miguel · 45 años con perros</footer>
+        </blockquote>
+      </div>
+      <div class="anim anim-slide-l delay-1 w-full md:w-1/2">
+        <img src="caniche-gigante-familia.webp" alt="Caniche gigante adulto, perro inteligente e hipoalergénico para familias" class="rounded-2xl w-full h-[420px] object-cover shadow-[0_4px_24px_rgba(5,150,105,0.10)] border border-[#E9E5D9]">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- H2 #3: Nuestros cachorros / reproductores -->
+<section class="w-full py-20 bg-surface">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="text-center mb-12">
+      <h2 class="anim font-headline-lg text-primary mb-3">Nuestros cachorros de caniche gigante — reproducción selectiva con 45 años de criterio</h2>
+      <p class="anim delay-1 font-body-md text-on-surface-variant max-w-2xl mx-auto">No somos un intermediario ni una tienda. Aquí ves al padre, ves a la madre y sabes de dónde viene tu cachorro. Llevamos 45 años seleccionando esta raza en Lorca, eligiendo cada cruce por carácter, salud y conformación.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+      <div class="anim group relative overflow-hidden rounded-2xl tonal-shadow flex flex-col" style="min-height:360px;">
+        <img src="reproductor-macho-caniche.webp" alt="Reproductor macho de caniche gigante" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+        <div class="absolute inset-0" style="background:linear-gradient(to top, rgba(5,150,105,0.92) 0%, rgba(5,150,105,0.78) 20%, rgba(5,150,105,0.30) 40%, transparent 55%);"></div>
+        <div class="relative z-10 flex flex-col h-full p-6 justify-end">
+          <h3 class="font-headline-md text-[1.1rem] text-white mb-1">Reproductor macho — genealogía y características de la línea</h3>
+          <p class="font-body-md text-[0.875rem] text-white/85 leading-relaxed">Talla y estructura de gigante de verdad, carácter estable y genealogía que se puede comprobar. El comprador serio de caniche siempre pregunta por el padre — aquí lo ves y lo conoces. Es el carácter que queremos que pase a la camada.</p>
+        </div>
+      </div>
+      <div class="anim delay-1 group relative overflow-hidden rounded-2xl tonal-shadow flex flex-col" style="min-height:360px;">
+        <img src="reproductora-hembra-caniche.webp" alt="Reproductora hembra de caniche gigante" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+        <div class="absolute inset-0" style="background:linear-gradient(to top, rgba(5,150,105,0.92) 0%, rgba(5,150,105,0.78) 20%, rgba(5,150,105,0.30) 40%, transparent 55%);"></div>
+        <div class="relative z-10 flex flex-col h-full p-6 justify-end">
+          <h3 class="font-headline-md text-[1.1rem] text-white mb-1">Reproductora hembra — estabilidad de carácter y calidad de cría</h3>
+          <p class="font-body-md text-[0.875rem] text-white/85 leading-relaxed">En el caniche, la hembra transmite tanto carácter y salud como el macho — por eso la elegimos con el mismo cuidado. Equilibrio, salud documentada y muy buena madre. De ella sale la mitad de lo que será tu perro.</p>
+        </div>
+      </div>
+    </div>
+    <!-- H3 colores -->
+    <div class="rounded-2xl p-7 md:p-8" style="background:rgba(5,150,105,0.05);border:1px solid #E9E5D9;">
+      <div class="flex items-start gap-4 mb-5">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(5,150,105,0.12);"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">palette</span></div>
+        <div>
+          <h3 class="font-headline-md text-[1.1rem] text-on-surface mb-1">Colores disponibles en nuestras camadas — negro, marrón, gris, apricot y particolor</h3>
+          <p class="font-body-md text-on-surface-variant text-[0.9rem]">El color es una de las primeras preguntas que nos hacen. El negro y el marrón son los más frecuentes; el gris y el apricot, algo menos comunes; y el particolor es el más raro — y por eso el más caro. Dime qué buscas y te digo qué tenemos previsto en la próxima camada.</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
+        <div class="rounded-xl overflow-hidden border border-[#E9E5D9]"><img src="https://placehold.co/400x320/1c1c1c/ffffff?text=Negro" alt="Cachorro de caniche gigante color negro" class="w-full h-28 object-cover"></div>
+        <div class="rounded-xl overflow-hidden border border-[#E9E5D9]"><img src="https://placehold.co/400x320/5b3a21/ffffff?text=Marr%C3%B3n" alt="Cachorro de caniche gigante color marrón" class="w-full h-28 object-cover"></div>
+        <div class="rounded-xl overflow-hidden border border-[#E9E5D9]"><img src="https://placehold.co/400x320/8a8d91/ffffff?text=Gris" alt="Cachorro de caniche gigante color gris" class="w-full h-28 object-cover"></div>
+        <div class="rounded-xl overflow-hidden border border-[#E9E5D9]"><img src="https://placehold.co/400x320/e3b577/3b1f00?text=Apricot" alt="Cachorro de caniche gigante color apricot" class="w-full h-28 object-cover"></div>
+        <div class="rounded-xl overflow-hidden border border-[#E9E5D9]"><img src="https://placehold.co/400x320/d1d5db/1c1c1c?text=Particolor" alt="Cachorro de caniche gigante particolor" class="w-full h-28 object-cover"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- H2 #4: Protocolo sanitario (oscuro) -->
+<section class="w-full py-20" style="background:#1c1c1c;">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="text-center mb-12">
+      <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-widest mb-4" style="background:rgba(165,208,185,0.15);color:#d1fae5;letter-spacing:0.12em;">Lo que ningún otro criador hace</span>
+      <h2 class="anim font-headline-lg text-white mb-3">El protocolo sanitario antes de entregarte el cachorro de caniche gigante</h2>
+      <p class="anim delay-1 font-body-md max-w-2xl mx-auto" style="color:rgba(255,255,255,0.65);">Vas a pagar entre 1.500 y 1.800 € por tu cachorro. Tu mayor miedo es que te lo lleves enfermo. Aquí lo eliminamos de raíz: analíticas completas el día antes de la entrega, con coste real de 150 € por animal.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+      <div class="anim rounded-2xl p-6 flex flex-col gap-4" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.10);">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center" style="background:#fea619;"><span class="material-symbols-outlined text-[24px]" style="color:#3b1f00;font-variation-settings:'FILL' 1;">biotech</span></div>
+        <h3 class="font-headline-md text-[1.05rem] text-white">Analíticas de parvo, giardia, coronavirus y serología — antes de que llegue a tu casa</h3>
+        <p class="font-body-md text-[0.875rem] leading-relaxed" style="color:rgba(255,255,255,0.65);">No es «vacunado y desparasitado» como pone cualquier anuncio. Es un informe clínico de verdad: parvovirus, giardia, coronavirus y serología, cada prueba hecha y firmada. Cuesta 150 € hacerlo bien, y lo recibes el día que te llevas al perro.</p>
+      </div>
+      <div class="anim delay-1 rounded-2xl p-6 flex flex-col gap-4" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.10);">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center" style="background:#fea619;"><span class="material-symbols-outlined text-[24px]" style="color:#3b1f00;font-variation-settings:'FILL' 1;">health_and_safety</span></div>
+        <h3 class="font-headline-md text-[1.05rem] text-white">Si el cachorro no está en perfectas condiciones, la venta no se formaliza</h3>
+        <p class="font-body-md text-[0.875rem] leading-relaxed" style="color:rgba(255,255,255,0.65);">Lo digo siempre igual: «te lo llevas saludable, porque si no está saludable, no te lo llevas hasta que no esté saludable». Mientras otros venden «15 días de garantía vírica», aquí la garantía es antes, no en un papel a los 15 días.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- H2 #5: Criador del sur de España -->
+<section class="w-full py-20 bg-surface">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="flex flex-col md:flex-row items-center gap-12">
+      <div class="anim anim-slide-l w-full md:w-1/2 flex flex-col gap-6">
+        <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-widest" style="background:rgba(5,150,105,0.10);color:#059669;letter-spacing:0.12em;">El hueco que nadie cubre</span>
+        <h2 class="font-headline-lg text-primary">Criador de caniche gigante en el sur de España — el único referente especializado en Murcia y Levante</h2>
+        <p class="font-body-md text-on-surface-variant leading-relaxed">
+          Búscalo tú mismo: los criadores de caniche gigante de referencia están todos en Asturias, Cataluña o Madrid. En Murcia, Almería, Granada, Alicante o Valencia no hay nadie. Si eres del sur y quieres un caniche gigante serio, hasta ahora te tocaba subir al norte. Aquí, en Lorca, tienes el referente que faltaba — sin medio país de por medio.
+        </p>
+        <div class="flex gap-4">
+          <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(5,150,105,0.10);"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">content_cut</span></div>
+          <div><h3 class="font-headline-md text-[1rem] text-on-surface mb-1">El valor añadido que ningún otro criador de caniche gigante ofrece — peluquería de competición en casa</h3><p class="font-body-md text-on-surface-variant text-[0.9rem]">Mi hijo quedó tercero en el Campeonato de Europa de peluquería canina, especializado precisamente en caniche gigante. El caniche necesita cortes frecuentes toda su vida — y los compradores de nuestros cachorros tienen al mejor peluquero de la raza en el mismo sitio donde lo compraron. Conoce nuestra <a href="peluqueria-canina-lorca.html" class="text-primary font-semibold underline decoration-primary/30 hover:decoration-primary transition-colors">peluquería canina especializada en caniche</a>. Eso no te lo da ningún otro criador.</p></div>
+        </div>
+        <a href="tel:+34670360676" class="inline-flex items-center gap-2 bg-primary text-on-primary font-label-md font-bold px-6 py-3 rounded-lg hover:bg-surface-tint transition-colors tonal-shadow w-fit mt-2"><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">phone</span>Hablar con Juan Miguel</a>
+      </div>
+      <div class="anim anim-slide-r delay-1 w-full md:w-1/2">
+        <img src="juan-miguel.jpg" alt="Juan Miguel, criador de caniche gigante en Lorca, sur de España" class="rounded-2xl w-full h-[420px] object-cover shadow-[0_4px_24px_rgba(5,150,105,0.10)] border border-[#E9E5D9]">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- H2 #6: Disponibilidad (oscuro) -->
+<section id="disponibilidad" class="w-full py-20" style="background:#1c1c1c;">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="text-center mb-12">
+      <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-widest mb-4" style="background:rgba(165,208,185,0.15);color:#d1fae5;letter-spacing:0.12em;">Disponibilidad</span>
+      <h2 class="anim font-headline-lg text-white mb-3">Cachorros de caniche gigante disponibles — camadas y reservas</h2>
+      <p class="anim delay-1 font-body-md max-w-2xl mx-auto" style="color:rgba(255,255,255,0.65);">No tenemos camadas constantes ni vendemos a cualquiera. Si quieres un caniche gigante de verdad, lo normal es esperar a la próxima — y merece la pena. Pregúntame y te digo qué hay y qué viene.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-6">
+      <div class="anim rounded-2xl p-7 flex flex-col gap-4" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.10);">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center" style="background:#fea619;"><span class="material-symbols-outlined text-[24px]" style="color:#3b1f00;font-variation-settings:'FILL' 1;">event_upcoming</span></div>
+        <h3 class="font-headline-md text-[1.05rem] text-white">Próxima camada de caniche gigante — cómo reservar tu plaza</h3>
+        <p class="font-body-md text-[0.875rem] leading-relaxed" style="color:rgba(255,255,255,0.65);">Dime qué buscas (sexo, color) y te aviso en cuanto haya camada prevista. Se reserva con una señal y se formaliza cuando el cachorro está listo y sano. Sin prisas y sin sorpresas.</p>
+        <a href="https://wa.me/34670360676?text=Quiero%20entrar%20en%20la%20lista%20de%20espera%20de%20caniche%20gigante" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-[#25D366] text-white font-label-md font-bold px-5 py-2.5 rounded-lg hover:opacity-90 transition-opacity w-fit text-sm mt-1"><span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1;">notifications_active</span>Entrar en la lista de espera</a>
+      </div>
+      <div class="anim delay-1 rounded-2xl p-7 flex flex-col gap-4" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.10);">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center" style="background:#fea619;"><span class="material-symbols-outlined text-[24px]" style="color:#3b1f00;font-variation-settings:'FILL' 1;">local_shipping</span></div>
+        <h3 class="font-headline-md text-[1.05rem] text-white">Entregamos cachorros de caniche gigante en toda España — sin excepción</h3>
+        <p class="font-body-md text-[0.875rem] leading-relaxed" style="color:rgba(255,255,255,0.65);">Estás en Madrid, Barcelona o Sevilla y te frena la distancia. No te frene: organizamos el transporte con todas las garantías hasta tu casa. Cuéntame dónde estás y vemos la mejor forma de llevártelo.</p>
+        <a href="https://wa.me/34670360676?text=%C2%BFC%C3%B3mo%20funciona%20el%20env%C3%ADo%20de%20un%20caniche%20gigante%20a%20mi%20ciudad%3F" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-[#25D366] text-white font-label-md font-bold px-5 py-2.5 rounded-lg hover:opacity-90 transition-opacity w-fit text-sm mt-1"><span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1;">chat</span>Preguntar por el envío</a>
+      </div>
+    </div>
+    <!-- H3 precio -->
+    <div class="anim rounded-2xl p-7 max-w-4xl mx-auto flex flex-col md:flex-row md:items-center gap-5" style="background:rgba(254,166,25,0.10);border:1px solid rgba(254,166,25,0.30);">
+      <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background:#fea619;"><span class="material-symbols-outlined text-[24px]" style="color:#3b1f00;font-variation-settings:'FILL' 1;">payments</span></div>
+      <div class="flex-1">
+        <h3 class="font-headline-md text-[1.05rem] text-white mb-1">¿Cuánto cuesta un cachorro de caniche gigante de criador selecto?</h3>
+        <p class="font-body-md text-[0.875rem] leading-relaxed" style="color:rgba(255,255,255,0.65);">El precio de mercado está en torno a 1.500 € y hasta 1.800 € en particolor. Dentro va el informe clínico de 150 €, las analíticas, la documentación completa y un perro criado con criterio. En esta raza, el «chollo» de Milanuncios lo acabas pagando después en el veterinario. Llámame y te doy el precio de la camada actual.</p>
+      </div>
+      <a href="https://wa.me/34670360676?text=%C2%BFCu%C3%A1nto%20cuesta%20un%20cachorro%20de%20caniche%20gigante%3F" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white font-label-md font-bold px-5 py-3 rounded-lg hover:opacity-90 transition-opacity w-full md:w-fit text-sm flex-shrink-0"><span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 1;">chat</span>Consultar precio</a>
+    </div>
+  </div>
+</section>
+
+<!-- RESEÑAS -->
+<section id="resenas" class="w-full bg-background py-20">
+  <div class="max-w-container-max-width mx-auto">
+    <div class="text-center mb-10 px-margin-mobile md:px-margin-desktop">
+      <h2 class="anim font-headline-lg text-primary mb-3">Lo que dicen quienes ya nos conocen</h2>
+      <p class="anim delay-1 font-body-md text-on-surface-variant max-w-2xl mx-auto">16 reseñas en Google, todas de 5 estrellas. No hemos pedido ni una.</p>
+    </div>
+    <div class="overflow-hidden py-2">
+    <div id="reviewCarousel" class="flex gap-5 pb-4" style="width:max-content;">
+      <div class="flex-shrink-0 w-[320px] md:w-[360px] bg-surface rounded-xl p-6 border border-[#E9E5D9] tonal-shadow flex flex-col gap-4">
+        <div class="flex items-center gap-1" style="color:#FBBC04"><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span></div>
+        <p class="font-body-md text-on-surface-variant italic leading-relaxed flex-1">"Muy amables y cercanos, unas instalaciones muy buenas. Llevo allí a mi doberman desde que tenía 5 meses, ahora tiene 11 y estoy muy contento. Juan Miguel es un gran adiestrador."</p>
+        <div class="flex items-center gap-3 pt-2 border-t border-[#E9E5D9]"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="text-on-primary font-bold text-sm">J</span></div><div><p class="font-label-md text-on-surface text-sm">Jorge Hernandez</p><p class="font-label-sm text-on-surface-variant text-xs">Google Maps</p></div></div>
+      </div>
+      <div class="flex-shrink-0 w-[320px] md:w-[360px] bg-surface rounded-xl p-6 border border-[#E9E5D9] tonal-shadow flex flex-col gap-4">
+        <div class="flex items-center gap-1" style="color:#FBBC04"><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span></div>
+        <p class="font-body-md text-on-surface-variant italic leading-relaxed flex-1">"Llevo solo 2 clases con mi pastor belga Malinois y muy contento desde el primer momento. Personal muy agradable y cercano, instalaciones perfectas. Juan Miguel es un profesional."</p>
+        <div class="flex items-center gap-3 pt-2 border-t border-[#E9E5D9]"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="text-on-primary font-bold text-sm">J</span></div><div><p class="font-label-md text-on-surface text-sm">Jose Antonio Hernandez</p><p class="font-label-sm text-on-surface-variant text-xs">Google Maps</p></div></div>
+      </div>
+      <div class="flex-shrink-0 w-[320px] md:w-[360px] bg-surface rounded-xl p-6 border border-[#E9E5D9] tonal-shadow flex flex-col gap-4">
+        <div class="flex items-center gap-1" style="color:#FBBC04"><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span></div>
+        <p class="font-body-md text-on-surface-variant italic leading-relaxed flex-1">"El sitio perfecto para mi beagle. Mi bigotitos se tira del coche en cuanto llegamos a la puerta. Hace dos años que llevo mi beagle, tanto de alojamiento como de peluquería, y para mí genial."</p>
+        <div class="flex items-center gap-3 pt-2 border-t border-[#E9E5D9]"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="text-on-primary font-bold text-sm">V</span></div><div><p class="font-label-md text-on-surface text-sm">Vicente Miguel Ros</p><p class="font-label-sm text-on-surface-variant text-xs">Google Maps · Local Guide</p></div></div>
+      </div>
+      <div class="flex-shrink-0 w-[320px] md:w-[360px] bg-surface rounded-xl p-6 border border-[#E9E5D9] tonal-shadow flex flex-col gap-4">
+        <div class="flex items-center gap-1" style="color:#FBBC04"><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span></div>
+        <p class="font-body-md text-on-surface-variant italic leading-relaxed flex-1">"Profesionales y ante todo buenas personas. Instalaciones únicas idóneas para los perros. Calidad en el servicio y pasión por lo que hacen. Solo puedo decir todo 10."</p>
+        <div class="flex items-center gap-3 pt-2 border-t border-[#E9E5D9]"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="text-on-primary font-bold text-sm">F</span></div><div><p class="font-label-md text-on-surface text-sm">Francisco Alcaraz</p><p class="font-label-sm text-on-surface-variant text-xs">Google Maps</p></div></div>
+      </div>
+      <div class="flex-shrink-0 w-[320px] md:w-[360px] bg-surface rounded-xl p-6 border border-[#E9E5D9] tonal-shadow flex flex-col gap-4">
+        <div class="flex items-center gap-1" style="color:#FBBC04"><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span></div>
+        <p class="font-body-md text-on-surface-variant italic leading-relaxed flex-1">"Me gusta mucho el centro. Trataron muy bien a mi perrita, además el paso por la peluquería súper bien. Me la dejaron súper limpia."</p>
+        <div class="flex items-center gap-3 pt-2 border-t border-[#E9E5D9]"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="text-on-primary font-bold text-sm">S</span></div><div><p class="font-label-md text-on-surface text-sm">Sarai Ayllon Abellan</p><p class="font-label-sm text-on-surface-variant text-xs">Google Maps · Local Guide</p></div></div>
+      </div>
+      <div class="flex-shrink-0 w-[320px] md:w-[360px] bg-surface rounded-xl p-6 border border-[#E9E5D9] tonal-shadow flex flex-col gap-4" aria-hidden="true">
+        <div class="flex items-center gap-1" style="color:#FBBC04"><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span></div>
+        <p class="font-body-md text-on-surface-variant italic leading-relaxed flex-1">"Muy amables y cercanos, unas instalaciones muy buenas. Llevo allí a mi doberman desde que tenía 5 meses, ahora tiene 11 y estoy muy contento. Juan Miguel es un gran adiestrador."</p>
+        <div class="flex items-center gap-3 pt-2 border-t border-[#E9E5D9]"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="text-on-primary font-bold text-sm">J</span></div><div><p class="font-label-md text-on-surface text-sm">Jorge Hernandez</p><p class="font-label-sm text-on-surface-variant text-xs">Google Maps</p></div></div>
+      </div>
+      <div class="flex-shrink-0 w-[320px] md:w-[360px] bg-surface rounded-xl p-6 border border-[#E9E5D9] tonal-shadow flex flex-col gap-4" aria-hidden="true">
+        <div class="flex items-center gap-1" style="color:#FBBC04"><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span></div>
+        <p class="font-body-md text-on-surface-variant italic leading-relaxed flex-1">"Llevo solo 2 clases con mi pastor belga Malinois y muy contento desde el primer momento. Personal muy agradable y cercano, instalaciones perfectas. Juan Miguel es un profesional."</p>
+        <div class="flex items-center gap-3 pt-2 border-t border-[#E9E5D9]"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="text-on-primary font-bold text-sm">J</span></div><div><p class="font-label-md text-on-surface text-sm">Jose Antonio Hernandez</p><p class="font-label-sm text-on-surface-variant text-xs">Google Maps</p></div></div>
+      </div>
+      <div class="flex-shrink-0 w-[320px] md:w-[360px] bg-surface rounded-xl p-6 border border-[#E9E5D9] tonal-shadow flex flex-col gap-4" aria-hidden="true">
+        <div class="flex items-center gap-1" style="color:#FBBC04"><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span></div>
+        <p class="font-body-md text-on-surface-variant italic leading-relaxed flex-1">"El sitio perfecto para mi beagle. Mi bigotitos se tira del coche en cuanto llegamos a la puerta. Hace dos años que llevo mi beagle, tanto de alojamiento como de peluquería, y para mí genial."</p>
+        <div class="flex items-center gap-3 pt-2 border-t border-[#E9E5D9]"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="text-on-primary font-bold text-sm">V</span></div><div><p class="font-label-md text-on-surface text-sm">Vicente Miguel Ros</p><p class="font-label-sm text-on-surface-variant text-xs">Google Maps · Local Guide</p></div></div>
+      </div>
+      <div class="flex-shrink-0 w-[320px] md:w-[360px] bg-surface rounded-xl p-6 border border-[#E9E5D9] tonal-shadow flex flex-col gap-4" aria-hidden="true">
+        <div class="flex items-center gap-1" style="color:#FBBC04"><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span></div>
+        <p class="font-body-md text-on-surface-variant italic leading-relaxed flex-1">"Profesionales y ante todo buenas personas. Instalaciones únicas idóneas para los perros. Calidad en el servicio y pasión por lo que hacen. Solo puedo decir todo 10."</p>
+        <div class="flex items-center gap-3 pt-2 border-t border-[#E9E5D9]"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="text-on-primary font-bold text-sm">F</span></div><div><p class="font-label-md text-on-surface text-sm">Francisco Alcaraz</p><p class="font-label-sm text-on-surface-variant text-xs">Google Maps</p></div></div>
+      </div>
+      <div class="flex-shrink-0 w-[320px] md:w-[360px] bg-surface rounded-xl p-6 border border-[#E9E5D9] tonal-shadow flex flex-col gap-4" aria-hidden="true">
+        <div class="flex items-center gap-1" style="color:#FBBC04"><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span></div>
+        <p class="font-body-md text-on-surface-variant italic leading-relaxed flex-1">"Me gusta mucho el centro. Trataron muy bien a mi perrita, además el paso por la peluquería súper bien. Me la dejaron súper limpia."</p>
+        <div class="flex items-center gap-3 pt-2 border-t border-[#E9E5D9]"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="text-on-primary font-bold text-sm">S</span></div><div><p class="font-label-md text-on-surface text-sm">Sarai Ayllon Abellan</p><p class="font-label-sm text-on-surface-variant text-xs">Google Maps · Local Guide</p></div></div>
+      </div>
+    </div>
+    </div>
+    <div class="text-center mt-8 px-margin-mobile md:px-margin-desktop">
+      <a href="https://www.google.com/maps/search/?api=1&query=Centro%20canino%20de%20lorca&query_place_id=ChIJBaYgWWjDZA0RA1d3LrAbdKk" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-secondary font-label-md font-bold hover:text-secondary-fixed-dim transition-colors">Ver todas las reseñas en Google <span class="material-symbols-outlined text-[18px]">open_in_new</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="w-full bg-surface py-20">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="text-center mb-10">
+      <h2 class="anim font-headline-lg text-primary mb-3">Preguntas frecuentes sobre la compra de un caniche gigante</h2>
+    </div>
+    <div class="max-w-2xl mx-auto flex flex-col gap-4">
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-background overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿Es el caniche gigante un perro difícil de cuidar?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">No es difícil, pero tampoco es un perro de adorno. Es muy listo, así que aprende rápido y disfruta trabajando contigo. Lo que necesita sí o sí: ejercicio, espacio y cortes de pelo periódicos. Si le das eso, es uno de los mejores perros de familia que existen.</div>
+      </details>
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-background overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿Qué documentación incluye la entrega?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">Microchip, cartilla con las vacunas al día, desparasitación, pasaporte y el informe clínico completo con todas las analíticas (parvo, giardia, coronavirus y serología). Todo en regla y en la mano el día que te llevas al perro.</div>
+      </details>
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-background overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿Puedo visitar el criadero antes de comprar?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">Claro. Quien sabe de esta raza siempre quiere ver al padre, a la madre y las instalaciones. Estamos en el Camino de los Valencianos, 24, en Lorca. Avísame y te enseño de dónde sale tu cachorro. Para vender, necesito tener al cliente delante.</div>
+      </details>
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-background overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿Con qué edad se entrega el cachorro?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">Se entrega cuando está sano, destetado, con sus primeras vacunas y desparasitado, y siempre con las analíticas hechas y negativas. Nunca antes de tiempo y nunca antes de pasar el protocolo sanitario. Si no está en condiciones, no sale.</div>
+      </details>
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-background overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿Aceptáis reservas con señal?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">Sí. Entras en la lista de espera de la próxima camada con una señal y, cuando nacen, te ayudamos a elegir el cachorro que mejor encaja contigo según su carácter. La compra se formaliza cuando está sano y listo para irse.</div>
+      </details>
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-background overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿Cómo es el primer baño y corte del cachorro?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">Aquí tienes una ventaja única: mi hijo, finalista en el Campeonato de Europa de peluquería canina, es especialista en caniche gigante. El primer corte se hace con calma para que el cachorro se acostumbre, y como comprador tienes acceso a peluquería de nivel competición en el mismo centro. Ningún otro criador te ofrece eso.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="w-full bg-background py-20">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="text-center mb-10">
+      <h2 class="anim font-headline-lg text-primary mb-3">¿Quieres un caniche gigante de verdad? Hablemos</h2>
+      <p class="anim delay-1 font-body-md text-on-surface-variant max-w-xl mx-auto">Una llamada o un WhatsApp y hablas directamente conmigo. Te cuento qué hay disponible y, si no hay nada ahora, te aviso en cuanto haya camada. Sin humo y sin compromiso.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
+      <div class="bg-primary rounded-2xl p-8 text-on-primary flex flex-col gap-5">
+      <a href="tel:+34670360676" class="flex items-center gap-4 hover:opacity-80 transition-opacity">
+        <span class="material-symbols-outlined text-secondary-container text-[24px]" style="font-variation-settings:'FILL' 1;">phone</span>
+        <div><p class="font-label-sm text-primary-fixed-dim uppercase tracking-wider">Teléfono</p><p class="font-body-md font-semibold">670 36 06 76</p></div>
+      </a>
+      <a href="https://wa.me/34670360676" target="_blank" rel="noopener" class="flex items-center gap-4 hover:opacity-80 transition-opacity">
+        <span class="material-symbols-outlined text-secondary-container text-[24px]" style="font-variation-settings:'FILL' 1;">chat</span>
+        <div><p class="font-label-sm text-primary-fixed-dim uppercase tracking-wider">WhatsApp</p><p class="font-body-md font-semibold">670 36 06 76</p></div>
+      </a>
+      <div class="flex items-start gap-4">
+        <span class="material-symbols-outlined text-secondary-container text-[24px]" style="font-variation-settings:'FILL' 1;">location_on</span>
+        <div><p class="font-label-sm text-primary-fixed-dim uppercase tracking-wider">Dónde estamos</p><p class="font-body-md font-semibold">Cam. de los Valencianos, 24<br>30813 Lorca, Murcia · Envíos a toda España</p></div>
+      </div>
+      <a href="https://wa.me/34670360676?text=Quiero%20un%20caniche%20gigante%2C%20%C2%BFqu%C3%A9%20hay%20disponible%3F" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white font-label-md font-bold px-6 py-3.5 rounded-lg hover:opacity-90 transition-opacity mt-2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.116 1.527 5.845L.057 23.5l5.773-1.517A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 01-5.031-1.385l-.361-.214-3.427.9.915-3.332-.235-.373A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+        Escríbeme por WhatsApp
+      </a>
+      </div>
+      <div class="rounded-2xl overflow-hidden tonal-shadow border border-[#E9E5D9] min-h-[360px]">
+        <iframe src="https://maps.google.com/maps?q=Centro+canino+de+lorca+Lorca+Murcia&z=15&output=embed&hl=es" width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Centro Canino de Lorca en Lorca, Murcia"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="w-full bg-primary py-10">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-6">
+    <div class="flex flex-col items-center md:items-start gap-1">
+      <span style="font-family:'Epilogue',sans-serif;font-weight:700;font-size:1.1rem;color:#ffffff;">Centro Canino de Lorca</span>
+      <span class="font-label-sm text-on-primary opacity-70">Adiestramiento · Residencia · Cría selectiva · Peluquería · Lorca, Murcia</span>
+    </div>
+    <nav class="flex flex-wrap justify-center gap-4 md:gap-gutter">
+      <a href="index.html" class="font-label-sm text-on-primary opacity-80 hover:opacity-100 transition-opacity">Inicio</a>
+      <a href="index.html#servicios" class="font-label-sm text-on-primary opacity-80 hover:opacity-100 transition-opacity">Servicios</a>
+      <a href="index.html#resenas" class="font-label-sm text-on-primary opacity-80 hover:opacity-100 transition-opacity">Reseñas</a>
+      <a href="#contacto" class="font-label-sm text-on-primary opacity-80 hover:opacity-100 transition-opacity">Contacto</a>
+    </nav>
+    <div class="font-body-md text-sm text-on-primary opacity-70 text-center md:text-right">© 2025 Centro Canino de Lorca · Lorca, Murcia</div>
+  </div>
+</footer>
+
+<a href="https://wa.me/34670360676" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp" class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-[0_4px_16px_rgba(0,0,0,0.2)] hover:scale-110 transition-transform">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.116 1.527 5.845L.057 23.5l5.773-1.517A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 01-5.031-1.385l-.361-.214-3.427.9.915-3.332-.235-.373A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+</a>
+
+<script>
+  document.getElementById('menuBtn').addEventListener('click', function(){ document.getElementById('mobileMenu').classList.toggle('hidden'); });
+  document.querySelectorAll('#mobileMenu a').forEach(function(a){ a.addEventListener('click', function(){ document.getElementById('mobileMenu').classList.add('hidden'); }); });
+  var observer = new IntersectionObserver(function(entries){ entries.forEach(function(e){ if(e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold:0.12 });
+  document.querySelectorAll('.anim').forEach(function(el){ observer.observe(el); });
+</script>
+
+</body>
+</html>

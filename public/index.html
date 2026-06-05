@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Adiestramiento canino en Lorca · Centro Canino de Lorca</title>
-  <meta name="description" content="Adiestramiento canino en Lorca, Murcia. Residencia, peluquería y adiestramiento con Juan Miguel. 5,0★ · 16 reseñas en Google. Instalaciones únicas, trato cercano. Llama al 670 36 06 76."/>
+  <title>Centro Canino de Lorca — Adiestramiento, residencia, cría y peluquería | 45 años</title>
+  <meta name="description" content="Centro canino en Lorca, Murcia. Adiestramiento, residencia, cría selectiva y peluquería con Juan Miguel. 45 años de experiencia, 5,0★ · 16 reseñas en Google. Todo para tu perro en un solo sitio. Llama al 670 36 06 76."/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
@@ -67,6 +67,9 @@
   }
   #reviewCarousel { animation: carousel-scroll 32s linear infinite; }
   #reviewCarousel:hover { animation-play-state: paused; }
+    @keyframes pawStep { 0%{opacity:0;} 12%{opacity:.5;} 45%{opacity:.5;} 70%{opacity:0;} 100%{opacity:0;} }
+    .paw-trail { position:absolute; inset:0; pointer-events:none; z-index:2; overflow:hidden; }
+    .paw-trail svg { position:absolute; width:30px; height:30px; opacity:0; fill:#ffffff; animation:pawStep 5s linear infinite; }
   </style>
 </head>
 <body class="bg-background">
@@ -79,7 +82,19 @@
       <span style="font-family:'Epilogue',sans-serif;font-weight:700;font-size:1.2rem;color:#059669;letter-spacing:-0.01em;">Centro Canino de Lorca</span>
     </a>
     <nav class="hidden md:flex items-center gap-6">
-      <a href="#servicios" class="font-label-md text-on-surface-variant hover:text-primary transition-colors">Servicios</a>
+      <div class="relative group">
+        <a href="#servicios" class="font-label-md text-on-surface-variant hover:text-primary transition-colors inline-flex items-center gap-1 cursor-pointer">Servicios<span class="material-symbols-outlined text-[16px]">expand_more</span></a>
+        <div class="absolute left-1/2 -translate-x-1/2 top-full pt-3 hidden group-hover:block z-50">
+          <div class="bg-surface rounded-xl border border-[#E9E5D9] shadow-[0_8px_24px_rgba(5,150,105,0.14)] py-2 w-72">
+            <a href="residencia-canina-lorca.html" class="flex items-center gap-3 px-4 py-2.5 hover:bg-background transition-colors"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">home</span><span class="font-label-md text-on-surface">Residencia canina</span></a>
+            <a href="adiestramiento-canino-lorca.html" class="flex items-center gap-3 px-4 py-2.5 hover:bg-background transition-colors"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">school</span><span class="font-label-md text-on-surface">Adiestramiento canino en Lorca</span></a>
+            <a href="adiestramiento-canino-online.html" class="flex items-center gap-3 px-4 py-2.5 hover:bg-background transition-colors"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">videocam</span><span class="font-label-md text-on-surface">Adiestramiento online</span></a>
+            <a href="cachorros-pastor-aleman-de-trabajo.html" class="flex items-center gap-3 px-4 py-2.5 hover:bg-background transition-colors"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">pets</span><span class="font-label-md text-on-surface">Cachorros Pastor Alemán</span></a>
+            <a href="cachorros-caniche-gigante.html" class="flex items-center gap-3 px-4 py-2.5 hover:bg-background transition-colors"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">pets</span><span class="font-label-md text-on-surface">Cachorros Caniche Gigante</span></a>
+            <a href="peluqueria-canina-lorca.html" class="flex items-center gap-3 px-4 py-2.5 hover:bg-background transition-colors"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">content_cut</span><span class="font-label-md text-on-surface">Peluquería canina</span></a>
+          </div>
+        </div>
+      </div>
       <a href="#nosotros" class="font-label-md text-on-surface-variant hover:text-primary transition-colors">Nosotros</a>
       <a href="#resenas" class="font-label-md text-on-surface-variant hover:text-primary transition-colors">Reseñas</a>
       <a href="#contacto" class="font-label-md text-on-surface-variant hover:text-primary transition-colors">Contacto</a>
@@ -95,8 +110,14 @@
     </button>
   </div>
   <div id="mobileMenu" class="hidden md:hidden bg-background border-t border-[#E9E5D9] px-margin-mobile py-4 flex flex-col gap-4">
-    <a href="#servicios" class="font-label-md text-on-surface-variant">Servicios</a>
-    <a href="#nosotros" class="font-label-md text-on-surface-variant">Nosotros</a>
+    <p class="font-label-sm text-on-surface-variant/60 uppercase tracking-wider pt-1">Servicios</p>
+    <a href="residencia-canina-lorca.html" class="font-label-md text-on-surface-variant pl-3">Residencia canina</a>
+    <a href="adiestramiento-canino-lorca.html" class="font-label-md text-on-surface-variant pl-3">Adiestramiento canino en Lorca</a>
+    <a href="adiestramiento-canino-online.html" class="font-label-md text-on-surface-variant pl-3">Adiestramiento online</a>
+    <a href="cachorros-pastor-aleman-de-trabajo.html" class="font-label-md text-on-surface-variant pl-3">Cachorros Pastor Alemán</a>
+    <a href="cachorros-caniche-gigante.html" class="font-label-md text-on-surface-variant pl-3">Cachorros Caniche Gigante</a>
+    <a href="peluqueria-canina-lorca.html" class="font-label-md text-on-surface-variant pl-3">Peluquería canina</a>
+    <a href="#nosotros" class="font-label-md text-on-surface-variant pt-1">Nosotros</a>
     <a href="#resenas" class="font-label-md text-on-surface-variant">Reseñas</a>
     <a href="#contacto" class="font-label-md text-on-surface-variant">Contacto</a>
     <a href="tel:+34670360676" class="inline-flex items-center gap-2 bg-primary text-on-primary font-label-md px-5 py-3 rounded-lg font-bold w-fit">
@@ -112,6 +133,21 @@
     alt="Adiestramiento canino en Lorca — Centro Canino de Lorca"
     class="absolute inset-0 w-full h-full object-cover"/>
   <div class="absolute inset-0" style="background:linear-gradient(to right, rgba(0,0,0,0.68) 0%, rgba(0,0,0,0.42) 55%, rgba(0,0,0,0.10) 100%);"></div>
+  <!-- Huellas dispersas animadas -->
+  <div class="paw-trail" aria-hidden="true">
+    <svg style="left:7%;top:20%;width:26px;height:26px;transform:rotate(12deg);animation-delay:0s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:21%;top:68%;width:34px;height:34px;transform:rotate(-16deg);animation-delay:.7s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:14%;top:44%;width:21px;height:21px;transform:rotate(26deg);animation-delay:1.3s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:37%;top:26%;width:30px;height:30px;transform:rotate(-8deg);animation-delay:.35s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:47%;top:64%;width:24px;height:24px;transform:rotate(18deg);animation-delay:1.6s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:61%;top:16%;width:34px;height:34px;transform:rotate(-22deg);animation-delay:1s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:71%;top:50%;width:27px;height:27px;transform:rotate(10deg);animation-delay:2.2s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:84%;top:24%;width:23px;height:23px;transform:rotate(-12deg);animation-delay:1.9s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:90%;top:62%;width:31px;height:31px;transform:rotate(22deg);animation-delay:.5s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:31%;top:85%;width:25px;height:25px;transform:rotate(-18deg);animation-delay:2.5s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:55%;top:84%;width:22px;height:22px;transform:rotate(8deg);animation-delay:1.15s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:78%;top:80%;width:29px;height:29px;transform:rotate(-25deg);animation-delay:.8s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+  </div>
   <div class="relative z-10 max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop py-20 md:py-28 flex items-center" style="min-height:560px;">
     <div class="w-full md:w-1/2 flex flex-col gap-6">
       <div class="flex items-center gap-2">
@@ -125,10 +161,10 @@
         <span class="font-label-sm text-white font-semibold">5,0 · 16 reseñas en Google</span>
       </div>
       <h1 class="font-headline-lg text-white">
-        Adiestramiento canino<br/>en Lorca, Murcia
+        Centro Canino de Lorca —<br/>todo para tu perro en un solo sitio
       </h1>
       <p class="font-body-md text-white/85 max-w-md">
-        Juan Miguel y su equipo llevan desde 2008 cuidando, adiestrando y mimando a los perros de Lorca. Adiestramiento, residencia y peluquería en instalaciones únicas.
+        45 años cuidando, adiestrando y mimando a los perros de Lorca. Adiestramiento, residencia, cría selectiva y peluquería con Juan Miguel, en instalaciones únicas.
       </p>
       <div class="flex flex-col sm:flex-row gap-3">
         <a href="tel:+34670360676" class="inline-flex items-center justify-center gap-2 bg-primary text-on-primary font-label-md font-bold px-6 py-3.5 rounded-lg hover:bg-surface-tint transition-colors" style="box-shadow:0 4px 16px rgba(5,150,105,0.4);">
@@ -171,7 +207,7 @@
         <p class="font-label-sm text-on-primary-container text-[11px] uppercase tracking-wider mt-1">Año de apertura</p>
       </div>
       <div>
-        <p class="font-headline-md text-[1.75rem] text-secondary-container font-bold">3</p>
+        <p class="font-headline-md text-[1.75rem] text-secondary-container font-bold">6</p>
         <p class="font-label-sm text-on-primary-container text-[11px] uppercase tracking-wider mt-1">Servicios · todo en uno</p>
       </div>
     </div>
@@ -183,26 +219,27 @@
   <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
     <div class="text-center mb-12">
       <h2 class="anim font-headline-lg text-primary mb-3">Nuestros servicios</h2>
-      <p class="anim delay-1 font-body-md text-on-surface-variant max-w-xl mx-auto">Todo lo que tu perro necesita en un mismo lugar. Adiestramiento, cuidado y bienestar en Lorca.</p>
+      <p class="anim delay-1 font-body-md text-on-surface-variant max-w-xl mx-auto">Todo lo que tu perro necesita en un mismo lugar. Adiestramiento, cuidado, cría selectiva y bienestar en Lorca.</p>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-      <div class="anim group relative overflow-hidden rounded-2xl tonal-shadow flex flex-col" style="min-height:380px;">
+      <a href="adiestramiento-canino-lorca.html" class="anim group relative overflow-hidden rounded-2xl tonal-shadow flex flex-col" style="min-height:360px;">
         <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHpQ8HnZGVRH7ujfrpw9CPnATZCvJGzPF25a1skNByRPqRg6cdnIJPStY_1RjJyK50bRIOOseM39ltTwS7W1c0_7CdBqfLxqk1lhamhXKGKjxMe7aG4H4qjCzJdbFq0btXuX3x3Tw=w1200-h900-k-no"
           alt="Adiestramiento canino Lorca" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
         <div class="absolute inset-0" style="background:linear-gradient(to top, rgba(5,150,105,0.92) 0%, rgba(5,150,105,0.78) 18%, rgba(5,150,105,0.35) 35%, transparent 50%);"></div>
         <div class="relative z-10 flex flex-col h-full p-6 gap-3">
           <div class="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(255,255,255,0.15);backdrop-filter:blur(4px);">
-            <span class="material-symbols-outlined text-[22px] text-white" style="font-variation-settings:'FILL' 1;">pets</span>
+            <span class="material-symbols-outlined text-[22px] text-white" style="font-variation-settings:'FILL' 1;">school</span>
           </div>
           <div class="mt-auto">
             <h3 class="font-headline-md text-[1.05rem] text-white mb-1">Adiestramiento canino</h3>
-            <p class="font-body-md text-[0.875rem] text-white/80 leading-relaxed">De la obediencia básica a programas avanzados. Juan Miguel trabaja con cada perro de forma individualizada para conseguir resultados duraderos.</p>
+            <p class="font-body-md text-[0.875rem] text-white/80 leading-relaxed">De la obediencia a la modificación de conducta. El 100% de los casos resueltos, con un método propio que no encontrarás en otro centro.</p>
+            <span class="inline-flex items-center gap-1 mt-3 font-label-md text-[13px] text-white">Ver servicio <span class="material-symbols-outlined text-[16px] transition-transform group-hover:translate-x-1">arrow_forward</span></span>
           </div>
         </div>
-      </div>
+      </a>
 
-      <div class="anim delay-1 group relative overflow-hidden rounded-2xl tonal-shadow flex flex-col" style="min-height:380px;">
+      <a href="residencia-canina-lorca.html" class="anim delay-1 group relative overflow-hidden rounded-2xl tonal-shadow flex flex-col" style="min-height:360px;">
         <img src="https://lh3.googleusercontent.com/p/AF1QipMeGBh_4sGVpb2eFTsYLbXSVFs8Gq2uxvwSLQ4L=w1200-h900-k-no"
           alt="Residencia canina Lorca" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
         <div class="absolute inset-0" style="background:linear-gradient(to top, rgba(5,150,105,0.92) 0%, rgba(5,150,105,0.78) 18%, rgba(5,150,105,0.35) 35%, transparent 50%);"></div>
@@ -212,12 +249,13 @@
           </div>
           <div class="mt-auto">
             <h3 class="font-headline-md text-[1.05rem] text-white mb-1">Residencia canina</h3>
-            <p class="font-body-md text-[0.875rem] text-white/80 leading-relaxed">Tu perro en las mejores manos cuando tú no puedes estar. Instalaciones únicas e idóneas para que se sienta como en casa.</p>
+            <p class="font-body-md text-[0.875rem] text-white/80 leading-relaxed">Tu perro en las mejores manos cuando tú no puedes estar. Más de 100 plazas, pero solo 10-15 a la vez. Donde los perros no quieren irse.</p>
+            <span class="inline-flex items-center gap-1 mt-3 font-label-md text-[13px] text-white">Ver servicio <span class="material-symbols-outlined text-[16px] transition-transform group-hover:translate-x-1">arrow_forward</span></span>
           </div>
         </div>
-      </div>
+      </a>
 
-      <div class="anim delay-2 group relative overflow-hidden rounded-2xl tonal-shadow flex flex-col" style="min-height:380px;">
+      <a href="peluqueria-canina-lorca.html" class="anim delay-2 group relative overflow-hidden rounded-2xl tonal-shadow flex flex-col" style="min-height:360px;">
         <img src="https://lh3.googleusercontent.com/p/AF1QipOF-6Nx8pLmZYQu90pesUOVn4DAnxpJnoj7gDfz=w1200-h900-k-no"
           alt="Peluquería canina Lorca" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
         <div class="absolute inset-0" style="background:linear-gradient(to top, rgba(5,150,105,0.92) 0%, rgba(5,150,105,0.78) 18%, rgba(5,150,105,0.35) 35%, transparent 50%);"></div>
@@ -227,10 +265,59 @@
           </div>
           <div class="mt-auto">
             <h3 class="font-headline-md text-[1.05rem] text-white mb-1">Peluquería canina</h3>
-            <p class="font-body-md text-[0.875rem] text-white/80 leading-relaxed">Baño, corte y arreglo con el mimo que tu perro merece. Los clientes repiten siempre: salen súper limpios y bien cuidados.</p>
+            <p class="font-body-md text-[0.875rem] text-white/80 leading-relaxed">Trabajo artesanal a tijera y stripping. Máximo dos perros al día. Peluquero 3º en el Campeonato de Europa, especialista en caniche gigante.</p>
+            <span class="inline-flex items-center gap-1 mt-3 font-label-md text-[13px] text-white">Ver servicio <span class="material-symbols-outlined text-[16px] transition-transform group-hover:translate-x-1">arrow_forward</span></span>
           </div>
         </div>
-      </div>
+      </a>
+
+      <a href="cachorros-pastor-aleman-de-trabajo.html" class="anim group relative overflow-hidden rounded-2xl tonal-shadow flex flex-col" style="min-height:360px;">
+        <img src="cluster-cachorros-pastor-aleman.png"
+          alt="Cachorros Pastor Alemán de trabajo Lorca" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
+        <div class="absolute inset-0" style="background:linear-gradient(to top, rgba(5,150,105,0.92) 0%, rgba(5,150,105,0.78) 18%, rgba(5,150,105,0.35) 35%, transparent 50%);"></div>
+        <div class="relative z-10 flex flex-col h-full p-6 gap-3">
+          <div class="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(255,255,255,0.15);backdrop-filter:blur(4px);">
+            <span class="material-symbols-outlined text-[22px] text-white" style="font-variation-settings:'FILL' 1;">pets</span>
+          </div>
+          <div class="mt-auto">
+            <h3 class="font-headline-md text-[1.05rem] text-white mb-1">Cachorros Pastor Alemán</h3>
+            <p class="font-body-md text-[0.875rem] text-white/80 leading-relaxed">Línea de trabajo, no de belleza. Genética seleccionada y protocolo sanitario completo: si no está sano, no te lo llevas. Envíos a toda España.</p>
+            <span class="inline-flex items-center gap-1 mt-3 font-label-md text-[13px] text-white">Ver servicio <span class="material-symbols-outlined text-[16px] transition-transform group-hover:translate-x-1">arrow_forward</span></span>
+          </div>
+        </div>
+      </a>
+
+      <a href="cachorros-caniche-gigante.html" class="anim delay-1 group relative overflow-hidden rounded-2xl tonal-shadow flex flex-col" style="min-height:360px;">
+        <img src="cachorro-caniche-gigante.webp"
+          alt="Cachorros Caniche Gigante Lorca" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
+        <div class="absolute inset-0" style="background:linear-gradient(to top, rgba(5,150,105,0.92) 0%, rgba(5,150,105,0.78) 18%, rgba(5,150,105,0.35) 35%, transparent 50%);"></div>
+        <div class="relative z-10 flex flex-col h-full p-6 gap-3">
+          <div class="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(255,255,255,0.15);backdrop-filter:blur(4px);">
+            <span class="material-symbols-outlined text-[22px] text-white" style="font-variation-settings:'FILL' 1;">pets</span>
+          </div>
+          <div class="mt-auto">
+            <h3 class="font-headline-md text-[1.05rem] text-white mb-1">Cachorros Caniche Gigante</h3>
+            <p class="font-body-md text-[0.875rem] text-white/80 leading-relaxed">Criador especializado, único referente del sur de España. Salud certificada y peluquería de competición en casa. Envíos a toda España.</p>
+            <span class="inline-flex items-center gap-1 mt-3 font-label-md text-[13px] text-white">Ver servicio <span class="material-symbols-outlined text-[16px] transition-transform group-hover:translate-x-1">arrow_forward</span></span>
+          </div>
+        </div>
+      </a>
+
+      <a href="adiestramiento-canino-online.html" class="anim delay-2 group relative overflow-hidden rounded-2xl tonal-shadow flex flex-col" style="min-height:360px;">
+        <img src="adiestramiento-online.webp"
+          alt="Adiestramiento canino online por videollamada" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
+        <div class="absolute inset-0" style="background:linear-gradient(to top, rgba(5,150,105,0.92) 0%, rgba(5,150,105,0.78) 18%, rgba(5,150,105,0.35) 35%, transparent 50%);"></div>
+        <div class="relative z-10 flex flex-col h-full p-6 gap-3">
+          <div class="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(255,255,255,0.15);backdrop-filter:blur(4px);">
+            <span class="material-symbols-outlined text-[22px] text-white" style="font-variation-settings:'FILL' 1;">videocam</span>
+          </div>
+          <div class="mt-auto">
+            <h3 class="font-headline-md text-[1.05rem] text-white mb-1">Adiestramiento online</h3>
+            <p class="font-body-md text-[0.875rem] text-white/80 leading-relaxed">Consulta de conducta por videollamada desde cualquier punto de España. Un diagnóstico real de tu caso, no un curso enlatado.</p>
+            <span class="inline-flex items-center gap-1 mt-3 font-label-md text-[13px] text-white">Ver servicio <span class="material-symbols-outlined text-[16px] transition-transform group-hover:translate-x-1">arrow_forward</span></span>
+          </div>
+        </div>
+      </a>
 
     </div>
   </div>
@@ -566,6 +653,58 @@
   </div>
 </section>
 
+<!-- ════════════════════════════ PREGUNTAS FRECUENTES ════════════════════════════ -->
+<section class="w-full bg-background py-20">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="text-center mb-10">
+      <h2 class="anim font-headline-lg text-primary mb-3">Preguntas frecuentes</h2>
+      <p class="anim delay-1 font-body-md text-on-surface-variant max-w-xl mx-auto">Todo lo que la gente nos pregunta antes de venir al Centro Canino de Lorca.</p>
+    </div>
+    <div class="max-w-2xl mx-auto flex flex-col gap-4">
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-surface overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿Qué servicios ofrece el Centro Canino de Lorca?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">En el Centro Canino de Lorca hacemos cuatro cosas y las hacemos bien: residencia canina, adiestramiento y modificación de conducta, cría selectiva de pastor alemán de trabajo y caniche gigante, y peluquería canina artesanal. También damos consulta de conducta online por videollamada para quien está fuera de la comarca. Todo en el mismo sitio, en Lorca (Murcia), con un equipo que ya conoce a tu perro de un servicio a otro. Llevamos así más de 45 años.</div>
+      </details>
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-surface overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿Dónde está el Centro Canino de Lorca?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">Estamos en el Camino de los Valencianos, 24, 30813 Lorca (Murcia), en plena comarca lorquina, con instalaciones propias y espacio de sobra para los perros. Atendemos a clientes de Lorca y de toda la comarca —Totana, Águilas, Puerto Lumbreras, Alhama— y, para la cría y la consulta online, a familias de toda España. Lo más fácil es llamarnos o escribirnos al 670 36 06 76 y te decimos cómo llegar.</div>
+      </details>
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-surface overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿Cuánta experiencia tiene Juan Miguel?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">Juan Miguel lleva toda la vida con perros: tiene 67 años y los 67 los ha pasado manejando, estudiando y resolviendo. Son 45 años de experiencia real, no de teoría, trabajando con familias, cine, televisión y seguridad. En el Centro Canino de Lorca esa trayectoria se nota en cada servicio. La confianza con los perros no se compra ni se improvisa: se gana con décadas, y por eso en Lorca somos el sitio de referencia para muchas familias de la comarca.</div>
+      </details>
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-surface overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿Atendéis a gente de fuera de Lorca?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">Sí. La residencia, el adiestramiento y la peluquería son sobre todo para Lorca y su comarca —Totana, Águilas, Puerto Lumbreras, Alhama—, y para la residencia hacemos recogida sin cargo hasta 20-25 km. La cría de pastor alemán de trabajo y caniche gigante la enviamos a toda España, y la consulta de conducta online por videollamada no tiene límite geográfico. Vivas donde vivas, escríbenos al 670 36 06 76 y vemos cómo ayudarte.</div>
+      </details>
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-surface overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿Cómo pido cita o información?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">Lo más rápido es llamar o escribir por WhatsApp al 670 36 06 76. Te respondemos nosotros directamente —nada de bots ni formularios largos— y te decimos disponibilidad, precio y cómo seguir. Para adiestramiento o peluquería nos gusta saber antes algo de tu perro (raza, edad, qué necesita) para orientarte bien. Estamos en Lorca (Murcia) y contestamos rápido. También nos encuentras en Facebook como Centro Canino Lorca.</div>
+      </details>
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-surface overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿Qué hace diferente al Centro Canino de Lorca?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">Que no somos una fábrica de perros. Cada animal recibe trato personalizado y lo lleva quien de verdad sabe. Tenemos 45 años de experiencia, tasa de éxito del 100% en adiestramiento, un protocolo sanitario serio en la cría y un peluquero finalista del Campeonato de Europa. Y, sobre todo, vocación: esto es un estilo de vida, no un negocio de volumen. En Lorca lo resumen nuestras 16 reseñas en Google, todas de 5 estrellas y sin haberlas pedido.</div>
+      </details>
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-surface overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿Trabajáis con todas las razas y edades?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">Sí, con todas. En el adiestramiento y la residencia del Centro Canino de Lorca atendemos desde cachorros de pocas semanas hasta perros mayores, y de cualquier raza —tenemos clientes con dóberman, pastor belga malinois, beagle y muchos más—. Cada perro es distinto, así que adaptamos el trato a su carácter, su edad y lo que necesita. Lo único que pedimos para la residencia es la cartilla de vacunación al día y el antiparasitario. Estamos en Lorca, Murcia.</div>
+      </details>
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-surface overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿Tenéis referencias o reseñas?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">Tenemos 16 reseñas en Google, todas de 5 estrellas, y no hemos pedido ni una. Los clientes hablan de instalaciones únicas, trato cercano y, sobre todo, de que los perros están a gusto —hay quien dice que su perro se tira del coche en cuanto llega a la puerta—. En la comarca de Lorca funcionamos mucho por el boca a boca: familias que llevan años con nosotros y nos recomiendan. Puedes leerlas todas buscando Centro Canino de Lorca en Google Maps.</div>
+      </details>
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-surface overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿Puedo ir a conocer las instalaciones antes?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">Claro, y lo recomendamos. En el Centro Canino de Lorca puedes venir a ver dónde va a estar tu perro antes de dejarlo, sobre todo si es la primera vez o si es un perro nervioso. Nosotros vivimos en la misma parcela, así que verlo todo de primera mano es lo normal. Llama al 670 36 06 76 y quedamos. Estamos en el Camino de los Valencianos, 24, en Lorca (Murcia).</div>
+      </details>
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-surface overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿Cómo os contacto rápido?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">Por teléfono o WhatsApp al 670 36 06 76 — es la vía más rápida y respondemos nosotros mismos. También estamos en Facebook como Centro Canino Lorca. Si prefieres venir, estamos en el Camino de los Valencianos, 24, 30813 Lorca (Murcia). Atendemos a toda la comarca lorquina y, para cría y consulta online, a toda España. Cuéntanos qué necesita tu perro y te orientamos sin compromiso.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
 <!-- ════════════════════════════ CONTACTO + MAPA ════════════════════════════ -->
 <section id="contacto" class="w-full bg-surface py-20">
   <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
@@ -698,6 +837,94 @@
     const msg  = document.getElementById('waMsg').value;
     window.open('https://wa.me/34670360676?text=' + encodeURIComponent('Hola, soy ' + name + '. ' + msg), '_blank');
   }
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué servicios ofrece el Centro Canino de Lorca?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En el Centro Canino de Lorca hacemos cuatro cosas y las hacemos bien: residencia canina, adiestramiento y modificación de conducta, cría selectiva de pastor alemán de trabajo y caniche gigante, y peluquería canina artesanal. También damos consulta de conducta online por videollamada para quien está fuera de la comarca. Todo en el mismo sitio, en Lorca (Murcia), con un equipo que ya conoce a tu perro de un servicio a otro. Llevamos así más de 45 años."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Dónde está el Centro Canino de Lorca?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Estamos en el Camino de los Valencianos, 24, 30813 Lorca (Murcia), en plena comarca lorquina, con instalaciones propias y espacio de sobra para los perros. Atendemos a clientes de Lorca y de toda la comarca —Totana, Águilas, Puerto Lumbreras, Alhama— y, para la cría y la consulta online, a familias de toda España. Lo más fácil es llamarnos o escribirnos al 670 36 06 76 y te decimos cómo llegar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánta experiencia tiene Juan Miguel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Juan Miguel lleva toda la vida con perros: tiene 67 años y los 67 los ha pasado manejando, estudiando y resolviendo. Son 45 años de experiencia real, no de teoría, trabajando con familias, cine, televisión y seguridad. En el Centro Canino de Lorca esa trayectoria se nota en cada servicio. La confianza con los perros no se compra ni se improvisa: se gana con décadas, y por eso en Lorca somos el sitio de referencia para muchas familias de la comarca."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Atendéis a gente de fuera de Lorca?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. La residencia, el adiestramiento y la peluquería son sobre todo para Lorca y su comarca —Totana, Águilas, Puerto Lumbreras, Alhama—, y para la residencia hacemos recogida sin cargo hasta 20-25 km. La cría de pastor alemán de trabajo y caniche gigante la enviamos a toda España, y la consulta de conducta online por videollamada no tiene límite geográfico. Vivas donde vivas, escríbenos al 670 36 06 76 y vemos cómo ayudarte."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo pido cita o información?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lo más rápido es llamar o escribir por WhatsApp al 670 36 06 76. Te respondemos nosotros directamente —nada de bots ni formularios largos— y te decimos disponibilidad, precio y cómo seguir. Para adiestramiento o peluquería nos gusta saber antes algo de tu perro (raza, edad, qué necesita) para orientarte bien. Estamos en Lorca (Murcia) y contestamos rápido. También nos encuentras en Facebook como Centro Canino Lorca."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué hace diferente al Centro Canino de Lorca?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Que no somos una fábrica de perros. Cada animal recibe trato personalizado y lo lleva quien de verdad sabe. Tenemos 45 años de experiencia, tasa de éxito del 100% en adiestramiento, un protocolo sanitario serio en la cría y un peluquero finalista del Campeonato de Europa. Y, sobre todo, vocación: esto es un estilo de vida, no un negocio de volumen. En Lorca lo resumen nuestras 16 reseñas en Google, todas de 5 estrellas y sin haberlas pedido."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Trabajáis con todas las razas y edades?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, con todas. En el adiestramiento y la residencia del Centro Canino de Lorca atendemos desde cachorros de pocas semanas hasta perros mayores, y de cualquier raza —tenemos clientes con dóberman, pastor belga malinois, beagle y muchos más—. Cada perro es distinto, así que adaptamos el trato a su carácter, su edad y lo que necesita. Lo único que pedimos para la residencia es la cartilla de vacunación al día y el antiparasitario. Estamos en Lorca, Murcia."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Tenéis referencias o reseñas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tenemos 16 reseñas en Google, todas de 5 estrellas, y no hemos pedido ni una. Los clientes hablan de instalaciones únicas, trato cercano y, sobre todo, de que los perros están a gusto —hay quien dice que su perro se tira del coche en cuanto llega a la puerta—. En la comarca de Lorca funcionamos mucho por el boca a boca: familias que llevan años con nosotros y nos recomiendan. Puedes leerlas todas buscando Centro Canino de Lorca en Google Maps."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo ir a conocer las instalaciones antes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Claro, y lo recomendamos. En el Centro Canino de Lorca puedes venir a ver dónde va a estar tu perro antes de dejarlo, sobre todo si es la primera vez o si es un perro nervioso. Nosotros vivimos en la misma parcela, así que verlo todo de primera mano es lo normal. Llama al 670 36 06 76 y quedamos. Estamos en el Camino de los Valencianos, 24, en Lorca (Murcia)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo os contacto rápido?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Por teléfono o WhatsApp al 670 36 06 76 — es la vía más rápida y respondemos nosotros mismos. También estamos en Facebook como Centro Canino Lorca. Si prefieres venir, estamos en el Camino de los Valencianos, 24, 30813 Lorca (Murcia). Atendemos a toda la comarca lorquina y, para cría y consulta online, a toda España. Cuéntanos qué necesita tu perro y te orientamos sin compromiso."
+      }
+    }
+  ]
+}
 </script>
 </body>
 </html>

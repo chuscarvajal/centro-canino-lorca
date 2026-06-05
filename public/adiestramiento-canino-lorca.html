@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adiestramiento Canino en Lorca — el 100% de los casos resueltos | Centro Canino de Lorca</title>
+  <meta name="description" content="Adiestramiento canino en Lorca con el 100% de los casos resueltos. 45 años de experiencia, método conductista propio y un diagnóstico previo único: te digo si el problema es el perro o el manejo. 5 clases por 250€. Llama al 670 36 06 76.">
+  <link rel="canonical" href="https://centro-canino-lorca.vercel.app/adiestramiento-canino-lorca">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: {
+          primary:'#059669','on-primary':'#ffffff','primary-fixed-dim':'#a7f3d0','surface-tint':'#047857',
+          'secondary-container':'#fea619','on-secondary-container':'#3b1f00','on-primary-container':'#d1fae5',
+          background:'#f9f7f2',surface:'#ffffff','on-surface':'#1a1a1a','on-surface-variant':'#4a4a4a',
+          secondary:'#fea619','secondary-fixed-dim':'#fbbf24',
+        },
+        fontFamily:{ sans:['Inter','sans-serif'], display:['Epilogue','sans-serif'] },
+        maxWidth:{ 'container-max-width':'1200px' },
+        spacing:{ 'margin-mobile':'1.25rem','margin-desktop':'2.5rem',gutter:'1.5rem' },
+      } }
+    }
+  </script>
+  <style>
+    .font-headline-lg { font-family:'Epilogue',sans-serif; font-size:clamp(1.75rem,4vw,2.5rem); font-weight:700; line-height:1.15; letter-spacing:-0.03em; }
+    .font-headline-md { font-family:'Epilogue',sans-serif; font-size:1.375rem; font-weight:700; line-height:1.2; letter-spacing:-0.02em; }
+    .font-body-md     { font-family:'Inter',sans-serif; font-size:1rem; font-weight:400; line-height:1.7; }
+    .font-label-md    { font-family:'Inter',sans-serif; font-size:0.9375rem; font-weight:600; }
+    .font-label-sm    { font-family:'Inter',sans-serif; font-size:0.75rem; font-weight:600; }
+    .tonal-shadow       { box-shadow:0 4px 8px rgba(5,150,105,0.04),0 1px 3px rgba(5,150,105,0.06); }
+    .tonal-shadow-hover { box-shadow:0 8px 16px rgba(5,150,105,0.08),0 2px 6px rgba(5,150,105,0.08); }
+    .anim { opacity:0; transform:translateY(16px); transition:opacity .55s ease, transform .55s ease; }
+    .anim.anim-slide-l { transform:translateX(-20px); } .anim.anim-slide-r { transform:translateX(20px); }
+    .anim.visible { opacity:1; transform:none; }
+    .delay-1{transition-delay:.1s;}.delay-2{transition-delay:.2s;}.delay-3{transition-delay:.3s;}
+    blockquote.quote-block { border-left:3px solid #059669; padding:1rem 1.25rem; background:rgba(5,150,105,0.05); border-radius:0 12px 12px 0; font-style:italic; }
+    @keyframes carousel-scroll { 0%{transform:translateX(0);} 100%{transform:translateX(-50%);} }
+    #reviewCarousel { animation:carousel-scroll 36s linear infinite; }
+    #reviewCarousel:hover { animation-play-state:paused; }
+    @keyframes pawStep { 0%{opacity:0;} 12%{opacity:.5;} 45%{opacity:.5;} 70%{opacity:0;} 100%{opacity:0;} }
+    .paw-trail { position:absolute; inset:0; pointer-events:none; z-index:2; overflow:hidden; }
+    .paw-trail svg { position:absolute; width:30px; height:30px; opacity:0; fill:#ffffff; animation:pawStep 5s linear infinite; }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+
+<!-- NAV -->
+<header class="sticky top-0 z-50 w-full bg-background/95 backdrop-blur border-b border-[#E9E5D9]" style="box-shadow:0 1px 8px rgba(5,150,105,0.06);">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop h-16 flex items-center justify-between gap-4">
+    <a href="index.html" class="flex items-center gap-2 flex-shrink-0">
+      <span class="material-symbols-outlined text-primary text-[22px]" style="font-variation-settings:'FILL' 1;">pets</span>
+      <span style="font-family:'Epilogue',sans-serif;font-weight:700;font-size:1.2rem;color:#059669;letter-spacing:-0.01em;">Centro Canino de Lorca</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-6">
+      <div class="relative group">
+        <a href="index.html#servicios" class="font-label-md text-on-surface-variant hover:text-primary transition-colors inline-flex items-center gap-1 cursor-pointer">Servicios<span class="material-symbols-outlined text-[16px]">expand_more</span></a>
+        <div class="absolute left-1/2 -translate-x-1/2 top-full pt-3 hidden group-hover:block z-50">
+          <div class="bg-surface rounded-xl border border-[#E9E5D9] shadow-[0_8px_24px_rgba(5,150,105,0.14)] py-2 w-72">
+            <a href="residencia-canina-lorca.html" class="flex items-center gap-3 px-4 py-2.5 hover:bg-background transition-colors"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">home</span><span class="font-label-md text-on-surface">Residencia canina</span></a>
+            <a href="adiestramiento-canino-lorca.html" class="flex items-center gap-3 px-4 py-2.5 hover:bg-background transition-colors"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">school</span><span class="font-label-md text-on-surface">Adiestramiento canino en Lorca</span></a>
+            <a href="adiestramiento-canino-online.html" class="flex items-center gap-3 px-4 py-2.5 hover:bg-background transition-colors"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">videocam</span><span class="font-label-md text-on-surface">Adiestramiento online</span></a>
+            <a href="cachorros-pastor-aleman-de-trabajo.html" class="flex items-center gap-3 px-4 py-2.5 hover:bg-background transition-colors"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">pets</span><span class="font-label-md text-on-surface">Cachorros Pastor Alemán</span></a>
+            <a href="cachorros-caniche-gigante.html" class="flex items-center gap-3 px-4 py-2.5 hover:bg-background transition-colors"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">pets</span><span class="font-label-md text-on-surface">Cachorros Caniche Gigante</span></a>
+            <a href="peluqueria-canina-lorca.html" class="flex items-center gap-3 px-4 py-2.5 hover:bg-background transition-colors"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">content_cut</span><span class="font-label-md text-on-surface">Peluquería canina</span></a>
+          </div>
+        </div>
+      </div>
+      <a href="index.html#nosotros" class="font-label-md text-on-surface-variant hover:text-primary transition-colors">Nosotros</a>
+      <a href="index.html#resenas" class="font-label-md text-on-surface-variant hover:text-primary transition-colors">Reseñas</a>
+      <a href="#contacto" class="font-label-md text-on-surface-variant hover:text-primary transition-colors">Contacto</a>
+      <a href="tel:+34670360676" class="inline-flex items-center gap-2 bg-primary text-on-primary font-label-md px-5 py-2.5 rounded-lg font-bold hover:bg-surface-tint transition-colors tonal-shadow tonal-shadow-hover">
+        <span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">phone</span>670 36 06 76
+      </a>
+    </nav>
+    <button id="menuBtn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Abrir menú">
+      <span class="w-5 h-0.5 bg-on-surface block"></span><span class="w-5 h-0.5 bg-on-surface block"></span><span class="w-5 h-0.5 bg-on-surface block"></span>
+    </button>
+  </div>
+  <div id="mobileMenu" class="hidden md:hidden bg-background border-t border-[#E9E5D9] px-margin-mobile py-4 flex flex-col gap-4">
+    <p class="font-label-sm text-on-surface-variant/60 uppercase tracking-wider pt-1">Servicios</p>
+    <a href="residencia-canina-lorca.html" class="font-label-md text-on-surface-variant pl-3">Residencia canina</a>
+    <a href="adiestramiento-canino-lorca.html" class="font-label-md text-on-surface-variant pl-3">Adiestramiento canino en Lorca</a>
+    <a href="adiestramiento-canino-online.html" class="font-label-md text-on-surface-variant pl-3">Adiestramiento online</a>
+    <a href="cachorros-pastor-aleman-de-trabajo.html" class="font-label-md text-on-surface-variant pl-3">Cachorros Pastor Alemán</a>
+    <a href="cachorros-caniche-gigante.html" class="font-label-md text-on-surface-variant pl-3">Cachorros Caniche Gigante</a>
+    <a href="peluqueria-canina-lorca.html" class="font-label-md text-on-surface-variant pl-3">Peluquería canina</a>
+    <a href="index.html#nosotros" class="font-label-md text-on-surface-variant pt-1">Nosotros</a>
+    <a href="index.html#resenas" class="font-label-md text-on-surface-variant">Reseñas</a>
+    <a href="#contacto" class="font-label-md text-on-surface-variant">Contacto</a>
+    <a href="tel:+34670360676" class="inline-flex items-center gap-2 bg-primary text-on-primary font-label-md px-5 py-3 rounded-lg font-bold w-fit"><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">phone</span>670 36 06 76</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="w-full relative overflow-hidden" style="min-height:580px;">
+  <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHpQ8HnZGVRH7ujfrpw9CPnATZCvJGzPF25a1skNByRPqRg6cdnIJPStY_1RjJyK50bRIOOseM39ltTwS7W1c0_7CdBqfLxqk1lhamhXKGKjxMe7aG4H4qjCzJdbFq0btXuX3x3Tw=w1200-h900-k-no" alt="Adiestramiento canino en Lorca — Centro Canino de Lorca" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0" style="background:linear-gradient(to right, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0.5) 55%, rgba(0,0,0,0.14) 100%);"></div>
+  <!-- Huellas dispersas animadas -->
+  <div class="paw-trail" aria-hidden="true">
+    <svg style="left:7%;top:20%;width:26px;height:26px;transform:rotate(12deg);animation-delay:0s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:21%;top:68%;width:34px;height:34px;transform:rotate(-16deg);animation-delay:.7s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:14%;top:44%;width:21px;height:21px;transform:rotate(26deg);animation-delay:1.3s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:37%;top:26%;width:30px;height:30px;transform:rotate(-8deg);animation-delay:.35s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:47%;top:64%;width:24px;height:24px;transform:rotate(18deg);animation-delay:1.6s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:61%;top:16%;width:34px;height:34px;transform:rotate(-22deg);animation-delay:1s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:71%;top:50%;width:27px;height:27px;transform:rotate(10deg);animation-delay:2.2s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:84%;top:24%;width:23px;height:23px;transform:rotate(-12deg);animation-delay:1.9s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:90%;top:62%;width:31px;height:31px;transform:rotate(22deg);animation-delay:.5s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:31%;top:85%;width:25px;height:25px;transform:rotate(-18deg);animation-delay:2.5s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:55%;top:84%;width:22px;height:22px;transform:rotate(8deg);animation-delay:1.15s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+    <svg style="left:78%;top:80%;width:29px;height:29px;transform:rotate(-25deg);animation-delay:.8s" viewBox="0 0 64 64"><ellipse cx="20" cy="16" rx="6" ry="8"/><ellipse cx="44" cy="16" rx="6" ry="8"/><ellipse cx="9" cy="33" rx="6" ry="7"/><ellipse cx="55" cy="33" rx="6" ry="7"/><path d="M16 44c0-9 8-14 16-14s16 5 16 14-8 12-16 12-16-3-16-12z"/></svg>
+  </div>
+  <div class="relative z-10 max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop pt-8">
+    <nav class="flex items-center gap-2 text-white/60 font-label-sm text-xs">
+      <a href="index.html" class="hover:text-white transition-colors">Centro Canino de Lorca</a>
+      <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+      <span class="text-white/90">Adiestramiento canino</span>
+    </nav>
+  </div>
+  <div class="relative z-10 max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop py-16 md:py-24 flex items-center" style="min-height:520px;">
+    <div class="w-full md:w-1/2 flex flex-col gap-6">
+      <div class="flex items-center gap-2">
+        <div class="flex items-center gap-0.5" style="color:#FBBC04">
+          <span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span>
+        </div>
+        <span class="font-label-sm text-white font-semibold">5,0 · 16 reseñas en Google</span>
+      </div>
+      <h1 class="font-headline-lg text-white">Adiestramiento canino en Lorca — el 100% de los casos resueltos en 5 clases</h1>
+      <p class="font-body-md text-white/85 max-w-md">
+        Si son perros normales, el 100% de los casos los he resuelto. No es marketing: son 45 años entendiendo cómo funciona el perro y un método conductista que no vas a encontrar en ningún otro centro de la comarca. Cuéntame qué hace tu perro y empezamos.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3">
+        <a href="#programa" class="inline-flex items-center justify-center gap-2 bg-primary text-on-primary font-label-md font-bold px-6 py-3.5 rounded-lg hover:bg-surface-tint transition-colors" style="box-shadow:0 4px 16px rgba(5,150,105,0.4);">
+          <span class="material-symbols-outlined text-[20px]" style="font-variation-settings:'FILL' 1;">checklist</span>Ver el programa
+        </a>
+        <a href="https://wa.me/34670360676?text=Hola%20Juan%20Miguel%2C%20quiero%20contarte%20qu%C3%A9%20hace%20mi%20perro" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white font-label-md font-bold px-6 py-3.5 rounded-lg hover:opacity-90 transition-opacity">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.116 1.527 5.845L.057 23.5l5.773-1.517A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 01-5.031-1.385l-.361-.214-3.427.9.915-3.332-.235-.373A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+          Cuéntame tu caso
+        </a>
+      </div>
+      <div class="flex flex-wrap gap-2 mt-1">
+        <span class="inline-flex items-center gap-1.5 font-label-md text-[13px] px-3 py-1.5 rounded-full font-semibold" style="background:rgba(255,255,255,0.18);backdrop-filter:blur(6px);color:#fff;"><span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">verified</span>100% de los casos resueltos</span>
+        <span class="inline-flex items-center gap-1.5 font-label-md text-[13px] px-3 py-1.5 rounded-full font-semibold" style="background:rgba(254,166,25,0.22);backdrop-filter:blur(6px);color:#fea619;"><span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">psychology</span>Método conductista propio</span>
+        <span class="inline-flex items-center gap-1.5 font-label-md text-[13px] px-3 py-1.5 rounded-full font-semibold" style="background:rgba(255,255,255,0.18);backdrop-filter:blur(6px);color:#fff;"><span class="material-symbols-outlined text-[15px]" style="font-variation-settings:'FILL' 1;">family_restroom</span>Especializado en familias</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="w-full py-8" style="background:linear-gradient(135deg,#047857 0%,#059669 100%);">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div><p class="font-headline-md text-[1.75rem] text-secondary-container font-bold">100%</p><p class="font-label-sm text-on-primary-container text-[11px] uppercase tracking-wider mt-1">De los casos resueltos</p></div>
+      <div><p class="font-headline-md text-[1.75rem] text-secondary-container font-bold">45 años</p><p class="font-label-sm text-on-primary-container text-[11px] uppercase tracking-wider mt-1">Resolviendo conducta</p></div>
+      <div><p class="font-headline-md text-[1.75rem] text-secondary-container font-bold">5 clases</p><p class="font-label-sm text-on-primary-container text-[11px] uppercase tracking-wider mt-1">2h cada una · 250€</p></div>
+      <div><p class="font-headline-md text-[1.75rem] text-secondary-container font-bold">5,0★</p><p class="font-label-sm text-on-primary-container text-[11px] uppercase tracking-wider mt-1">16 reseñas en Google</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- H2 #1: Adiestrador 45 años -->
+<section class="w-full py-20 bg-surface">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="flex flex-col md:flex-row items-center gap-12">
+      <div class="anim anim-slide-l w-full md:w-1/2 flex flex-col gap-6">
+        <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-widest" style="background:rgba(5,150,105,0.10);color:#059669;letter-spacing:0.12em;">Quién está detrás</span>
+        <h2 class="font-headline-lg text-primary">Adiestrador de perros en Lorca con 45 años — y un método que ningún otro centro de la comarca tiene</h2>
+        <p class="font-body-md text-on-surface-variant leading-relaxed">
+          «He dedicado la vida a esto. Tengo 67 años y los 67 los he pasado manejando perros, estudiando y resolviendo.» No vengo de un cursillo: trabajo con familias —no con deportistas ni con instituciones— porque lo que me interesa es que tú y tu perro conviváis bien. Y antes de tocar un solo ejercicio, hago algo que casi nadie hace: un diagnóstico de verdad.
+        </p>
+        <div class="flex flex-col gap-5">
+          <div class="flex gap-4">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(5,150,105,0.10);"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">psychology_alt</span></div>
+            <div><h3 class="font-headline-md text-[1rem] text-on-surface mb-1">Etólogo canino en Lorca — entendemos al perro antes de intentar corregirlo</h3><p class="font-body-md text-on-surface-variant text-[0.9rem]">El "adiestramiento positivo" genérico corrige el síntoma; yo voy a la causa. Etología (cómo funciona el perro desde su naturaleza) más conductismo (cómo se forman y se cambian las conductas). «Para cambiar la conducta, necesitas entrar en su mundo y saber cómo ellos funcionan.» Por eso funciona cuando lo demás no ha dado resultado.</p></div>
+          </div>
+          <div class="flex gap-4">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(5,150,105,0.10);"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">manage_search</span></div>
+            <div><h3 class="font-headline-md text-[1rem] text-on-surface mb-1">El diagnóstico previo — ¿el problema es el perro o el manejo? Una semana lo desvela</h3><p class="font-body-md text-on-surface-variant text-[0.9rem]">Esto no lo ofrece nadie en la comarca: déjame el perro una semana en la residencia, normalizo el trato y te digo de dónde viene de verdad el problema. Normalmente es de manejo. Es el paso que resuelve la duda que llevas meses sin poder responder solo.</p></div>
+          </div>
+        </div>
+        <blockquote class="quote-block font-body-md text-on-surface-variant">
+          «Cuando yo tenga el perro en una semana y normalice el trato, te diré si el perro tiene algún problema o el problema es tuyo. Normalmente el problema es de manejo.»
+          <footer class="mt-2 font-label-md text-primary not-italic">— Juan Miguel · 45 años con perros</footer>
+        </blockquote>
+      </div>
+      <div class="anim anim-slide-r delay-1 w-full md:w-1/2">
+        <img src="https://lh3.googleusercontent.com/p/AF1QipOF-6Nx8pLmZYQu90pesUOVn4DAnxpJnoj7gDfz=w1200-h900-k-no" alt="Juan Miguel, adiestrador y etólogo canino en Lorca" class="rounded-2xl w-full h-[420px] object-cover shadow-[0_4px_24px_rgba(5,150,105,0.10)] border border-[#E9E5D9]">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- H2 #2: El programa de 5 clases -->
+<section id="programa" class="w-full py-20 bg-background">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="text-center mb-12">
+      <h2 class="anim font-headline-lg text-primary mb-3">Clases de adiestramiento canino en Lorca — el programa de 5 sesiones que resuelve el problema</h2>
+      <p class="anim delay-1 font-body-md text-on-surface-variant max-w-2xl mx-auto">5 clases presenciales de 2 horas cada una. No vas a la siguiente hasta que dominas las tareas de la anterior. Y cuando acaba el curso, el seguimiento sigue sin coste. No hay letra pequeña.</p>
+    </div>
+    <div class="flex flex-col md:flex-row items-center gap-12">
+      <div class="anim anim-slide-l w-full md:w-1/2">
+        <img src="https://lh3.googleusercontent.com/p/AF1QipMeGBh_4sGVpb2eFTsYLbXSVFs8Gq2uxvwSLQ4L=w1200-h900-k-no" alt="Clase de adiestramiento canino en el Centro Canino de Lorca" class="rounded-2xl w-full h-[420px] object-cover shadow-[0_4px_24px_rgba(5,150,105,0.10)] border border-[#E9E5D9]">
+      </div>
+      <div class="anim anim-slide-r delay-1 w-full md:w-1/2 flex flex-col gap-6">
+        <p class="font-body-md text-on-surface-variant leading-relaxed">
+          Las sesiones semanales fijas no funcionan porque el perro avanza a su ritmo, no al del calendario. Aquí cada clase te deja tareas en casa; cuando las tienes dominadas, hacemos la siguiente. Así el aprendizaje se fija de verdad. Y son 10 horas de trabajo directo conmigo más el seguimiento posterior por 250€ — te lo digo claro: es barato, lo hacemos por conciencia social, no para vivir de ello.
+        </p>
+        <div class="flex gap-4">
+          <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(5,150,105,0.10);"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">checklist</span></div>
+          <div><h3 class="font-headline-md text-[1rem] text-on-surface mb-1">Obediencia canina — qué aprende el perro y qué aprende el dueño en cada clase</h3><p class="font-body-md text-on-surface-variant text-[0.9rem]">El perro: caminar sin tirar, acudir a la llamada, sentarse, quedarse, gestionar las situaciones que a ti te dan problema. Pero el objetivo no es solo "el perro obediente": es que tú entiendas su conducta y sepas manejarlo. «Entendiendo a tu perro, terminas por entenderte a ti mismo.»</p></div>
+        </div>
+        <div class="flex gap-4">
+          <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(5,150,105,0.10);"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings:'FILL' 1;">child_care</span></div>
+          <div><h3 class="font-headline-md text-[1rem] text-on-surface mb-1">Adiestramiento de cachorros en Lorca — construimos el perro desde las 6 semanas</h3><p class="font-body-md text-on-surface-variant text-[0.9rem]">Los primeros meses lo deciden todo: socialización, primeros límites y prevenir los problemas antes de que aparezcan. No es "educar" un cachorro, es construirlo desde la base — igual que construyo mis propios perros de cría desde las 6 semanas. El cachorro también sigue las 5 clases; solo cambia el punto de partida.</p></div>
+        </div>
+        <a href="https://wa.me/34670360676?text=Quiero%20info%20sobre%20el%20programa%20de%205%20clases%20de%20adiestramiento" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-primary text-on-primary font-label-md font-bold px-6 py-3 rounded-lg hover:bg-surface-tint transition-colors tonal-shadow w-fit mt-2"><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">chat</span>Pregúntame por el programa</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- H2 #3: Adultos y modificación de conducta (oscuro) -->
+<section class="w-full py-20" style="background:#1c1c1c;">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="text-center mb-12">
+      <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-widest mb-4" style="background:rgba(165,208,185,0.15);color:#d1fae5;letter-spacing:0.12em;">Tiene solución</span>
+      <h2 class="anim font-headline-lg text-white mb-3">Educación canina para perros adultos y casos de modificación de conducta</h2>
+      <p class="anim delay-1 font-body-md max-w-2xl mx-auto" style="color:rgba(255,255,255,0.65);">«Ya es muy mayor» es un mito. El perro adulto que nunca fue educado y el que arrastra un problema desde hace tiempo tienen los dos solución con el método correcto. «En cuanto tú te haces las cosas que tienes que hacer, el perro se comporta de otra forma.»</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+      <div class="anim rounded-2xl p-6 flex flex-col gap-4" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.10);">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center" style="background:#fea619;"><span class="material-symbols-outlined text-[24px]" style="color:#3b1f00;font-variation-settings:'FILL' 1;">format_list_bulleted</span></div>
+        <h3 class="font-headline-md text-[1.05rem] text-white">Los casos más frecuentes — perros que tiran, ladran, no responden o tienen ansiedad cuando se quedan solos</h3>
+        <p class="font-body-md text-[0.875rem] leading-relaxed" style="color:rgba(255,255,255,0.65);">Tira de la correa, ladra a otros perros en la calle, no acude cuando lo llamas, muerde cuando le tocas, destroza la casa cuando se queda solo, tiene miedo a ruidos o a personas. Si reconoces a tu perro en esta lista, tu caso está cubierto. No necesitas saber cómo se llama el problema: para eso estoy yo.</p>
+      </div>
+      <div class="anim delay-1 rounded-2xl p-6 flex flex-col gap-4" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.10);">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center" style="background:#fea619;"><span class="material-symbols-outlined text-[24px]" style="color:#3b1f00;font-variation-settings:'FILL' 1;">healing</span></div>
+        <h3 class="font-headline-md text-[1.05rem] text-white">Perros agresivos o con miedo en Lorca — estos casos también tienen solución</h3>
+        <p class="font-body-md text-[0.875rem] leading-relaxed" style="color:rgba(255,255,255,0.65);">La agresividad, la reactividad y el miedo intenso también se trabajan y también se resuelven — solo requieren un diagnóstico previo más detallado. «El miedo es irracional.» Por eso lo primero es entender de dónde viene antes de corregir nada. <a href="https://wa.me/34670360676?text=Mi%20perro%20es%20agresivo%20o%20tiene%20miedo%2C%20%C2%BFpod%C3%A9is%20ayudarme%3F" target="_blank" rel="noopener" class="text-secondary-container underline underline-offset-2 hover:opacity-80 transition-opacity">Cuéntame el caso de tu perro agresivo o con miedo →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- H2 #4: Zona y precio -->
+<section class="w-full py-20 bg-surface">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="text-center mb-12">
+      <span class="anim inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-widest mb-4" style="background:rgba(5,150,105,0.10);color:#059669;letter-spacing:0.12em;">Sin sorpresas</span>
+      <h2 class="anim font-headline-lg text-primary mb-3">Zona de cobertura y precio del adiestramiento canino en Lorca y la comarca</h2>
+      <p class="anim delay-1 font-body-md text-on-surface-variant max-w-2xl mx-auto">Trabajo en Lorca y toda la comarca, y el precio está a la vista para que no tengas que llamar solo para saber cuánto cuesta.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+      <div class="anim anim-slide-l rounded-2xl p-7 flex flex-col gap-4 bg-background border border-[#E9E5D9] tonal-shadow">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center" style="background:rgba(5,150,105,0.10);"><span class="material-symbols-outlined text-primary text-[24px]" style="font-variation-settings:'FILL' 1;">location_on</span></div>
+        <h3 class="font-headline-md text-[1.05rem] text-on-surface">Educador canino en Lorca y comarca — Totana, Alhama, Puerto Lumbreras, Águilas y alrededores</h3>
+        <p class="font-body-md text-[0.9rem] leading-relaxed text-on-surface-variant">Cubro Lorca, Totana, Alhama, La Hoya, Puerto Lumbreras, Águilas y los alrededores. Según el caso, el perro viene al centro o me desplazo yo. Si estás cerca y buscas un adiestrador de perros en tu zona, llegamos hasta ti. ¿Vives lejos de la comarca? También hago <a href="adiestramiento-canino-online.html" class="text-primary font-semibold underline decoration-primary/30 hover:decoration-primary transition-colors">consultas de conducta online por videollamada</a>.</p>
+      </div>
+      <div class="anim anim-slide-r delay-1 rounded-2xl p-7 flex flex-col gap-4 bg-background border border-[#E9E5D9] tonal-shadow">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center" style="background:rgba(5,150,105,0.10);"><span class="material-symbols-outlined text-primary text-[24px]" style="font-variation-settings:'FILL' 1;">payments</span></div>
+        <h3 class="font-headline-md text-[1.05rem] text-on-surface">Precio del adiestramiento canino — 250€ las 5 clases de 2 horas, con seguimiento sin coste extra</h3>
+        <p class="font-body-md text-[0.9rem] leading-relaxed text-on-surface-variant">250€ el programa completo: 5 clases de 2 horas (10 horas de trabajo directo conmigo) más tareas y seguimiento posterior. Un adiestrador medio en España cobra entre 40€ y 80€ la hora. Echa la cuenta: son 10 horas más seguimiento por 250€, y no hay letra pequeña.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- H2 #5: RESEÑAS -->
+<section id="resenas" class="w-full bg-background py-20">
+  <div class="max-w-container-max-width mx-auto">
+    <div class="text-center mb-10 px-margin-mobile md:px-margin-desktop">
+      <h2 class="anim font-headline-lg text-primary mb-3">Lo que dicen las familias de Lorca</h2>
+      <p class="anim delay-1 font-body-md text-on-surface-variant max-w-2xl mx-auto">Reseñas reales de adiestramiento en Google Maps · 5,0 ★ de media</p>
+    </div>
+    <div class="overflow-hidden py-2">
+    <div id="reviewCarousel" class="flex gap-5 pb-4" style="width:max-content;">
+      <div class="flex-shrink-0 w-[320px] md:w-[360px] bg-surface rounded-xl p-6 border border-[#E9E5D9] tonal-shadow flex flex-col gap-4">
+        <div class="flex items-center gap-1" style="color:#FBBC04"><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span></div>
+        <p class="font-body-md text-on-surface-variant italic leading-relaxed flex-1">«Muy amables y cercanos, unas instalaciones muy buenas. Llevo allí a mi doberman desde que tenía 5 meses, ahora tiene 11 y estoy muy contento. Juan Miguel es un gran adiestrador.»</p>
+        <div class="flex items-center gap-3 pt-2 border-t border-[#E9E5D9]"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="text-on-primary font-bold text-sm">J</span></div><div><p class="font-label-md text-on-surface text-sm">Jorge Hernandez</p><p class="font-label-sm text-on-surface-variant text-xs">Google Maps</p></div></div>
+      </div>
+      <div class="flex-shrink-0 w-[320px] md:w-[360px] bg-surface rounded-xl p-6 border border-[#E9E5D9] tonal-shadow flex flex-col gap-4">
+        <div class="flex items-center gap-1" style="color:#FBBC04"><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span></div>
+        <p class="font-body-md text-on-surface-variant italic leading-relaxed flex-1">«Llevo solo 2 clases con mi pastor belga Malinois y muy contento desde el primer momento. Personal muy agradable y cercano, instalaciones perfectas. Juan Miguel es un profesional.»</p>
+        <div class="flex items-center gap-3 pt-2 border-t border-[#E9E5D9]"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="text-on-primary font-bold text-sm">J</span></div><div><p class="font-label-md text-on-surface text-sm">Jose Antonio Hernandez</p><p class="font-label-sm text-on-surface-variant text-xs">Google Maps</p></div></div>
+      </div>
+      <div class="flex-shrink-0 w-[320px] md:w-[360px] bg-surface rounded-xl p-6 border border-[#E9E5D9] tonal-shadow flex flex-col gap-4">
+        <div class="flex items-center gap-1" style="color:#FBBC04"><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span></div>
+        <p class="font-body-md text-on-surface-variant italic leading-relaxed flex-1">«Muy amables y cercanos, unas instalaciones muy buenas. Llevo allí a mi doberman desde que tenía 5 meses, ahora tiene 11 y estoy muy contento. Juan Miguel es un gran adiestrador.»</p>
+        <div class="flex items-center gap-3 pt-2 border-t border-[#E9E5D9]"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="text-on-primary font-bold text-sm">J</span></div><div><p class="font-label-md text-on-surface text-sm">Jorge Hernandez</p><p class="font-label-sm text-on-surface-variant text-xs">Google Maps</p></div></div>
+      </div>
+      <div class="flex-shrink-0 w-[320px] md:w-[360px] bg-surface rounded-xl p-6 border border-[#E9E5D9] tonal-shadow flex flex-col gap-4">
+        <div class="flex items-center gap-1" style="color:#FBBC04"><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span></div>
+        <p class="font-body-md text-on-surface-variant italic leading-relaxed flex-1">«Llevo solo 2 clases con mi pastor belga Malinois y muy contento desde el primer momento. Personal muy agradable y cercano, instalaciones perfectas. Juan Miguel es un profesional.»</p>
+        <div class="flex items-center gap-3 pt-2 border-t border-[#E9E5D9]"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="text-on-primary font-bold text-sm">J</span></div><div><p class="font-label-md text-on-surface text-sm">Jose Antonio Hernandez</p><p class="font-label-sm text-on-surface-variant text-xs">Google Maps</p></div></div>
+      </div>
+      <div class="flex-shrink-0 w-[320px] md:w-[360px] bg-surface rounded-xl p-6 border border-[#E9E5D9] tonal-shadow flex flex-col gap-4">
+        <div class="flex items-center gap-1" style="color:#FBBC04"><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span></div>
+        <p class="font-body-md text-on-surface-variant italic leading-relaxed flex-1">«Muy amables y cercanos, unas instalaciones muy buenas. Llevo allí a mi doberman desde que tenía 5 meses, ahora tiene 11 y estoy muy contento. Juan Miguel es un gran adiestrador.»</p>
+        <div class="flex items-center gap-3 pt-2 border-t border-[#E9E5D9]"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="text-on-primary font-bold text-sm">J</span></div><div><p class="font-label-md text-on-surface text-sm">Jorge Hernandez</p><p class="font-label-sm text-on-surface-variant text-xs">Google Maps</p></div></div>
+      </div>
+      <div class="flex-shrink-0 w-[320px] md:w-[360px] bg-surface rounded-xl p-6 border border-[#E9E5D9] tonal-shadow flex flex-col gap-4">
+        <div class="flex items-center gap-1" style="color:#FBBC04"><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">star</span></div>
+        <p class="font-body-md text-on-surface-variant italic leading-relaxed flex-1">«Llevo solo 2 clases con mi pastor belga Malinois y muy contento desde el primer momento. Personal muy agradable y cercano, instalaciones perfectas. Juan Miguel es un profesional.»</p>
+        <div class="flex items-center gap-3 pt-2 border-t border-[#E9E5D9]"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="text-on-primary font-bold text-sm">J</span></div><div><p class="font-label-md text-on-surface text-sm">Jose Antonio Hernandez</p><p class="font-label-sm text-on-surface-variant text-xs">Google Maps</p></div></div>
+      </div>
+    </div>
+    </div>
+    <div class="text-center mt-8 px-margin-mobile md:px-margin-desktop">
+      <a href="https://www.google.com/maps/search/?api=1&query=Centro%20canino%20de%20lorca&query_place_id=ChIJBaYgWWjDZA0RA1d3LrAbdKk" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-secondary font-label-md font-bold hover:text-secondary-fixed-dim transition-colors">Ver todas las reseñas en Google <span class="material-symbols-outlined text-[18px]">open_in_new</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="w-full bg-surface py-20">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="text-center mb-10">
+      <h2 class="anim font-headline-lg text-primary mb-3">Preguntas frecuentes sobre el adiestramiento canino en Lorca</h2>
+    </div>
+    <div class="max-w-2xl mx-auto flex flex-col gap-4">
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-background overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿Cuánto cuesta el adiestramiento canino en Lorca?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">El curso de adiestramiento en Lorca son 250 € e incluye 5 clases presenciales de 2 horas cada una, con tareas para casa entre sesión y sesión y seguimiento posterior sin coste. Te lo digo claro: es barato para lo que es, 10 horas de trabajo directo conmigo más el seguimiento, y lo mantengo así por conciencia, no porque no valga más. Cuéntame qué hace tu perro al 670 36 06 76 y te explico el plan.</div>
+      </details>
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-background overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿Cuántas clases necesita mi perro?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">El programa estándar en Lorca son 5 clases de 2 horas, y para la mayoría de los casos es suficiente. No vamos por calendario fijo: pasamos a la siguiente clase cuando dominas las tareas de la anterior, así el aprendizaje se fija de verdad. Cada perro y cada familia llevan su ritmo. Si el caso es más complejo, lo hablamos. Lo importante no es el número de clases, sino que tú aprendas a manejar a tu perro.</div>
+      </details>
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-background overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿De verdad funciona? ¿Hay garantía?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">Si es un perro normal, el 100% de los casos los he resuelto en 45 años en Lorca. No es marketing: es un método conductista y etológico que no vas a encontrar en otro centro. Eso sí, no hago milagros: hace falta que tú apliques lo que te enseño, porque el adiestramiento es trabajo en equipo. Donde no me comprometo es si hay una lesión o un problema médico de fondo. Cuéntame el caso y te digo con sinceridad si puedo ayudarte.</div>
+      </details>
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-background overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">Mi perro es agresivo o tiene miedo, ¿podéis ayudar?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">Sí, es justo lo mío. La agresividad, la reactividad y el miedo se trabajan y se resuelven, solo necesitan un diagnóstico más detallado primero. En Lorca llevo 45 años con perros y mi enfoque es entender de dónde viene la conducta antes de corregir nada: el miedo es irracional, hay que entrar en el mundo del perro. Tráeme el caso al 670 36 06 76 y vemos juntos qué le pasa a tu perro y cómo cambiarlo.</div>
+      </details>
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-background overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿En qué consiste el diagnóstico previo?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">Es algo que casi nadie ofrece: si no tienes claro cuál es el problema, déjame el perro una semana en la residencia, en Lorca, mientras normalizo el trato. Al cabo de esos días te digo si el problema es el perro o es el manejo, y te aviso que casi siempre es de manejo. Es el paso que resuelve esa duda que llevas meses dándole vueltas tú solo. Luego trabajamos sobre eso, no a ciegas.</div>
+      </details>
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-background overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿Trabajáis con cachorros?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">Sí, y cuanto antes mejor. Los primeros meses deciden el perro que tendrás de adulto, así que en Lorca empezamos a educar cachorros desde muy pronto: socialización, primeros límites y prevención de problemas antes de que aparezcan. Trabajo con cachorros de cualquier raza. Es mucho más fácil construir bien desde el principio que corregir después. Si acabas de traer un cachorro a casa, escríbeme al 670 36 06 76 y empezamos con buen pie.</div>
+      </details>
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-background overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿Y con perros adultos que ya tienen mañas?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">También, sin problema. Eso de que un perro mayor no aprende es un mito. En Lorca trabajo con perros adultos que nunca recibieron educación o que han cogido manías, como tirar de la correa, no hacer caso o tener ansiedad cuando se quedan solos, y se resuelven. En cuanto tú cambias lo que tienes que cambiar, el perro se comporta de otra forma. La edad no es el problema; el método sí importa. Cuéntame qué hace y lo vemos.</div>
+      </details>
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-background overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿Qué razas adiestráis?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">Todas. En Lorca he trabajado con dóberman, pastor belga malinois, beagle y prácticamente cualquier raza, de todas las edades. Cada perro necesita un trato distinto y las técnicas salen de conocerlo, no de un manual. Eso sí, no hago adiestramiento de guardia, defensa, ataque ni deportivo: lo mío son las familias que quieren convivir bien con su perro. Si ese es tu caso, escríbeme al 670 36 06 76 y lo vemos.</div>
+      </details>
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-background overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿Tengo que ir a vuestro centro o vais a mi casa?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">Lo normal es que trabajemos en el centro, en Lorca, o que me desplace yo según el caso. Cubro Lorca y toda la comarca: Totana, Alhama, La Hoya, Puerto Lumbreras, Águilas y alrededores. Y si vives lejos de la comarca, también hago consultas de conducta online por videollamada. Dime dónde estás y qué le pasa a tu perro al 670 36 06 76 y vemos la mejor forma de empezar.</div>
+      </details>
+      <details class="group rounded-2xl border border-[#E9E5D9] bg-background overflow-hidden">
+        <summary class="flex items-center justify-between p-5 cursor-pointer font-label-md text-on-surface select-none">¿Cómo empiezo?<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span></summary>
+        <div class="px-5 pb-5 font-body-md text-on-surface-variant">Muy sencillo: llámame o escríbeme por WhatsApp al 670 36 06 76 y cuéntame qué hace tu perro. Con eso ya te digo si puedo ayudarte y cómo enfocarlo, nada de bots ni formularios largos, hablas directamente conmigo. Estamos en Lorca (Murcia), en el Camino de los Valencianos, 24. Cuanto antes empieces, antes conviviréis mejor. El primer paso es solo contarme el caso, sin compromiso.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- H3 / CONTACTO -->
+<section id="contacto" class="w-full bg-background py-20">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="text-center mb-10">
+      <h2 class="anim font-headline-lg text-primary mb-3">Cuéntame qué hace tu perro — así empezamos</h2>
+      <p class="anim delay-1 font-body-md text-on-surface-variant max-w-xl mx-auto">Una llamada o un WhatsApp y hablas directamente conmigo. Lo primero es que me cuentes el caso: con eso ya sé por dónde empezar. Te contesto yo en persona, no un bot.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto items-stretch">
+      <div class="bg-primary rounded-2xl p-8 text-on-primary flex flex-col gap-5">
+        <a href="tel:+34670360676" class="flex items-center gap-4 hover:opacity-80 transition-opacity">
+          <span class="material-symbols-outlined text-secondary-container text-[24px]" style="font-variation-settings:'FILL' 1;">phone</span>
+          <div><p class="font-label-sm text-primary-fixed-dim uppercase tracking-wider">Teléfono</p><p class="font-body-md font-semibold">670 36 06 76</p></div>
+        </a>
+        <a href="https://wa.me/34670360676" target="_blank" rel="noopener" class="flex items-center gap-4 hover:opacity-80 transition-opacity">
+          <span class="material-symbols-outlined text-secondary-container text-[24px]" style="font-variation-settings:'FILL' 1;">chat</span>
+          <div><p class="font-label-sm text-primary-fixed-dim uppercase tracking-wider">WhatsApp</p><p class="font-body-md font-semibold">670 36 06 76</p></div>
+        </a>
+        <div class="flex items-start gap-4">
+          <span class="material-symbols-outlined text-secondary-container text-[24px]" style="font-variation-settings:'FILL' 1;">location_on</span>
+          <div><p class="font-label-sm text-primary-fixed-dim uppercase tracking-wider">Dónde estamos</p><p class="font-body-md font-semibold">Cam. de los Valencianos, 24<br>30813 Lorca, Murcia</p></div>
+        </div>
+        <div class="flex items-start gap-4">
+          <span class="material-symbols-outlined text-secondary-container text-[24px]" style="font-variation-settings:'FILL' 1;">map</span>
+          <div><p class="font-label-sm text-primary-fixed-dim uppercase tracking-wider">Zona de servicio</p><p class="font-body-md font-semibold">Lorca, Totana, Alhama, La Hoya, Puerto Lumbreras, Águilas y comarca</p></div>
+        </div>
+        <a href="https://wa.me/34670360676?text=Hola%20Juan%20Miguel%2C%20te%20cuento%20qu%C3%A9%20hace%20mi%20perro%3A" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white font-label-md font-bold px-6 py-3.5 rounded-lg hover:opacity-90 transition-opacity mt-2">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.116 1.527 5.845L.057 23.5l5.773-1.517A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 01-5.031-1.385l-.361-.214-3.427.9.915-3.332-.235-.373A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+          Escríbeme por WhatsApp
+        </a>
+      </div>
+      <div class="rounded-2xl overflow-hidden border border-[#E9E5D9] tonal-shadow min-h-[360px]">
+        <iframe src="https://maps.google.com/maps?q=Centro+canino+de+lorca+Lorca+Murcia&z=15&output=embed&hl=es" width="100%" height="100%" style="border:0;min-height:360px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación del Centro Canino de Lorca"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="w-full bg-primary py-10">
+  <div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-6">
+    <div class="flex flex-col items-center md:items-start gap-1">
+      <span style="font-family:'Epilogue',sans-serif;font-weight:700;font-size:1.1rem;color:#ffffff;">Centro Canino de Lorca</span>
+      <span class="font-label-sm text-on-primary opacity-70">Adiestramiento · Residencia · Cría selectiva · Peluquería · Lorca, Murcia</span>
+    </div>
+    <nav class="flex flex-wrap justify-center gap-4 md:gap-gutter">
+      <a href="index.html" class="font-label-sm text-on-primary opacity-80 hover:opacity-100 transition-opacity">Inicio</a>
+      <a href="index.html#servicios" class="font-label-sm text-on-primary opacity-80 hover:opacity-100 transition-opacity">Servicios</a>
+      <a href="index.html#resenas" class="font-label-sm text-on-primary opacity-80 hover:opacity-100 transition-opacity">Reseñas</a>
+      <a href="#contacto" class="font-label-sm text-on-primary opacity-80 hover:opacity-100 transition-opacity">Contacto</a>
+    </nav>
+    <div class="font-body-md text-sm text-on-primary opacity-70 text-center md:text-right">© 2025 Centro Canino de Lorca · Lorca, Murcia</div>
+  </div>
+</footer>
+
+<a href="https://wa.me/34670360676" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp" class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-[0_4px_16px_rgba(0,0,0,0.2)] hover:scale-110 transition-transform">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.116 1.527 5.845L.057 23.5l5.773-1.517A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 01-5.031-1.385l-.361-.214-3.427.9.915-3.332-.235-.373A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+</a>
+
+<script>
+  document.getElementById('menuBtn').addEventListener('click', function(){ document.getElementById('mobileMenu').classList.toggle('hidden'); });
+  document.querySelectorAll('#mobileMenu a').forEach(function(a){ a.addEventListener('click', function(){ document.getElementById('mobileMenu').classList.add('hidden'); }); });
+  var observer = new IntersectionObserver(function(entries){ entries.forEach(function(e){ if(e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold:0.12 });
+  document.querySelectorAll('.anim').forEach(function(el){ observer.observe(el); });
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cuánto cuesta el adiestramiento canino en Lorca?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El curso de adiestramiento en Lorca son 250 € e incluye 5 clases presenciales de 2 horas cada una, con tareas para casa entre sesión y sesión y seguimiento posterior sin coste. Te lo digo claro: es barato para lo que es, 10 horas de trabajo directo conmigo más el seguimiento, y lo mantengo así por conciencia, no porque no valga más. Cuéntame qué hace tu perro al 670 36 06 76 y te explico el plan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuántas clases necesita mi perro?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El programa estándar en Lorca son 5 clases de 2 horas, y para la mayoría de los casos es suficiente. No vamos por calendario fijo: pasamos a la siguiente clase cuando dominas las tareas de la anterior, así el aprendizaje se fija de verdad. Cada perro y cada familia llevan su ritmo. Si el caso es más complejo, lo hablamos. Lo importante no es el número de clases, sino que tú aprendas a manejar a tu perro."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿De verdad funciona? ¿Hay garantía?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Si es un perro normal, el 100% de los casos los he resuelto en 45 años en Lorca. No es marketing: es un método conductista y etológico que no vas a encontrar en otro centro. Eso sí, no hago milagros: hace falta que tú apliques lo que te enseño, porque el adiestramiento es trabajo en equipo. Donde no me comprometo es si hay una lesión o un problema médico de fondo. Cuéntame el caso y te digo con sinceridad si puedo ayudarte."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Mi perro es agresivo o tiene miedo, ¿podéis ayudar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, es justo lo mío. La agresividad, la reactividad y el miedo se trabajan y se resuelven, solo necesitan un diagnóstico más detallado primero. En Lorca llevo 45 años con perros y mi enfoque es entender de dónde viene la conducta antes de corregir nada: el miedo es irracional, hay que entrar en el mundo del perro. Tráeme el caso al 670 36 06 76 y vemos juntos qué le pasa a tu perro y cómo cambiarlo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿En qué consiste el diagnóstico previo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Es algo que casi nadie ofrece: si no tienes claro cuál es el problema, déjame el perro una semana en la residencia, en Lorca, mientras normalizo el trato. Al cabo de esos días te digo si el problema es el perro o es el manejo, y te aviso que casi siempre es de manejo. Es el paso que resuelve esa duda que llevas meses dándole vueltas tú solo. Luego trabajamos sobre eso, no a ciegas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Trabajáis con cachorros?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, y cuanto antes mejor. Los primeros meses deciden el perro que tendrás de adulto, así que en Lorca empezamos a educar cachorros desde muy pronto: socialización, primeros límites y prevención de problemas antes de que aparezcan. Trabajo con cachorros de cualquier raza. Es mucho más fácil construir bien desde el principio que corregir después. Si acabas de traer un cachorro a casa, escríbeme al 670 36 06 76 y empezamos con buen pie."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Y con perros adultos que ya tienen mañas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "También, sin problema. Eso de que un perro mayor no aprende es un mito. En Lorca trabajo con perros adultos que nunca recibieron educación o que han cogido manías, como tirar de la correa, no hacer caso o tener ansiedad cuando se quedan solos, y se resuelven. En cuanto tú cambias lo que tienes que cambiar, el perro se comporta de otra forma. La edad no es el problema; el método sí importa. Cuéntame qué hace y lo vemos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué razas adiestráis?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Todas. En Lorca he trabajado con dóberman, pastor belga malinois, beagle y prácticamente cualquier raza, de todas las edades. Cada perro necesita un trato distinto y las técnicas salen de conocerlo, no de un manual. Eso sí, no hago adiestramiento de guardia, defensa, ataque ni deportivo: lo mío son las familias que quieren convivir bien con su perro. Si ese es tu caso, escríbeme al 670 36 06 76 y lo vemos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Tengo que ir a vuestro centro o vais a mi casa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lo normal es que trabajemos en el centro, en Lorca, o que me desplace yo según el caso. Cubro Lorca y toda la comarca: Totana, Alhama, La Hoya, Puerto Lumbreras, Águilas y alrededores. Y si vives lejos de la comarca, también hago consultas de conducta online por videollamada. Dime dónde estás y qué le pasa a tu perro al 670 36 06 76 y vemos la mejor forma de empezar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo empiezo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Muy sencillo: llámame o escríbeme por WhatsApp al 670 36 06 76 y cuéntame qué hace tu perro. Con eso ya te digo si puedo ayudarte y cómo enfocarlo, nada de bots ni formularios largos, hablas directamente conmigo. Estamos en Lorca (Murcia), en el Camino de los Valencianos, 24. Cuanto antes empieces, antes conviviréis mejor. El primer paso es solo contarme el caso, sin compromiso."
+      }
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
