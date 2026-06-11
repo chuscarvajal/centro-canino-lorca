@@ -79,6 +79,10 @@
     /* Hero parallax fijo (móvil y escritorio, vía JS) */
     .hero-img{position:absolute;top:0;left:0;width:100%;height:100%;background-size:cover;background-position:65% center;background-repeat:no-repeat;will-change:transform;z-index:0;}
     @media(min-width:768px){ .hero-img{background-position:center;} }
+    /* Slider del hero: cruce de 3 fotos cada 5s */
+    .hero-slide{opacity:0;transition:opacity 1.4s ease-in-out;}
+    .hero-slide.is-active{opacity:1;}
+    @media(prefers-reduced-motion:reduce){ .hero-slide{transition:none;} }
   </style>
   <script type="application/ld+json">
   {
@@ -200,7 +204,9 @@
 
 <!-- ════════════════════════════ HERO ════════════════════════════ -->
 <section class="w-full relative overflow-hidden" style="min-height:560px;">
-  <div class="hero-img" style="background-image:url('hero-homepage.webp');"></div>
+  <div class="hero-img hero-slide is-active" style="background-image:url('hero-home-1.webp');"></div>
+  <div class="hero-img hero-slide" style="background-image:url('hero-home-2.webp');"></div>
+  <div class="hero-img hero-slide" style="background-image:url('hero-home-3.webp');"></div>
   <div class="absolute inset-0 hero-ov"></div>
   <div class="relative z-10 max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop py-10 md:py-28 flex items-center min-h-[380px] md:min-h-[560px]">
     <div class="w-full md:w-1/2 flex flex-col gap-5 md:gap-7 hero-content">
@@ -409,7 +415,7 @@
         <img
           src="juan-miguel-padre-e-hijo.webp"
           alt="Juan Miguel y su hijo — equipo del Centro Canino de Lorca"
-          class="rounded-2xl w-full h-[400px] object-cover shadow-[0_4px_24px_rgba(5,150,105,0.10)] border border-[#E9E5D9]"
+          class="rounded-2xl w-full h-auto md:h-[400px] object-cover object-center shadow-[0_4px_24px_rgba(5,150,105,0.10)] border border-[#E9E5D9]"
         />
       </div>
     </div>
@@ -959,6 +965,17 @@
   window.addEventListener("scroll",function(){ if(!ticking){ window.requestAnimationFrame(upd); ticking=true; } },{passive:true});
   window.addEventListener("resize",upd,{passive:true});
   upd();
+})();
+// Slider del hero: cruce de las 3 fotos cada 5 segundos
+(function(){
+  var slides=[].slice.call(document.querySelectorAll(".hero-slide"));
+  if(slides.length<2)return;
+  var i=0;
+  setInterval(function(){
+    slides[i].classList.remove("is-active");
+    i=(i+1)%slides.length;
+    slides[i].classList.add("is-active");
+  },5000);
 })();
 </script>
 </body>
