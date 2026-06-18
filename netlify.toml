@@ -1,0 +1,5 @@
+# Configuración de despliegue en Netlify
+# Sitio estático (HTML + Tailwind por CDN): no hay build, solo se publica la carpeta public.
+[build]
+  publish = "public"
+  command = ""
