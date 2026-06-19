@@ -1,6 +1,7 @@
 /* Centro Canino de Lorca
    - Seguimiento de leads en GA4 (clics de llamada, WhatsApp y formularios)
    - Banner de consentimiento de cookies con Google Consent Mode v2
+   - Enlace "Configurar cookies" en el pie para cambiar el consentimiento
    Eventos que se envían a GA4:
      lead_llamada     -> clic en un botón/enlace de teléfono (tel:)
      lead_whatsapp    -> clic en un botón/enlace de WhatsApp (wa.me)
@@ -8,6 +9,7 @@
 */
 (function () {
   "use strict";
+  var KEY = "cc_consent_v1";
 
   /* ---------- 1) Seguimiento de leads ----------
      Los eventos se envían siempre. Con Consent Mode, si el usuario no ha
@@ -32,18 +34,18 @@
     });
   });
 
-  /* ---------- 2) Consentimiento de cookies (Consent Mode) ---------- */
-  var KEY = "cc_consent_v1", saved = null;
-  try { saved = localStorage.getItem(KEY); } catch (e) {}
-
-  if (saved === "granted") {
-    if (typeof gtag === "function") gtag("consent", "update", { analytics_storage: "granted" });
-    return; // ya aceptó: sin banner
+  /* ---------- 2) Consentimiento (Consent Mode) ---------- */
+  function setConsent(value) {
+    try { localStorage.setItem(KEY, value); } catch (e) {}
+    if (typeof gtag === "function") {
+      gtag("consent", "update", { analytics_storage: value === "granted" ? "granted" : "denied" });
+    }
   }
-  if (saved === "denied") return; // ya rechazó: no insistimos
 
-  function build() {
+  function showBanner() {
+    if (document.getElementById("cc-bar")) return; // ya está abierto
     var bar = document.createElement("div");
+    bar.id = "cc-bar";
     bar.setAttribute("role", "dialog");
     bar.setAttribute("aria-label", "Aviso de cookies");
     bar.style.cssText = "position:fixed;left:16px;right:16px;bottom:16px;z-index:9999;max-width:560px;margin:0 auto;background:#1c1c1c;color:#fff;border-radius:16px;padding:18px 20px;box-shadow:0 8px 30px rgba(0,0,0,.35);font-family:Inter,system-ui,sans-serif;font-size:14px;line-height:1.5;";
@@ -55,17 +57,35 @@
       "</div>";
     document.body.appendChild(bar);
     function close() { if (bar.parentNode) bar.parentNode.removeChild(bar); }
-    document.getElementById("cc-ok").addEventListener("click", function () {
-      try { localStorage.setItem(KEY, "granted"); } catch (e) {}
-      if (typeof gtag === "function") gtag("consent", "update", { analytics_storage: "granted" });
-      close();
-    });
-    document.getElementById("cc-no").addEventListener("click", function () {
-      try { localStorage.setItem(KEY, "denied"); } catch (e) {}
-      close();
-    });
+    document.getElementById("cc-ok").addEventListener("click", function () { setConsent("granted"); close(); });
+    document.getElementById("cc-no").addEventListener("click", function () { setConsent("denied"); close(); });
   }
 
-  if (document.body) build();
-  else document.addEventListener("DOMContentLoaded", build);
+  /* Enlace "Configurar cookies" en el pie (junto a Política de cookies) */
+  function injectSettingsLink() {
+    if (document.getElementById("cc-settings-link")) return;
+    var ref = document.querySelector('footer a[href$="politica-cookies.html"]');
+    if (!ref) return;
+    var link = document.createElement("a");
+    link.id = "cc-settings-link";
+    link.href = "#";
+    link.textContent = "Configurar cookies";
+    link.className = ref.className; // misma estética que el resto de enlaces del pie
+    link.addEventListener("click", function (e) { e.preventDefault(); showBanner(); });
+    ref.parentNode.insertBefore(link, ref.nextSibling);
+  }
+
+  function init() {
+    var saved = null;
+    try { saved = localStorage.getItem(KEY); } catch (e) {}
+    if (saved === "granted" && typeof gtag === "function") {
+      gtag("consent", "update", { analytics_storage: "granted" });
+    } else if (saved !== "granted" && saved !== "denied") {
+      showBanner(); // primera visita: pedir consentimiento
+    }
+    injectSettingsLink(); // siempre, para poder cambiar la elección
+  }
+
+  if (document.body) init();
+  else document.addEventListener("DOMContentLoaded", init);
 })();
