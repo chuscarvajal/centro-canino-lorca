@@ -69,6 +69,10 @@
     .hero-content{text-shadow:0 2px 12px rgba(0,0,0,0.75), 0 1px 3px rgba(0,0,0,0.6);}
     .hero-img{position:absolute;top:0;left:0;width:100%;height:100%;background-size:cover;background-position:65% center;background-repeat:no-repeat;will-change:transform;z-index:0;}
     @media(min-width:768px){ .hero-img{background-position:center;} }
+    /* Slider del hero: cruce de 2 fotos (pastor alemán y caniche gigante) cada 5s */
+    .hero-slide{opacity:0;transition:opacity 1.4s ease-in-out;}
+    .hero-slide.is-active{opacity:1;}
+    @media(prefers-reduced-motion:reduce){ .hero-slide{transition:none;} }
   </style>
 </head>
 <body class="bg-surface text-on-surface antialiased">
@@ -126,7 +130,8 @@
 
 <!-- HERO -->
 <section class="w-full relative overflow-hidden" style="min-height:560px;">
-  <div class="hero-img" style="background-image:url('cachorros-pastor-aleman-hero.webp');"></div>
+  <div class="hero-img hero-slide is-active" style="background-image:url('cachorros-pastor-aleman-hero.webp');"></div>
+  <div class="hero-img hero-slide" style="background-image:url('cachorro-caniche-gigante.webp');"></div>
   <div class="absolute inset-0 hero-ov"></div>
   <div class="relative z-10 max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop pt-8">
     <nav class="flex items-center gap-2 text-white/60 font-label-sm text-xs">
@@ -453,6 +458,18 @@
     { "@type": "Question", "name": "¿Cómo reservo un cachorro?", "acceptedAnswer": { "@type": "Answer", "text": "Escríbeme por WhatsApp al 670 36 06 76 y dime qué raza te interesa y qué buscas. No tengo camadas constantes ni vendo a cualquiera, así que lo normal es entrar en la lista de espera de la próxima camada. Se reserva con una señal y se formaliza cuando el cachorro está listo y sano. Crío en Lorca y envío a toda la península." } }
   ]
 }
+</script>
+<script>
+(function(){
+  var slides=[].slice.call(document.querySelectorAll(".hero-slide"));
+  if(slides.length<2)return;
+  var i=0;
+  setInterval(function(){
+    slides[i].classList.remove("is-active");
+    i=(i+1)%slides.length;
+    slides[i].classList.add("is-active");
+  },5000);
+})();
 </script>
 <script src="cookies-analytics.js" defer></script>
 </body>
