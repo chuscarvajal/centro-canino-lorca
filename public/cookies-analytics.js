@@ -5,11 +5,37 @@
    Eventos que se envían a GA4:
      lead_llamada     -> clic en un botón/enlace de teléfono (tel:)
      lead_whatsapp    -> clic en un botón/enlace de WhatsApp (wa.me)
+     lead_email       -> clic en un enlace de correo (mailto:)
+     lead_como_llegar -> clic en un enlace de mapa / cómo llegar
      lead_formulario  -> envío de un formulario de la web
-*/
+   Cada evento incluye el parámetro "origen" (utm_source/campaña o el sitio
+   de procedencia) para poder atribuir de DÓNDE viene cada lead. */
 (function () {
   "use strict";
   var KEY = "cc_consent_v1";
+
+  /* ---------- 0) Origen de la visita (atribución) ----------
+     Se calcula una vez por sesión (primer toque) y se adjunta a cada lead.
+     Prioridad: utm_source[/utm_campaign] del enlace de entrada; si no,
+     el dominio de procedencia (referrer); si no, "directo". */
+  function origen() {
+    try {
+      var stored = sessionStorage.getItem("cc_origen");
+      if (stored) return stored;
+      var p = new URLSearchParams(location.search);
+      var s = p.get("utm_source"), c = p.get("utm_campaign"), val;
+      if (s) {
+        val = c ? s + "/" + c : s;
+      } else if (document.referrer) {
+        var h = new URL(document.referrer).hostname.replace(/^www\./, "");
+        val = (h === location.hostname) ? "directo" : h;
+      } else {
+        val = "directo";
+      }
+      sessionStorage.setItem("cc_origen", val);
+      return val;
+    } catch (e) { return "desconocido"; }
+  }
 
   /* ---------- 1) Seguimiento de leads ----------
      Los eventos se envían siempre. Con Consent Mode, si el usuario no ha
@@ -19,17 +45,22 @@
     if (!a || typeof gtag !== "function") return;
     var href = a.getAttribute("href") || "";
     var texto = (a.textContent || "").replace(/\s+/g, " ").trim().slice(0, 80);
+    var base = { boton: texto, pagina: location.pathname, origen: origen() };
     if (href.indexOf("tel:") === 0) {
-      gtag("event", "lead_llamada", { boton: texto, pagina: location.pathname });
+      gtag("event", "lead_llamada", base);
     } else if (href.indexOf("wa.me") > -1 || href.indexOf("api.whatsapp") > -1) {
-      gtag("event", "lead_whatsapp", { boton: texto, pagina: location.pathname });
+      gtag("event", "lead_whatsapp", base);
+    } else if (href.indexOf("mailto:") === 0) {
+      gtag("event", "lead_email", base);
+    } else if (/(maps\.google|google\.[a-z.]+\/maps|goo\.gl\/maps|maps\.app\.goo\.gl)/i.test(href)) {
+      gtag("event", "lead_como_llegar", base);
     }
   }, true);
 
   Array.prototype.forEach.call(document.querySelectorAll("form"), function (f) {
     f.addEventListener("submit", function () {
       if (typeof gtag === "function") {
-        gtag("event", "lead_formulario", { pagina: location.pathname });
+        gtag("event", "lead_formulario", { pagina: location.pathname, origen: origen() });
       }
     });
   });
@@ -76,6 +107,7 @@
   }
 
   function init() {
+    origen(); // fija el origen de la sesión en la primera carga (con el UTM aún en la URL)
     var saved = null;
     try { saved = localStorage.getItem(KEY); } catch (e) {}
     if (saved === "granted" && typeof gtag === "function") {
