@@ -121,3 +121,44 @@
   if (document.body) init();
   else document.addEventListener("DOMContentLoaded", init);
 })();
+
+/* ---------- 3) Analítica propia de clics en CTAs (sin cookies, sin terceros) ----------
+   Envía {cta, section, page, ts} a la función de Netlify /track; el panel está en
+   /.netlify/functions/stats?key=... Las secciones solo llevan clases de Tailwind, así que
+   se etiquetan por su titular: "hero" si contiene el H1 y, si no, el H2/H3 en slug. */
+(function(){
+  function slug(t){return (t||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'').slice(0,32)||'seccion';}
+  function ctaOf(a){
+    var h=(a.getAttribute('href')||'');
+    if(h.indexOf('tel:')===0)return'llamar';
+    if(/wa\.me|whatsapp|api\.whatsapp/i.test(h))return'whatsapp';
+    if(h.indexOf('mailto:')===0)return'email';
+    if(/google\.[a-z.]+\/maps|maps\.app\.goo|maps\.google\./i.test(h))return'mapa';
+    return a.getAttribute('data-cta')||null;
+  }
+  function sectionOf(el){
+    var d=el.closest('[data-section]'); if(d)return d.getAttribute('data-section');
+    if(el.closest('footer'))return'footer';
+    if(el.closest('nav'))return'menu';
+    if(el.closest('header'))return'cabecera';
+    if(el.closest('.fixed'))return'flotante';
+    var s=el.closest('section,aside'); if(!s)return'otro';
+    if(s.id)return s.id;
+    var h=s.querySelector('h1,h2,h3'); if(!h)return'seccion';
+    return h.tagName==='H1'?'hero':slug(h.textContent);
+  }
+  function send(cta,section){
+    try{
+      var b=JSON.stringify({cta:cta,section:section,page:location.pathname,ts:new Date().toISOString()});
+      if(navigator.sendBeacon){navigator.sendBeacon('/.netlify/functions/track',b);}
+      else{fetch('/.netlify/functions/track',{method:'POST',body:b,keepalive:true});}
+    }catch(e){}
+  }
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a[href],[data-cta]'); if(!a)return;
+    var c=ctaOf(a); if(!c)return; send(c,sectionOf(a));
+  },true);
+  document.addEventListener('submit',function(e){
+    var f=e.target; if(f&&f.tagName==='FORM') send('formulario',sectionOf(f));
+  },true);
+})();

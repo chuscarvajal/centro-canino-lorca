@@ -3,3 +3,8 @@
 [build]
   publish = "public"
   command = ""
+
+# Analítica propia de clics en CTAs (skill cta-tracking): track + panel stats
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
