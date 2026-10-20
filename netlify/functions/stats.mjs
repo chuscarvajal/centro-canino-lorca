@@ -9,7 +9,7 @@ import { getStore } from '@netlify/blobs';
 //   CTA_STATS_KEY  -> clave de acceso al panel (pon una única por proyecto)
 //   CTA_SITE_NAME  -> nombre que sale en la cabecera del panel
 const env = (k) => (globalThis.Netlify?.env?.get?.(k)) || process.env[k];
-const SECRET = () => env('CTA_STATS_KEY') || 'canino-cta-4eavfg7h51';
+const SECRET = () => env('CTA_STATS_KEY') || ''; // repo público: la clave vive solo en Netlify (sin env, panel cerrado)
 const SITE = () => env('CTA_SITE_NAME') || 'Centro Canino de Lorca';
 
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -28,7 +28,7 @@ function table(title, rows, c1) {
 
 export default async (req) => {
   const url = new URL(req.url);
-  if (url.searchParams.get('key') !== SECRET()) {
+  if (!SECRET() || url.searchParams.get('key') !== SECRET()) {
     return new Response('No autorizado. Añade ?key=TU_CLAVE a la URL.', { status: 401 });
   }
 
