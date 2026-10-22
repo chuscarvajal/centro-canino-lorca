@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-generar_og_jpg.py — Centro Canino de Lorca (Rank Masters · Chus Carvajal)
+generar_og_jpg.py — Centro Canino de Lorca (Chus Carvajal)
 
 Crea una copia JPG de cada imagen usada como og:image (para que la vista previa
 al compartir en WhatsApp/Facebook, que no renderizan WebP, funcione siempre).
@@ -21,6 +21,7 @@ OG_IMAGES = [
     "cluster-adiestramiento-canino.webp",
     "hero-home-1.webp",
     "hero-peluqueria.webp",
+    "guarderia-canina-lorca-zona-verde-cesped.webp",
 ]
 
 for name in OG_IMAGES:
