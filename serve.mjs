@@ -20,7 +20,8 @@ const MIME = {
 };
 
 createServer(async (req, res) => {
-  let path = req.url === '/' ? '/index.html' : req.url;
+  let path = req.url.split('?')[0];
+  if (path.endsWith('/')) path += 'index.html';   // /blog/ -> /blog/index.html (como Netlify)
   const filePath = join(ROOT, path);
   const ext = extname(filePath) || '.html';
   try {
