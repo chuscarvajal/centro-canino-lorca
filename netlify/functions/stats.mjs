@@ -60,10 +60,10 @@ export default async (req) => {
     return Response.json({ total: events.length, events });
   }
   if (url.searchParams.get('format') === 'csv') {
-    const head = 'fecha,hora,cta,seccion,pagina,dispositivo\n';
+    const head = 'fecha,hora,cta,seccion,pagina,origen,dispositivo\n';
     const rows = events.map((e) => {
       const [f, h] = (e.ts || '').split('T');
-      return [f, (h || '').slice(0, 8), e.cta, e.section, e.page, e.ua].map((x) => `"${String(x || '').replace(/"/g, '""')}"`).join(',');
+      return [f, (h || '').slice(0, 8), e.cta, e.section, e.page, e.origen, e.ua].map((x) => `"${String(x || '').replace(/"/g, '""')}"`).join(',');
     }).join('\n');
     return new Response(head + rows, { headers: { 'content-type': 'text/csv; charset=utf-8', 'content-disposition': 'attachment; filename="cta-clics.csv"' } });
   }
@@ -71,7 +71,7 @@ export default async (req) => {
   const dateAgg = [...events.reduce((m, e) => m.set((e.ts || '').slice(0, 10), (m.get((e.ts || '').slice(0, 10)) || 0) + 1), new Map())].sort((a, b) => b[0].localeCompare(a[0]));
   const recent = events.slice(0, 60).map((e) => {
     const [f, h] = (e.ts || '').split('T');
-    return `<tr><td>${esc(f)} ${esc((h || '').slice(0, 5))}</td><td><span class="pill p-${esc(e.cta)}">${esc(e.cta)}</span></td><td>${esc(e.section)}</td><td class="pg">${esc(e.page)}</td><td>${esc(e.ua)}</td></tr>`;
+    return `<tr><td>${esc(f)} ${esc((h || '').slice(0, 5))}</td><td><span class="pill p-${esc(e.cta)}">${esc(e.cta)}</span></td><td>${esc(e.section)}</td><td class="pg">${esc(e.page)}</td><td class="pg">${esc(e.origen || '—')}</td><td>${esc(e.ua)}</td></tr>`;
   }).join('');
   const k = esc(url.searchParams.get('key'));
 
@@ -113,7 +113,8 @@ export default async (req) => {
     ${table('Por fecha', dateAgg, 'Día')}
     <div class="grid2">${table('Por tipo de CTA', tally(events, 'cta'), 'CTA')}${table('Por dispositivo', tally(events, 'ua'), 'Dispositivo')}</div>
     <div class="grid2">${table('Por sección', tally(events, 'section'), 'Sección')}${table('Por página', tally(events, 'page'), 'Página')}</div>
-    <section><h2>Últimos clics (60)</h2><div class="tw"><table><thead><tr><th scope="col">Fecha</th><th scope="col">CTA</th><th scope="col">Sección</th><th scope="col">Página</th><th scope="col">Disp.</th></tr></thead><tbody>${recent || '<tr><td colspan="5">Sin clics todavía. Prueba a pulsar un botón de la web.</td></tr>'}</tbody></table></div></section>
+    ${table('Por origen de la visita (UTM, web de procedencia o directo)', tally(events.filter((e) => e.origen), 'origen'), 'Origen')}
+    <section><h2>Últimos clics (60)</h2><div class="tw"><table><thead><tr><th scope="col">Fecha</th><th scope="col">CTA</th><th scope="col">Sección</th><th scope="col">Página</th><th scope="col">Origen</th><th scope="col">Disp.</th></tr></thead><tbody>${recent || '<tr><td colspan="6">Sin clics todavía. Prueba a pulsar un botón de la web.</td></tr>'}</tbody></table></div></section>
   </main></body></html>`;
 
   return new Response(html, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' } });

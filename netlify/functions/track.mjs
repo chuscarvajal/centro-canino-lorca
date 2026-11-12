@@ -2,7 +2,8 @@ import { getStore } from '@netlify/blobs';
 
 // Registra un clic de CTA (llamar / whatsapp / email / mapa / formulario)
 // con fecha + página + sección. Almacena en Netlify Blobs (store "cta-events").
-// Endpoint: POST /.netlify/functions/track   body JSON {cta, section, page, ts}
+// Endpoint: POST /.netlify/functions/track   body JSON {cta, section, page, origen, ts}
+// origen = utm_source[/utm_campaign] de la visita, dominio de procedencia o "directo".
 export default async (req) => {
   if (req.method !== 'POST') return new Response('', { status: 405 });
 
@@ -15,6 +16,7 @@ export default async (req) => {
     cta: clean(d.cta, 24),
     section: clean(d.section, 40),
     page: clean(d.page, 160) || '/',
+    origen: clean(d.origen, 60) || 'desconocido',
     ref: clean(req.headers.get('referer'), 160),
     ua: /Mobi|Android|iPhone/i.test(req.headers.get('user-agent') || '') ? 'movil' : 'escritorio',
     ts,
